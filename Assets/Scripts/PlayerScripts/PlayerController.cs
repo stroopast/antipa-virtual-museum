@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerControllerScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     Animator animator;
     CharacterController characterController;
 
-    [SerializeField] private Transform cam;
-    [SerializeField] private float speed = 2.2f;
-    [SerializeField] private float turnSmoothTime = 0.1f;
+    public Transform cam;
+    public float playerMoveSpeed = 2.2f;
+    public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     void Start()
     {
@@ -18,15 +18,13 @@ public class PlayerControllerScript : MonoBehaviour
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        updateMovementAnimation();
-        handleMovement();
+        UpdateMovementAnimation();
+        HandleMovement();
     }
 
-    bool checkIfWasdIsPressed()
+    bool CheckIfWasdIsPressed()
     {
         bool isWPressed = Input.GetKey(KeyCode.W);
         bool isAPressed = Input.GetKey(KeyCode.A);
@@ -36,7 +34,7 @@ public class PlayerControllerScript : MonoBehaviour
         return isWPressed || isAPressed || isSPressed || isDPressed;
     }
 
-    void handleMovement()
+    void HandleMovement()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -49,13 +47,13 @@ public class PlayerControllerScript : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngel, 0f) * Vector3.forward;
-            characterController.Move(moveDir.normalized * speed * Time.deltaTime);
+            characterController.Move(moveDir.normalized * playerMoveSpeed * Time.deltaTime);
         }
     }
 
-    void updateMovementAnimation()
+    void UpdateMovementAnimation()
     {
-        bool isWASDpressed = checkIfWasdIsPressed();
+        bool isWASDpressed = CheckIfWasdIsPressed();
         bool isLeftShiftPressed = Input.GetKey("left shift");
         bool isWalking = animator.GetBool("isWalking");
         bool isRunning = animator.GetBool("isRunning");
@@ -72,13 +70,13 @@ public class PlayerControllerScript : MonoBehaviour
 
         if (!isRunning && (isLeftShiftPressed && isWASDpressed))
         {
-            speed = speed + 2;
+            playerMoveSpeed = playerMoveSpeed + 2;
             animator.SetBool("isRunning", true);
         }
 
         if (isRunning && (!isLeftShiftPressed || !isWASDpressed))
         {
-            speed = speed - 2;
+            playerMoveSpeed = playerMoveSpeed - 2;
             animator.SetBool("isRunning", false);
         }
     }
