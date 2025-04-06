@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Lion
+  m_EditorClassIdentifier: 
+  exhibitName: Leu
+  species: Panthera leo
+  description: Leul (Panthera leo) este o specie de felina carnivora, originara din
+    regiunile Africii subsahariene si, intr-o mica masura, din vestul Indiei. Este
+    un pradator de varf si se distinge prin comportamentul social complex, traind
+    in grupuri organizate numite haite. Masculii sunt usor de recunoscut datorita
+    coamei impunatoare.
+  image: {fileID: 21300000, guid: fa16c8d1543120142a9c2d604f5b3c77, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}

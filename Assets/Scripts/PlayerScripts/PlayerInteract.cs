@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -15,6 +17,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private GameObject currentExhibit;
 
+    public InteractionMenu exhibitMenu;
     void Update()
     {
         RaycastHit hit;
@@ -33,19 +36,34 @@ public class PlayerInteraction : MonoBehaviour
             {
                 interactionMenu.SetActive(true);
                 interactionText.gameObject.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                Exhibit exhibit = currentExhibit.GetComponent<Exhibit>();
+
+                if (exhibit != null)
+                {
+                    exhibitMenu.LoadExhibitData(exhibit.data);
+                }
             }
         }
         else
         {
             currentExhibit = null;
             interactionText.gameObject.SetActive(false);
-            interactionMenu.SetActive(false);
         }
 
         if (interactionMenu.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
             interactionMenu.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
+        if(!interactionMenu.activeSelf)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
