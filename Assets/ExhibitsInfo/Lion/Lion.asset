@@ -21,3 +21,26 @@ MonoBehaviour:
     coamei impunatoare.
   image: {fileID: 21300000, guid: fa16c8d1543120142a9c2d604f5b3c77, type: 3}
   sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: African lions (Panthera leo) live in most of sub-Saharan Africa
+    except in desert and rainforest habitats. Lions were once exterminated from South
+    Africa, where they remain in Kruger and Kalahari Gemsbok National Parks and possibly
+    some other protected areas.
+  habitat: African lions live in plains or savanna habitat with a large prey base
+    (mostly ungulates) and sufficient cover available. In these optimal habitats,
+    lions are the second most abundant large predator, after spotted hyenas Crocuta
+    crocuta. Lions can also live, with wider ranges, in most habitats except in tropical
+    rainforests and in deserts. Lions can live in forested, shrubby, mountainous,
+    and semi-desert habitats.
+  lifespan: Female lions typically live longer than males. Males reach their prime
+    between five and nine years but few males survive past ten years of age. Some
+    males have survived until 16 in the wild. Females normally live until 15 or 16
+    years. In the Serengeti, females live up to 18 years.
+  food: Lions are predatory carnivores. They usually hunt in groups, but the actual
+    killing is done by an individual lion. They frequently bring down prey much bigger
+    than they are themselves. Showy males have more difficulty hunting than females
+    because of their conspicuousness, therefore females in a pride do the majority
+    of hunting.
+  habitatTitle: Savane
+  lifespanTitle: 15-16 ani
+  dietTitle: Carnivora
+  map: {fileID: 21300000, guid: 84de82801a1b1ce4795868e35380f11d, type: 3}

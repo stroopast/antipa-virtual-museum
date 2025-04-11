@@ -18,6 +18,7 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject currentExhibit;
 
     public InteractionMenu exhibitMenu;
+    public InformationMenu exhibitInfoMenu;
     void Update()
     {
         RaycastHit hit;
@@ -44,6 +45,7 @@ public class PlayerInteraction : MonoBehaviour
                 if (exhibit != null)
                 {
                     exhibitMenu.LoadExhibitData(exhibit.data);
+                    exhibitInfoMenu.LoadExhibitAdditionalInfo(exhibit.data);
                 }
             }
         }
@@ -56,12 +58,6 @@ public class PlayerInteraction : MonoBehaviour
         if (interactionMenu.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
             interactionMenu.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-
-        if(!interactionMenu.activeSelf)
-        {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }

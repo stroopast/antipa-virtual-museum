@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
+using System;
 
 public class InteractionMenu : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class InteractionMenu : MonoBehaviour
     public TextMeshProUGUI exhibitDescr;
     public Image exhibitImg;
     public AudioSource exhibitSound;
+
+    public GameObject additionalInformationPage;
 
     private ExhibitData currentExhibit;
 
@@ -40,8 +43,18 @@ public class InteractionMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
+    public void OpenAdditionalInformation()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        additionalInformationPage.SetActive(true);
+        gameObject.SetActive(false);
+    }
+
     public void ExitInteractionMenu()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         gameObject.SetActive(false);
     }
 }
