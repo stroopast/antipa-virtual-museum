@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
-public class InformationMenu : MonoBehaviour
+public class ExhibitInfoMenu : MonoBehaviour
 {
     [Header("Left Page")]
     public TextMeshProUGUI geographicRange;
@@ -21,7 +21,15 @@ public class InformationMenu : MonoBehaviour
     public TextMeshProUGUI echibitDiet;
     public TextMeshProUGUI echibitLifespan;
 
-    public void ExitInformationMenu()
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitExhibitInfoMenu();
+        }
+    }
+
+    public void ExitExhibitInfoMenu()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -44,5 +52,12 @@ public class InformationMenu : MonoBehaviour
         echibitDiet.text = data.dietTitle;
         echibitLifespan.text = data.lifespanTitle;
         map.sprite = data.map;
+    }
+
+    public void OpenExhibitInfoMenu()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        gameObject.SetActive(true);
     }
 }

@@ -12,13 +12,16 @@ public class PlayerInteraction : MonoBehaviour
     public Camera playerCamera;
     public float interactionRange = 7f;
     public TextMeshProUGUI interactionText;
-    public GameObject interactionMenu;
+    public GameObject mainMenu;
+    public GameObject infoMenu;
+    public GameObject quizMenu;
     public LayerMask exhibitLayer;
 
     private GameObject currentExhibit;
 
-    public InteractionMenu exhibitMenu;
-    public InformationMenu exhibitInfoMenu;
+    public ExhibitMainMenu exhibitMainMenu;
+    public ExhibitInfoMenu exhibitInfoMenu;
+    public ExhibitQuizMenu exhibitQuizMenu;
     void Update()
     {
         RaycastHit hit;
@@ -28,24 +31,31 @@ public class PlayerInteraction : MonoBehaviour
         if (hitExhibit)
         {
             currentExhibit = hit.collider.gameObject;
-            if (!interactionMenu.activeSelf)
+            if (!mainMenu.activeSelf)
             {
                 interactionText.gameObject.SetActive(true);
             }
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if(exhibitMainMenu.gameObject.activeSelf || exhibitInfoMenu.gameObject.activeSelf || exhibitQuizMenu.gameObject.activeSelf)
             {
-                interactionMenu.SetActive(true);
+                //nothing
+                interactionText.gameObject.SetActive(false);
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                mainMenu.SetActive(true);
                 interactionText.gameObject.SetActive(false);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
 
                 Exhibit exhibit = currentExhibit.GetComponent<Exhibit>();
+                Quiz quiz = currentExhibit.GetComponent<Quiz>();
 
                 if (exhibit != null)
                 {
-                    exhibitMenu.LoadExhibitData(exhibit.data);
+                    exhibitMainMenu.LoadExhibitData(exhibit.data);
                     exhibitInfoMenu.LoadExhibitAdditionalInfo(exhibit.data);
+                    exhibitQuizMenu.LoadQuizData(quiz.quiz);
                 }
             }
         }
@@ -55,11 +65,5 @@ public class PlayerInteraction : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
 
-        if (interactionMenu.activeSelf && Input.GetKeyDown(KeyCode.Escape))
-        {
-            interactionMenu.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
     }
 }

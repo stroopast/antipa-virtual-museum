@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using System;
 
-public class InteractionMenu : MonoBehaviour
+public class ExhibitMainMenu : MonoBehaviour
 {
     public TextMeshProUGUI exhibitName;
     public TextMeshProUGUI speciesName;
@@ -14,13 +14,17 @@ public class InteractionMenu : MonoBehaviour
     public Image exhibitImg;
     public AudioSource exhibitSound;
 
-    public GameObject additionalInformationPage;
+    public GameObject exhibitInfoMenu;
+    public GameObject exhibitQuizMenu;
 
     private ExhibitData currentExhibit;
 
-    private void Awake()
+    private void Update()
     {
-        gameObject.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitExhibitMainMenu();
+        }
     }
 
     public void LoadExhibitData(ExhibitData data)
@@ -43,18 +47,18 @@ public class InteractionMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
-    public void OpenAdditionalInformation()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        additionalInformationPage.SetActive(true);
-        gameObject.SetActive(false);
-    }
-
-    public void ExitInteractionMenu()
+    public void ExitExhibitMainMenu()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         gameObject.SetActive(false);
     }
+
+    public void OpenExhibitMainMenu()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        gameObject.SetActive(true);
+    }
+
 }
