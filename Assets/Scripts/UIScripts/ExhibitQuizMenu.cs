@@ -35,7 +35,7 @@ public class ExhibitQuizMenu : MonoBehaviour
     public void StartQuiz()
     {
         tryAgainButton.gameObject.SetActive(false);
-        backButton.gameObject.SetActive(false);
+        backButton.gameObject.SetActive(true);
         answerInput.gameObject.SetActive(true);
         submitButton.gameObject.SetActive(true);
         questionNumber.gameObject.SetActive(true);
@@ -87,7 +87,6 @@ public class ExhibitQuizMenu : MonoBehaviour
         submitButton.gameObject.SetActive(false);
         questionNumber.gameObject.SetActive(false);
         tryAgainButton.gameObject.SetActive(true);
-        backButton.gameObject.SetActive(true);
     }
 
     public void ResetQuiz()
@@ -117,23 +116,5 @@ public class ExhibitQuizMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         gameObject.SetActive(true);
-        ChangeTMPInputFieldColor("E3D0AF");
-    }
-
-    void ChangeTMPInputFieldColor(string hexColor)
-    {
-        if (ColorUtility.TryParseHtmlString(hexColor, out Color newColor))
-        {
-            Image background = answerInput.GetComponent<Image>();
-            if (background != null)
-            {
-                background.color = newColor;
-                Debug.Log("ASDASDSA");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Invalid hex color: " + hexColor);
-        }
     }
 }
