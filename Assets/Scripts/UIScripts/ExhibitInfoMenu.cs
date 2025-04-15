@@ -23,10 +23,7 @@ public class ExhibitInfoMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitExhibitInfoMenu();
-        }
+        HandleInput();
     }
 
     public void ExitExhibitInfoMenu()
@@ -59,5 +56,13 @@ public class ExhibitInfoMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         gameObject.SetActive(true);
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitExhibitInfoMenu();
+        }
     }
 }

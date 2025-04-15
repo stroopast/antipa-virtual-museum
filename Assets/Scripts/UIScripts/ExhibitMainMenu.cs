@@ -21,10 +21,7 @@ public class ExhibitMainMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitExhibitMainMenu();
-        }
+        HandleInput();
     }
 
     public void LoadExhibitData(ExhibitData data)
@@ -61,4 +58,11 @@ public class ExhibitMainMenu : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    private void HandleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitExhibitMainMenu();
+        }
+    }
 }

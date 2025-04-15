@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
+
+
 
 public class ExhibitQuizMenu : MonoBehaviour
 {
@@ -16,20 +19,21 @@ public class ExhibitQuizMenu : MonoBehaviour
     public Button backButton;
 
     private QuizData quizData;
+    private string animalName;
     private int currentQuestionIndex = 0;
     private int score = 0;
 
+    private const int MAX_SCORE = 4;
+    private bool inputBlocked = false;
+
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitQuiz();
-        }
-
+        HandleInput();
     }
-    public void LoadQuizData(QuizData data)
+    public void LoadQuizData(QuizData data, ExhibitData exhibit)
     {
         quizData = data;
+        animalName = exhibit.exhibitName;
     }
 
     public void StartQuiz()
@@ -55,12 +59,19 @@ public class ExhibitQuizMenu : MonoBehaviour
         }
         else
         {
-            ShowFinalScore();
+            CheckQuizCompletion();
         }
     }
 
     void CheckAnswer()
     {
+        if (inputBlocked)
+        {
+            return;
+        }
+
+        inputBlocked = true;
+
         string userAnswer = answerInput.text.Trim().ToLower();
         string correctAnswer = quizData.questions[currentQuestionIndex].correctAnswer.Trim().ToLower();
 
@@ -75,18 +86,38 @@ public class ExhibitQuizMenu : MonoBehaviour
         }
 
         currentQuestionIndex++;
-        Invoke(nameof(LoadQuestion), 2f); // Wait 2 seconds before next question
+        StartCoroutine(WaitAndLoadNextQuestion());
     }
 
     void ShowFinalScore()
     {
+        if(score < MAX_SCORE / 2)
+        {
+            scoreText.text = $"Ai răspuns corect la {score}/{quizData.questions.Count} întrebări. Nu-i nimic, mai încearcă! Fiecare răspuns greșit este o lecție.";
+        }
+        else
+        {
+            scoreText.text = $"Felicitări! Ai răspuns corect la {score}/{quizData.questions.Count} întrebări!";
+        }
         questionText.text = "";
         feedbackText.text = "";
-        scoreText.text = $"Felicitări! Ai răspuns corect la {score}/{quizData.questions.Count} întrebări!";
         answerInput.gameObject.SetActive(false);
         submitButton.gameObject.SetActive(false);
         questionNumber.gameObject.SetActive(false);
         tryAgainButton.gameObject.SetActive(true);
+    }
+
+    void CheckQuizCompletion()
+    {
+        if (score == MAX_SCORE)
+        {
+            AchievementManager.Instance.UnlockAchievement(animalName);
+            ExitQuiz();
+        }
+        else
+        {
+            ShowFinalScore();
+        }
     }
 
     public void ResetQuiz()
@@ -94,10 +125,10 @@ public class ExhibitQuizMenu : MonoBehaviour
         currentQuestionIndex = 0;
         score = 0;
         scoreText.text = "";
-        tryAgainButton.gameObject.SetActive(false);
         answerInput.gameObject.SetActive(true);
         submitButton.gameObject.SetActive(true);
         questionNumber.gameObject.SetActive(true);
+        tryAgainButton.gameObject.SetActive(false);
         LoadQuestion();
     }
 
@@ -116,5 +147,24 @@ public class ExhibitQuizMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         gameObject.SetActive(true);
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitQuiz();
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            CheckAnswer();
+        }
+    }
+
+    private IEnumerator WaitAndLoadNextQuestion()
+    {
+        yield return new WaitForSeconds(2f);
+        LoadQuestion();
+        inputBlocked = false;
     }
 }

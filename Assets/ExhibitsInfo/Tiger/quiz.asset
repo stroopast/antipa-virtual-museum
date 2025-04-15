@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: quiz
   m_EditorClassIdentifier: 
   questions:
-  - questionText: Cate picioare are?
-    correctAnswer: 4
+  - questionText: abcd
+    correctAnswer: abcd
     questionNumber: 1
-  - questionText: Ce culoare are?
-    correctAnswer: 1
+  - questionText: aaa
+    correctAnswer: aaa
     questionNumber: 2
-  - questionText: Unde traieste
-    correctAnswer: 2
+  - questionText: bbb
+    correctAnswer: bbb
     questionNumber: 3
-  - questionText: Ce mananca
-    correctAnswer: 3
+  - questionText: ccc
+    correctAnswer: ccc
     questionNumber: 4

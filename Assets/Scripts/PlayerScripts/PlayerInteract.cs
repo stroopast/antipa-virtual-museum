@@ -22,7 +22,9 @@ public class PlayerInteraction : MonoBehaviour
     public ExhibitMainMenu exhibitMainMenu;
     public ExhibitInfoMenu exhibitInfoMenu;
     public ExhibitQuizMenu exhibitQuizMenu;
-    void Update()
+
+    public GameObject AchievementsMenu;
+    private void Update()
     {
         RaycastHit hit;
         Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
@@ -55,7 +57,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     exhibitMainMenu.LoadExhibitData(exhibit.data);
                     exhibitInfoMenu.LoadExhibitAdditionalInfo(exhibit.data);
-                    exhibitQuizMenu.LoadQuizData(quiz.quiz);
+                    exhibitQuizMenu.LoadQuizData(quiz.quiz, exhibit.data);
                 }
             }
         }
@@ -65,5 +67,14 @@ public class PlayerInteraction : MonoBehaviour
             interactionText.gameObject.SetActive(false);
         }
 
+        HandleInput();
+    }
+
+    private void HandleInput()
+    {
+        if (Input.GetKeyDown(KeyCode.F8))
+        {
+            AchievementsMenu.gameObject.SetActive(true);
+        }
     }
 }
