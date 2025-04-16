@@ -17,13 +17,6 @@ public class StartGameMenu : MonoBehaviour
     void Start()
     {
         InitiateStartingScene();
-        PlayerPrefs.DeleteAll();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void InitiateStartingScene()

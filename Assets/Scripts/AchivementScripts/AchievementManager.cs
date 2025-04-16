@@ -86,7 +86,6 @@ public class AchievementManager : MonoBehaviour
                 }
             }
             Invoke(nameof(ExitWinTrophyMenu), 5f);
-            Debug.Log($"Achievement unlocked: {animalName}");
         }
     }
 
@@ -114,6 +113,11 @@ public class AchievementManager : MonoBehaviour
                 Cursor.visible = false;
                 AchievementsMenu.gameObject.SetActive(false);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.F8))
+        {
+            AchievementsMenu.gameObject.SetActive(true);
         }
     }
 }
