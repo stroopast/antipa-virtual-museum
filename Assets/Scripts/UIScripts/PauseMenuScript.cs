@@ -8,6 +8,9 @@ public class PauseMenuScript : MonoBehaviour
 {
     public GameObject PauseMenu;
     public List<GameObject> otherMenus;
+
+    private int slot = 0;
+
     private void Update()
     {
         HandleInput();

@@ -17,13 +17,21 @@ public class PlayerInteraction : MonoBehaviour
     public GameObject quizMenu;
     public LayerMask exhibitLayer;
 
-    private GameObject currentExhibit;
-
     public ExhibitMainMenu exhibitMainMenu;
     public ExhibitInfoMenu exhibitInfoMenu;
     public ExhibitQuizMenu exhibitQuizMenu;
 
     public GameObject AchievementsMenu;
+
+    private GameObject currentExhibit;
+
+    public TextMeshProUGUI playerName;
+
+    private void Start()
+    {
+        string name = PlayerPrefs.GetString("PlayerName", "Vizitator");
+        playerName.text = name;
+    }
     private void Update()
     {
         RaycastHit hit;
