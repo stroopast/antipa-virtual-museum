@@ -25,6 +25,7 @@ public class ExhibitQuizMenu : MonoBehaviour
 
     private const int MAX_SCORE = 4;
     private bool inputBlocked = false;
+    private Coroutine loadNextQuestionCoroutine;
 
     private void Update()
     {
@@ -86,7 +87,7 @@ public class ExhibitQuizMenu : MonoBehaviour
         }
 
         currentQuestionIndex++;
-        StartCoroutine(WaitAndLoadNextQuestion());
+        loadNextQuestionCoroutine  = StartCoroutine(WaitAndLoadNextQuestion());
     }
 
     void ShowFinalScore()
@@ -134,6 +135,13 @@ public class ExhibitQuizMenu : MonoBehaviour
 
     public void ExitQuiz()
     {
+        if (loadNextQuestionCoroutine != null)
+        {
+            StopCoroutine(loadNextQuestionCoroutine);
+            loadNextQuestionCoroutine = null;
+        }
+
+        inputBlocked = false;
         currentQuestionIndex = 0;
         score = 0;
         scoreText.text = "";
