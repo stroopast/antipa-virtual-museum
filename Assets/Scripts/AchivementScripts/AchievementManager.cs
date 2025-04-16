@@ -108,9 +108,12 @@ public class AchievementManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            AchievementsMenu.gameObject.SetActive(false);
+            if(AchievementsMenu.gameObject.activeSelf)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                AchievementsMenu.gameObject.SetActive(false);
+            }
         }
     }
 }
