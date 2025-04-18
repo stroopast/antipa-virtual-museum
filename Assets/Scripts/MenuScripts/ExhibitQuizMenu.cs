@@ -27,10 +27,6 @@ public class ExhibitQuizMenu : MonoBehaviour
     private bool inputBlocked = false;
     private Coroutine loadNextQuestionCoroutine;
 
-    private void Update()
-    {
-        HandleInput();
-    }
     public void LoadQuizData(QuizData data, ExhibitData exhibit)
     {
         quizData = data;
@@ -64,7 +60,7 @@ public class ExhibitQuizMenu : MonoBehaviour
         }
     }
 
-    void CheckAnswer()
+    public void CheckAnswer()
     {
         if (inputBlocked)
         {
@@ -156,19 +152,6 @@ public class ExhibitQuizMenu : MonoBehaviour
         Cursor.visible = true;
         gameObject.SetActive(true);
     }
-
-    private void HandleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitQuiz();
-        }
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            CheckAnswer();
-        }
-    }
-
     private IEnumerator WaitAndLoadNextQuestion()
     {
         yield return new WaitForSeconds(2f);

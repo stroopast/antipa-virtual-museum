@@ -43,8 +43,6 @@ public class AchievementManager : MonoBehaviour
 
     private void Update()
     {
-        HandleInput();
-
         for (var iconIndex = 0; iconIndex < achievementsIcons.Count; iconIndex++)
         {
             achievementsIcons[iconIndex].image.sprite = allAchievements[iconIndex].trophyIcon;
@@ -89,13 +87,6 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
-    public void OpenAchievementsInventory()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        AchievementsMenu.gameObject.SetActive(true);
-    }
-
     public void ExitWinTrophyMenu()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -103,21 +94,27 @@ public class AchievementManager : MonoBehaviour
         WinTrophyMenu.SetActive(false);
     }
 
-    private void HandleInput()
+
+
+    public List<string> GetUnlockedAchievements()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        List<string> list = new();
+        foreach (var kvp in unlockedAchievements)
         {
-            if(AchievementsMenu.gameObject.activeSelf)
+            if (kvp.Value)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                AchievementsMenu.gameObject.SetActive(false);
+                list.Add(kvp.Key);
             }
         }
+        return list;
+    }
 
-        if (Input.GetKeyDown(KeyCode.F8))
+    public void SetUnlockedAchievements(List<string> list)
+    {
+        foreach (var achievement in allAchievements)
         {
-            AchievementsMenu.gameObject.SetActive(true);
+            unlockedAchievements[achievement.animalName] = list.Contains(achievement.animalName);
         }
     }
+
 }

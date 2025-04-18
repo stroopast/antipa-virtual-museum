@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class StartGameMenu : MonoBehaviour
+public class InitialSceneScript : MonoBehaviour
 {
     [Header("Single Player related buttons")]
     public GameObject SinglePlayerBtn;
