@@ -99,11 +99,11 @@ public class AchievementManager : MonoBehaviour
     public List<string> GetUnlockedAchievements()
     {
         List<string> list = new();
-        foreach (var kvp in unlockedAchievements)
+        foreach (var trophy in unlockedAchievements)
         {
-            if (kvp.Value)
+            if (trophy.Value)
             {
-                list.Add(kvp.Key);
+                list.Add(trophy.Key);
             }
         }
         return list;

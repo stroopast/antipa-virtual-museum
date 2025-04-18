@@ -1,10 +1,15 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using TMPro;
 
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance;
+
+    public GameObject SaveMenu;
+    public TextMeshProUGUI SavePopUpMenu;
 
     private void Awake()
     {
@@ -25,10 +30,18 @@ public class SaveManager : MonoBehaviour
 
         data.unlockedAchievements = AchievementManager.Instance.GetUnlockedAchievements();
 
+        int totalAchievements = AchievementManager.Instance.allAchievements.Count;
+        int unlocked = data.unlockedAchievements.Count;
+        data.progressPercentage = totalAchievements > 0 ? (unlocked * 100f) / totalAchievements : 0f;
+
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(GetSlotPath(slot), json);
-
         Debug.Log($"Saved to slot {slot}");
+
+        SaveMenu.gameObject.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        StartCoroutine(WaitForSavingProcess());
     }
 
     public void LoadGame(int slot)
@@ -62,5 +75,21 @@ public class SaveManager : MonoBehaviour
     public bool SaveExists(int slot)
     {
         return File.Exists(GetSlotPath(slot));
+    }
+
+    public SaveData GetSlotData(int slot)
+    {
+        string path = GetSlotPath(slot);
+        if (!File.Exists(path)) return null;
+
+        string json = File.ReadAllText(path);
+        return JsonUtility.FromJson<SaveData>(json);
+    }
+
+    private IEnumerator WaitForSavingProcess()
+    {
+        SavePopUpMenu.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SavePopUpMenu.gameObject.SetActive(false);
     }
 }

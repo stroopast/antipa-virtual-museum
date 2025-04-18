@@ -11,7 +11,15 @@ public class SaveLoadUI : MonoBehaviour
 
     public void LoadFromSlot(int slot)
     {
-        SaveManager.Instance.LoadGame(slot);
+        if (SaveManager.Instance.SaveExists(slot))
+        {
+            SaveManager.Instance.LoadGame(slot);
+        }
+        else
+        {
+            Debug.Log($"No save found in slot {slot}!");
+            // maybe add a pop up menu
+        }
     }
 
     public void DeleteSlot(int slot)

@@ -8,6 +8,7 @@ public class SaveData
     public string playerName;
     public Vector3Data playerPosition;
     public List<string> unlockedAchievements;
+    public float progressPercentage; // nou
 }
 
 [System.Serializable]
