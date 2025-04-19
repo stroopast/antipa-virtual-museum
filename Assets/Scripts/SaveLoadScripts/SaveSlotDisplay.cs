@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Xml.Serialization;
 
 public class SaveSlotDisplay : MonoBehaviour
 {
-    public int slotIndex; // Slot 1, 2, 3
+    public int slotIndex;
     public TextMeshProUGUI infoText;
-
-    private void OnEnable()
+  
+    private void Update()
     {
         UpdateSlotDisplay();
     }

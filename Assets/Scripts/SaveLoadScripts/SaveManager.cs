@@ -70,7 +70,11 @@ public class SaveManager : MonoBehaviour
     public void DeleteSave(int slot)
     {
         string path = GetSlotPath(slot);
-        if (File.Exists(path)) File.Delete(path);
+        if (File.Exists(path))
+        {
+            File.Delete(path);
+            Debug.Log($"Deleted save in slot {slot}");
+        }
     }
 
     public bool SaveExists(int slot)
