@@ -94,8 +94,6 @@ public class AchievementManager : MonoBehaviour
         WinTrophyMenu.SetActive(false);
     }
 
-
-
     public List<string> GetUnlockedAchievements()
     {
         List<string> list = new();

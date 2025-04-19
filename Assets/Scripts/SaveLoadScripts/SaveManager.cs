@@ -47,6 +47,7 @@ public class SaveManager : MonoBehaviour
     public void LoadGame(int slot)
     {
         string path = GetSlotPath(slot);
+
         if (!File.Exists(path))
         {
             Debug.LogWarning($"No save in slot {slot}");
@@ -56,7 +57,7 @@ public class SaveManager : MonoBehaviour
         string json = File.ReadAllText(path);
         SaveData data = JsonUtility.FromJson<SaveData>(json);
 
-        PlayerPrefs.SetString("PlayerName", data.playerName);
+        PlayerInfo.Instance.UpdateNameOnLoad(data.playerName);
 
         var player = GameObject.FindWithTag("Player");
         player.transform.position = data.playerPosition.ToVector3();
