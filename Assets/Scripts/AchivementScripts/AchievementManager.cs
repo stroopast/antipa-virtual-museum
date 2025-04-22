@@ -51,6 +51,7 @@ public class AchievementManager : MonoBehaviour
             {
 
                 achievementsIcons[iconIndex].image.color = Color.gray;
+                achievementsIcons[iconIndex].achievementName.text = "";
             }
             else
             {

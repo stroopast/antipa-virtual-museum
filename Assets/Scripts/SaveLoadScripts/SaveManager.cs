@@ -38,10 +38,10 @@ public class SaveManager : MonoBehaviour
         File.WriteAllText(GetSlotPath(slot), json);
         Debug.Log($"Saved to slot {slot}");
 
-        SaveMenu.gameObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        StartCoroutine(WaitForSavingProcess());
+        //SaveMenu.gameObject.SetActive(false);
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //StartCoroutine(WaitForSavingProcess());
     }
 
     public void LoadGame(int slot)
