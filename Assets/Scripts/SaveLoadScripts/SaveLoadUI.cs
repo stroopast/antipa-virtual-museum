@@ -7,6 +7,7 @@ public class SaveLoadUI : MonoBehaviour
 {
     public GameObject LoadMenu;
     public GameObject SaveMenu;
+    public GameObject DeleteSavePopUpMenu;
     public TextMeshProUGUI SavePopUpText;
     public void SaveToSlot(int slot)
     {

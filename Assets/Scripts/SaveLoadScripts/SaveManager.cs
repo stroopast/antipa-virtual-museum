@@ -8,9 +8,6 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance;
 
-    public GameObject SaveMenu;
-    public TextMeshProUGUI SavePopUpMenu;
-
     private void Awake()
     {
         if (Instance == null) Instance = this;
