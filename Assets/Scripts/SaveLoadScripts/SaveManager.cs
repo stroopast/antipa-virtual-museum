@@ -36,12 +36,6 @@ public class SaveManager : MonoBehaviour
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(GetSlotPath(slot), json);
-        Debug.Log($"Saved to slot {slot}");
-
-        //SaveMenu.gameObject.SetActive(false);
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
-        //StartCoroutine(WaitForSavingProcess());
     }
 
     public void LoadGame(int slot)
@@ -50,7 +44,6 @@ public class SaveManager : MonoBehaviour
 
         if (!File.Exists(path))
         {
-            Debug.LogWarning($"No save in slot {slot}");
             return;
         }
 
@@ -63,8 +56,6 @@ public class SaveManager : MonoBehaviour
         player.transform.position = data.playerPosition.ToVector3();
 
         AchievementManager.Instance.SetUnlockedAchievements(data.unlockedAchievements);
-
-        Debug.Log($"Loaded from slot {slot}");
     }
 
     public void DeleteSave(int slot)
@@ -73,7 +64,6 @@ public class SaveManager : MonoBehaviour
         if (File.Exists(path))
         {
             File.Delete(path);
-            Debug.Log($"Deleted save in slot {slot}");
         }
     }
 
@@ -89,12 +79,5 @@ public class SaveManager : MonoBehaviour
 
         string json = File.ReadAllText(path);
         return JsonUtility.FromJson<SaveData>(json);
-    }
-
-    private IEnumerator WaitForSavingProcess()
-    {
-        SavePopUpMenu.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        SavePopUpMenu.gameObject.SetActive(false);
     }
 }

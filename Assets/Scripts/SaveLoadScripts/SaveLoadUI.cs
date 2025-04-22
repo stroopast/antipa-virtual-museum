@@ -30,8 +30,7 @@ public class SaveLoadUI : MonoBehaviour
         }
         else
         {
-            Debug.Log($"No save found in slot {slot}!");
-            // maybe add a pop up menu
+            StartCoroutine(WaitForSavingProcess("empty", slot));
         }
     }
 
@@ -53,6 +52,12 @@ public class SaveLoadUI : MonoBehaviour
             case "load":
                 SavePopUpText.gameObject.SetActive(true);
                 SavePopUpText.text = $"Jocul a fost încărcat cu succes din slotul {slot}!";
+                yield return new WaitForSeconds(3f);
+                SavePopUpText.gameObject.SetActive(false);
+                break;
+            case "empty":
+                SavePopUpText.gameObject.SetActive(true);
+                SavePopUpText.text = $"Nu există o salvare în slotul {slot}!";
                 yield return new WaitForSeconds(3f);
                 SavePopUpText.gameObject.SetActive(false);
                 break;
