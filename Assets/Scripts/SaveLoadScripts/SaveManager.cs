@@ -14,13 +14,13 @@ public class SaveManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    private string GetSlotPath(int slot) => $"{Application.persistentDataPath}/save_slot_{slot}.json";
+    public string GetSlotPath(int slot) => $"{Application.persistentDataPath}/save_slot_{slot}.json";
 
     public void SaveGame(int slot)
     {
         SaveData data = new SaveData();
 
-        data.playerName = PlayerPrefs.GetString("PlayerName", "Explorer");
+        data.playerName = PlayerInfo.Instance.playerName.text;
 
         var player = GameObject.FindWithTag("Player");
         data.playerPosition = new Vector3Data(player.transform.position);

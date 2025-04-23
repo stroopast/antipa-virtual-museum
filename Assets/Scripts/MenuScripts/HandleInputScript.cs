@@ -106,20 +106,6 @@ public class HandleInputScript : MonoBehaviour
             AchievementsMenu.gameObject.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.F1))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            SaveMenu.gameObject.SetActive(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.F2))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            LoadMenu.gameObject.SetActive(true);
-        }
-
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if(ExhibitQuizMenu.gameObject.activeSelf)

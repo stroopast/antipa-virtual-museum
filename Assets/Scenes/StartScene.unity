@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 75239608}
   - component: {fileID: 75239607}
   - component: {fileID: 75239606}
-  - component: {fileID: 75239605}
   m_Layer: 5
   m_Name: RemoveSlot3Btn
   m_TagString: Untagged
@@ -163,20 +162,6 @@ RectTransform:
   m_AnchoredPosition: {x: 275, y: -125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &75239605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75239603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 3
-  infoText: {fileID: 1919911679}
 --- !u!114 &75239606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
-        m_MethodName: DeleteSlot
+      - m_Target: {fileID: 660137715}
+        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+        m_MethodName: DeleteSave
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -416,7 +401,6 @@ GameObject:
   - component: {fileID: 99680513}
   - component: {fileID: 99680512}
   - component: {fileID: 99680511}
-  - component: {fileID: 99680510}
   m_Layer: 5
   m_Name: RemoveSlot1Btn
   m_TagString: Untagged
@@ -444,20 +428,6 @@ RectTransform:
   m_AnchoredPosition: {x: 275, y: 125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &99680510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99680508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 1
-  infoText: {fileID: 1463609029}
 --- !u!114 &99680511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,9 +472,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
-        m_MethodName: DeleteSlot
+      - m_Target: {fileID: 660137715}
+        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+        m_MethodName: DeleteSave
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -783,8 +753,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
+      - m_Target: {fileID: 660137713}
+        m_TargetAssemblyTypeName: InitialSceneScript, Assembly-CSharp
         m_MethodName: LoadFromSlot
         m_Mode: 3
         m_Arguments:
@@ -1228,6 +1198,7 @@ MonoBehaviour:
   NewGameBtn: {fileID: 91140097}
   EnterGameBtn: {fileID: 1250924609}
   GenerateRandIDBtn: {fileID: 714220961}
+  LoadGameMenu: {fileID: 1682877048}
   playerNameInputField: {fileID: 1219736540}
 --- !u!4 &660137714
 Transform:
@@ -3086,8 +3057,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
+      - m_Target: {fileID: 660137713}
+        m_TargetAssemblyTypeName: InitialSceneScript, Assembly-CSharp
         m_MethodName: LoadFromSlot
         m_Mode: 3
         m_Arguments:
@@ -3838,8 +3809,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
+      - m_Target: {fileID: 660137713}
+        m_TargetAssemblyTypeName: InitialSceneScript, Assembly-CSharp
         m_MethodName: LoadFromSlot
         m_Mode: 3
         m_Arguments:
@@ -4506,7 +4477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1991678862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 660137713}
+        m_TargetAssemblyTypeName: InitialSceneScript, Assembly-CSharp
+        m_MethodName: PressLoadGameButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1991678862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4557,7 +4540,6 @@ GameObject:
   - component: {fileID: 2017632500}
   - component: {fileID: 2017632499}
   - component: {fileID: 2017632498}
-  - component: {fileID: 2017632497}
   m_Layer: 5
   m_Name: RemoveSlot2Btn
   m_TagString: Untagged
@@ -4585,20 +4567,6 @@ RectTransform:
   m_AnchoredPosition: {x: 275, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2017632497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017632495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 2
-  infoText: {fileID: 1989448048}
 --- !u!114 &2017632498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4643,9 +4611,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SaveLoadUI, Assembly-CSharp
-        m_MethodName: DeleteSlot
+      - m_Target: {fileID: 660137715}
+        m_TargetAssemblyTypeName: SaveManager, Assembly-CSharp
+        m_MethodName: DeleteSave
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

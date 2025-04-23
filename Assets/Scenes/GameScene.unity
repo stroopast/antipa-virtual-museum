@@ -972,7 +972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NU!
+  m_text: Nu!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
   m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
@@ -2043,7 +2043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212096550}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10917738, y: -0.00000001762991, z: 0.0000000019363626, w: 0.9940223}
+  m_LocalRotation: {x: 0.10917738, y: 0.000000017629906, z: -0.0000000019363622, w: 0.9940223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3701,7 +3701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: DA!
+  m_text: Da!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
   m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
@@ -7164,7 +7164,6 @@ GameObject:
   - component: {fileID: 820344480}
   - component: {fileID: 820344479}
   - component: {fileID: 820344478}
-  - component: {fileID: 820344481}
   m_Layer: 5
   m_Name: RemoveSlot3Btn
   m_TagString: Untagged
@@ -7286,20 +7285,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820344475}
   m_CullTransparentMesh: 1
---- !u!114 &820344481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820344475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 3
-  infoText: {fileID: 787432167}
 --- !u!1 &820793576
 GameObject:
   m_ObjectHideFlags: 0
@@ -8758,7 +8743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927783754}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14521314, y: -1.6271901e-15, z: 2.6894993e-16, w: 0.98940045}
+  m_LocalRotation: {x: 0.14521313, y: 0.000000032966824, z: -0.000000004838501, w: 0.98940045}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8960,7 +8945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12719244, y: 0.00000003413326, z: -0.000000004377043, w: 0.9918781}
+  m_LocalRotation: {x: 0.12719244, y: -0.000000034133265, z: 0.0000000043770436, w: 0.9918781}
   m_LocalPosition: {x: 0, y: 2.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13718,7 +13703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646236620}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12719242, y: 0.00000001706663, z: -0.0000000021885211, w: 0.9918781}
+  m_LocalRotation: {x: 0.12719242, y: -0.000000017066634, z: 0.0000000021885216, w: 0.9918781}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14251,7 +14236,6 @@ GameObject:
   - component: {fileID: 1714473837}
   - component: {fileID: 1714473836}
   - component: {fileID: 1714473835}
-  - component: {fileID: 1714473838}
   m_Layer: 5
   m_Name: RemoveSlot2Btn
   m_TagString: Untagged
@@ -14373,20 +14357,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714473832}
   m_CullTransparentMesh: 1
---- !u!114 &1714473838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714473832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 2
-  infoText: {fileID: 129694699}
 --- !u!1 &1722100169
 GameObject:
   m_ObjectHideFlags: 0
@@ -16107,6 +16077,7 @@ GameObject:
   - component: {fileID: 1943417138}
   - component: {fileID: 1943417137}
   - component: {fileID: 1943417139}
+  - component: {fileID: 1943417140}
   m_Layer: 0
   m_Name: SaveLoadManager
   m_TagString: Untagged
@@ -16126,8 +16097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2411b948daabc34abb7adb732500704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaveMenu: {fileID: 336140981}
-  SavePopUpMenu: {fileID: 578870892}
 --- !u!4 &1943417138
 Transform:
   m_ObjectHideFlags: 0
@@ -16157,8 +16126,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadMenu: {fileID: 197116593}
   SaveMenu: {fileID: 336140981}
-  DeleteSavePopUpMenu: {fileID: 0}
+  DeleteSavePopUpMenu: {fileID: 1342603155}
   SavePopUpText: {fileID: 578870892}
+--- !u!114 &1943417140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943417136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c96d0a39234a0f4e95a8374a97fa1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1947003679
 GameObject:
   m_ObjectHideFlags: 0
@@ -17089,7 +17070,6 @@ GameObject:
   - component: {fileID: 2139574353}
   - component: {fileID: 2139574352}
   - component: {fileID: 2139574351}
-  - component: {fileID: 2139574354}
   m_Layer: 5
   m_Name: RemoveSlot1Btn
   m_TagString: Untagged
@@ -17211,20 +17191,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139574348}
   m_CullTransparentMesh: 1
---- !u!114 &2139574354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139574348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da6370d0b36b494b91041373229499e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slotIndex: 1
-  infoText: {fileID: 10817441}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

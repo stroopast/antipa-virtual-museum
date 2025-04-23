@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,8 +13,8 @@ public class InitialSceneScript : MonoBehaviour
     public GameObject NewGameBtn;
     public GameObject EnterGameBtn;
     public GameObject GenerateRandIDBtn;
+    public GameObject LoadGameMenu;
     public TMP_InputField playerNameInputField;
-
     void Start()
     {
         InitiateStartingScene();
@@ -65,5 +66,26 @@ public class InitialSceneScript : MonoBehaviour
         PlayerPrefs.SetString("PlayerName", id);
         PlayerPrefs.Save();
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void PressLoadGameButton()
+    {
+        NewGameBtn.gameObject.SetActive(false);
+        LoadGameBtn.gameObject.SetActive(false);
+        LoadGameMenu.gameObject.SetActive(true);
+    }
+
+    public void LoadFromSlot(int slot)
+    {
+        if(File.Exists(SaveManager.Instance.GetSlotPath(slot)))
+        {
+            PlayerPrefs.SetInt("SlotToLoad", slot);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("GameScene");     
+        }
+        else
+        {
+            Debug.Log("Nu exista salvare pe acest slot!");
+        }
     }
 }
