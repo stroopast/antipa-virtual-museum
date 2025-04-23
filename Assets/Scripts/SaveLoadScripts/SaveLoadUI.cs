@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 
@@ -7,8 +8,8 @@ public class SaveLoadUI : MonoBehaviour
 {
     public GameObject LoadMenu;
     public GameObject SaveMenu;
-    public GameObject DeleteSavePopUpMenu;
     public TextMeshProUGUI SavePopUpText;
+    public List<GameObject> DeletePopUpVect; 
     public void SaveToSlot(int slot)
     {
         SaveManager.Instance.SaveGame(slot);
@@ -24,7 +25,7 @@ public class SaveLoadUI : MonoBehaviour
         if (SaveManager.Instance.SaveExists(slot))
         {
             SaveManager.Instance.LoadGame(slot);
-            LoadMenu.gameObject.SetActive(false);
+            LoadMenu.gameObject.SetActive(true);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             StartCoroutine(WaitForSavingProcess("load", slot));
@@ -38,6 +39,24 @@ public class SaveLoadUI : MonoBehaviour
     public void DeleteSlot(int slot)
     {
         SaveManager.Instance.DeleteSave(slot);
+        LoadMenu.gameObject.SetActive(true);
+        DeletePopUpVect[slot - 1].gameObject.SetActive(false);
+    }
+
+    public void PressNoButton(int slot)
+    {
+        LoadMenu.gameObject.SetActive(true);
+        DeletePopUpVect[slot - 1].gameObject.SetActive(false);
+    }
+
+    public void PressRemoveSlotButton(int slot)
+    {
+        string path = SaveManager.Instance.GetSlotPath(slot);
+        if (File.Exists(path))
+        {
+            LoadMenu.gameObject.SetActive(false);
+            DeletePopUpVect[slot - 1].gameObject.SetActive(true);
+        }
     }
 
     private IEnumerator WaitForSavingProcess(string option, int slot)

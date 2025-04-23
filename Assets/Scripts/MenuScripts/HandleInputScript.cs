@@ -16,6 +16,7 @@ public class HandleInputScript : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject SaveMenu;
     public GameObject LoadMenu;
+    public List<GameObject> DeleteLoadPopUpMenus;
 
     private void Update()
     {
@@ -98,6 +99,15 @@ public class HandleInputScript : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 LoadMenu.gameObject.SetActive(false);
+            }
+            foreach (var menu in DeleteLoadPopUpMenus)
+            {
+                if(menu.gameObject.activeSelf)
+                {
+                    menu.gameObject.SetActive(false);
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
         }
 
