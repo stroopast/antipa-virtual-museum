@@ -9,9 +9,28 @@ public class SaveLoadUI : MonoBehaviour
     public GameObject LoadMenu;
     public GameObject SaveMenu;
     public TextMeshProUGUI SavePopUpText;
-    public List<GameObject> DeletePopUpVect; 
+    public List<GameObject> DeleteLoadPopUpVect; 
+    public List<GameObject> OverwriteSavePopUpVect;
+
+    public void CheckSaveOverWrite(int slot)
+    {
+        string path = SaveManager.Instance.GetSlotPath(slot);
+        if (File.Exists(path))
+        {
+            SaveMenu.gameObject.SetActive(false);
+            OverwriteSavePopUpVect[slot - 1].gameObject.SetActive(true);
+        }
+        else
+        {
+            SaveToSlot(slot);
+        }
+    }
     public void SaveToSlot(int slot)
     {
+        if(OverwriteSavePopUpVect[slot - 1].gameObject.activeSelf)
+        {
+            OverwriteSavePopUpVect[slot - 1].gameObject.SetActive(false);
+        }
         SaveManager.Instance.SaveGame(slot);
         SaveMenu.gameObject.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
@@ -40,13 +59,19 @@ public class SaveLoadUI : MonoBehaviour
     {
         SaveManager.Instance.DeleteSave(slot);
         LoadMenu.gameObject.SetActive(true);
-        DeletePopUpVect[slot - 1].gameObject.SetActive(false);
+        DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(false);
     }
 
-    public void PressNoButton(int slot)
+    public void PressNoButtonOnLoadDelete(int slot)
     {
         LoadMenu.gameObject.SetActive(true);
-        DeletePopUpVect[slot - 1].gameObject.SetActive(false);
+        DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(false);
+    }
+
+    public void PressNoButtonOnSaveOverWrite(int slot)
+    {
+        SaveMenu.gameObject.SetActive(true);
+        OverwriteSavePopUpVect[slot - 1].gameObject.SetActive(false);
     }
 
     public void PressRemoveSlotButton(int slot)
@@ -55,7 +80,7 @@ public class SaveLoadUI : MonoBehaviour
         if (File.Exists(path))
         {
             LoadMenu.gameObject.SetActive(false);
-            DeletePopUpVect[slot - 1].gameObject.SetActive(true);
+            DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(true);
         }
     }
 
