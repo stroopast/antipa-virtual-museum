@@ -14,6 +14,7 @@ public class InitialSceneScript : MonoBehaviour
     public GameObject EnterGameBtn;
     public GameObject GenerateRandIDBtn;
     public GameObject LoadGameMenu;
+    public List<GameObject> DeleteLoadPopUpVect;
     public TMP_InputField playerNameInputField;
     void Start()
     {
@@ -87,5 +88,21 @@ public class InitialSceneScript : MonoBehaviour
         {
             Debug.Log("Nu exista salvare pe acest slot!");
         }
+    }
+
+    public void PressRemoveSlotButton(int slot)
+    {
+        string path = SaveManager.Instance.GetSlotPath(slot);
+        if (File.Exists(path))
+        {
+            LoadGameMenu.gameObject.SetActive(false);
+            DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(true);
+        }
+    }
+
+    public void PressNoButtonOnLoadDelete(int slot)
+    {
+        LoadGameMenu.gameObject.SetActive(true);
+        DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(false);
     }
 }
