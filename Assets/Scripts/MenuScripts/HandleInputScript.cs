@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class HandleInputScript : MonoBehaviour
 {
-    public List<GameObject> otherMenus;
-
     public GameObject ExhibitMainMenu;
     public GameObject ExhibitInfoMenu;
     public GameObject ExhibitQuizMenu;
@@ -23,21 +21,25 @@ public class HandleInputScript : MonoBehaviour
         HandleInput();
     }
 
+    bool AreMenusActive()
+    {
+        GameObject[] menus = GameObject.FindGameObjectsWithTag("Menu");
+
+        foreach (var menu in menus)
+        {
+            if (menu.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Logic for Pause Menu
-            int openedMenus = 0;
-
-            foreach (var menu in otherMenus)
-            {
-                if (menu.gameObject.activeSelf)
-                {
-                    openedMenus++;
-                }
-            }
-
             if (PauseMenu.gameObject.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.Locked;
@@ -45,7 +47,7 @@ public class HandleInputScript : MonoBehaviour
                 PauseMenu.gameObject.SetActive(false);
             }
             // Check if other menus are active, if no active menus open pause menu
-            else if (openedMenus == 0)
+            else if (!AreMenusActive())
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -113,17 +115,7 @@ public class HandleInputScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F8))
         {
-            int openedMenus = 0;
-
-            foreach (var menu in otherMenus)
-            {
-                if (menu.gameObject.activeSelf)
-                {
-                    openedMenus++;
-                }
-            }
-
-            if (openedMenus == 0 && !PauseMenu.gameObject.activeSelf)
+            if(!AreMenusActive())
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
