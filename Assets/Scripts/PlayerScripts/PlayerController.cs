@@ -1,5 +1,7 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     Animator animator;
     CharacterController characterController;
+    public CinemachineFreeLook freeLookCamera;
 
     public Transform cam;
     public float playerMoveSpeed = 2.2f;
@@ -21,8 +24,19 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        UpdateMovementAnimation();
-        HandleMovement();
+        if(!AreMenusActive())
+        {
+            HandleMovement();
+            UpdateMovementAnimation();
+            freeLookCamera.m_XAxis.m_InputAxisName = "Mouse X";
+            freeLookCamera.m_YAxis.m_InputAxisName = "Mouse Y";
+        }
+        else
+        {
+            freeLookCamera.m_XAxis.m_InputAxisName = "";
+            freeLookCamera.m_YAxis.m_InputAxisName = "";
+            ResetMovementAnimation();
+        }
     }
 
     bool CheckIfWasdIsPressed()
@@ -80,5 +94,26 @@ public class PlayerController : MonoBehaviour
             playerMoveSpeed = playerMoveSpeed - 2;
             animator.SetBool("isRunning", false);
         }
+    }
+
+    void ResetMovementAnimation()
+    {
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", false);
+    }
+
+    bool AreMenusActive()
+    {
+        GameObject[] menus = GameObject.FindGameObjectsWithTag("Menu");
+
+        foreach (var menu in menus)
+        {
+            if (menu.activeInHierarchy)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
