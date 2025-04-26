@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
         {
             freeLookCamera.m_XAxis.m_InputAxisName = "";
             freeLookCamera.m_YAxis.m_InputAxisName = "";
+
+            freeLookCamera.m_XAxis.m_InputAxisValue = 0;
+            freeLookCamera.m_YAxis.m_InputAxisValue = 0;
+
             ResetMovementAnimation();
         }
     }
