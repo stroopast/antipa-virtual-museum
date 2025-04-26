@@ -1595,10 +1595,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfe841f6316b3d44860189fdfee9100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freeLookCamera: {fileID: 1002438305}
-  cam: {fileID: 963194228}
+  freeLookCamera: {fileID: 0}
+  cam: {fileID: 0}
   playerMoveSpeed: 2.2
   turnSmoothTime: 0.1
+  Menus: []
 --- !u!114 &151721232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1611,19 +1612,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ca700ebfc9d6a46a5ef87f2197cb91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 963194227}
+  playerCamera: {fileID: 0}
   interactionRange: 7
-  interactionText: {fileID: 369568432}
+  interactText: {fileID: 0}
   exhibitLayer:
     serializedVersion: 2
-    m_Bits: 64
-  MainMenu: {fileID: 392281866}
-  PauseMenu: {fileID: 457533363}
-  TrophyPopUp: {fileID: 277736643}
-  AchievementsMenu: {fileID: 1807608840}
-  exhibitMainMenu: {fileID: 392281870}
-  exhibitInfoMenu: {fileID: 1906331907}
-  exhibitQuizMenu: {fileID: 1761021862}
+    m_Bits: 0
+  MainMenu: {fileID: 0}
+  PauseMenu: {fileID: 0}
+  TrophyPopUp: {fileID: 0}
+  AchievementsMenu: {fileID: 0}
+  exhibitMainMenu: {fileID: 0}
+  exhibitInfoMenu: {fileID: 0}
+  exhibitQuizMenu: {fileID: 0}
 --- !u!114 &151721233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2aeb8dac127da14ba3d919784657526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: {fileID: 1295514226}
+  playerName: {fileID: 0}
 --- !u!1 &159434125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,7 +2312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212096550}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10917738, y: 0.000000017629906, z: -0.0000000019363622, w: 0.9940223}
+  m_LocalRotation: {x: 0.10917738, y: -0.00000001762991, z: 0.0000000019363626, w: 0.9940223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7156,17 +7157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18bbecfbf97c344a9728bed239fc50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherMenus:
-  - {fileID: 392281866}
-  - {fileID: 1906331903}
-  - {fileID: 1761021858}
-  - {fileID: 1807608840}
-  - {fileID: 277736643}
-  - {fileID: 336140981}
-  - {fileID: 197116593}
-  - {fileID: 1342603155}
-  - {fileID: 1509641128}
-  - {fileID: 1101030591}
   ExhibitMainMenu: {fileID: 392281866}
   ExhibitInfoMenu: {fileID: 1906331903}
   ExhibitQuizMenu: {fileID: 1761021858}
@@ -7179,6 +7169,7 @@ MonoBehaviour:
   - {fileID: 1342603155}
   - {fileID: 1509641128}
   - {fileID: 1101030591}
+  Menus: []
 --- !u!1 &674098991
 GameObject:
   m_ObjectHideFlags: 0
@@ -10584,7 +10575,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927783754}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14521314, y: -5.1799038e-15, z: 7.130392e-16, w: 0.98940045}
+  m_LocalRotation: {x: 0.14521313, y: 0.000000032966827, z: -0.0000000048385016, w: 0.98940045}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

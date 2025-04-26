@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     CharacterController characterController;
     public CinemachineFreeLook freeLookCamera;
-
     public Transform cam;
+
     public float playerMoveSpeed = 2.2f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public List<GameObject> Menus = new List<GameObject>();
     void Start()
     {
+        InitiateScript();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator = GetComponent<Animator>();
@@ -131,6 +132,23 @@ public class PlayerController : MonoBehaviour
             if (obj.CompareTag("Menu") && obj.scene.IsValid())
             {
                 Menus.Add(obj);            }
+        }
+    }
+
+    void InitiateScript()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (var obj in allObjects)
+        {
+            if (obj.name == "Main Camera" && obj.scene.IsValid())
+            {
+                cam = obj.transform;
+            }
+            if (obj.name == "FreeLook Camera" && obj.scene.IsValid())
+            {
+                freeLookCamera = obj.GetComponent<CinemachineFreeLook>();
+            }
         }
     }
 }
