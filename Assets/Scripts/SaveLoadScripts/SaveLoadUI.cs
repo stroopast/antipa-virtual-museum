@@ -44,7 +44,7 @@ public class SaveLoadUI : MonoBehaviour
         if (SaveManager.Instance.SaveExists(slot))
         {
             SaveManager.Instance.LoadGame(slot);
-            LoadMenu.gameObject.SetActive(true);
+            LoadMenu.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             StartCoroutine(WaitForSavingProcess("load", slot));

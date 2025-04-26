@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class HandleInputScript : MonoBehaviour
 {
-    public List<GameObject> otherMenus;
-
     public GameObject ExhibitMainMenu;
     public GameObject ExhibitInfoMenu;
     public GameObject ExhibitQuizMenu;
@@ -17,27 +15,46 @@ public class HandleInputScript : MonoBehaviour
     public GameObject SaveMenu;
     public GameObject LoadMenu;
     public List<GameObject> DeleteLoadPopUpMenus;
+    public List<GameObject> Menus = new List<GameObject>();
+
+    private void Start()
+    {
+        FindAllMenus();
+    }
 
     private void Update()
     {
         HandleInput();
     }
 
+    bool AreMenusActive()
+    {
+        foreach (var menu in Menus)
+        {
+            if (menu != null && menu.activeSelf)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    void FindAllMenus()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Menu") && obj.scene.IsValid())
+            {
+                Menus.Add(obj);
+            }
+        }
+    }
+
     private void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Logic for Pause Menu
-            int openedMenus = 0;
-
-            foreach (var menu in otherMenus)
-            {
-                if (menu.gameObject.activeSelf)
-                {
-                    openedMenus++;
-                }
-            }
-
             if (PauseMenu.gameObject.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.Locked;
@@ -45,7 +62,7 @@ public class HandleInputScript : MonoBehaviour
                 PauseMenu.gameObject.SetActive(false);
             }
             // Check if other menus are active, if no active menus open pause menu
-            else if (openedMenus == 0)
+            else if (!AreMenusActive())
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -113,7 +130,12 @@ public class HandleInputScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F8))
         {
-            AchievementsMenu.gameObject.SetActive(true);
+            if(!AreMenusActive())
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                AchievementsMenu.gameObject.SetActive(true);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Return))
