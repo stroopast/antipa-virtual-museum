@@ -12,18 +12,18 @@ public class PlayerInteraction : MonoBehaviour
     public Camera playerCamera;
     public float interactionRange = 7f;
     public TextMeshProUGUI interactionText;
-    public GameObject mainMenu;
-    public GameObject infoMenu;
-    public GameObject quizMenu;
     public LayerMask exhibitLayer;
-
-    private GameObject currentExhibit;
+    public GameObject MainMenu;
+    public GameObject PauseMenu;
+    public GameObject TrophyPopUp;
+    public GameObject AchievementsMenu;
 
     public ExhibitMainMenu exhibitMainMenu;
     public ExhibitInfoMenu exhibitInfoMenu;
     public ExhibitQuizMenu exhibitQuizMenu;
 
-    public GameObject AchievementsMenu;
+    private GameObject currentExhibit;
+
     private void Update()
     {
         RaycastHit hit;
@@ -33,19 +33,21 @@ public class PlayerInteraction : MonoBehaviour
         if (hitExhibit)
         {
             currentExhibit = hit.collider.gameObject;
-            if (!mainMenu.activeSelf)
+
+            if(exhibitMainMenu.gameObject.activeSelf || exhibitInfoMenu.gameObject.activeSelf || 
+                exhibitQuizMenu.gameObject.activeSelf || PauseMenu.gameObject.activeSelf ||
+                TrophyPopUp.gameObject.activeSelf || MainMenu.gameObject.activeSelf || AchievementsMenu.gameObject.activeSelf)
+            {
+                interactionText.gameObject.SetActive(false);
+            }
+            else
             {
                 interactionText.gameObject.SetActive(true);
             }
-
-            if(exhibitMainMenu.gameObject.activeSelf || exhibitInfoMenu.gameObject.activeSelf || exhibitQuizMenu.gameObject.activeSelf)
+            
+            if (Input.GetKeyDown(KeyCode.E) && !PauseMenu.gameObject.activeSelf)
             {
-                //nothing
-                interactionText.gameObject.SetActive(false);
-            }
-            else if (Input.GetKeyDown(KeyCode.E))
-            {
-                mainMenu.SetActive(true);
+                MainMenu.SetActive(true);
                 interactionText.gameObject.SetActive(false);
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -65,16 +67,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentExhibit = null;
             interactionText.gameObject.SetActive(false);
-        }
-
-        HandleInput();
-    }
-
-    private void HandleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.F8))
-        {
-            AchievementsMenu.gameObject.SetActive(true);
         }
     }
 }

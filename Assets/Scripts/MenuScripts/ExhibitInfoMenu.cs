@@ -21,11 +21,6 @@ public class ExhibitInfoMenu : MonoBehaviour
     public TextMeshProUGUI echibitDiet;
     public TextMeshProUGUI echibitLifespan;
 
-    private void Update()
-    {
-        HandleInput();
-    }
-
     public void ExitExhibitInfoMenu()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -56,13 +51,5 @@ public class ExhibitInfoMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         gameObject.SetActive(true);
-    }
-
-    private void HandleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitExhibitInfoMenu();
-        }
     }
 }

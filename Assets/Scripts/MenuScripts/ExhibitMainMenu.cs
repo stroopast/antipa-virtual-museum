@@ -14,15 +14,7 @@ public class ExhibitMainMenu : MonoBehaviour
     public Image exhibitImg;
     public AudioSource exhibitSound;
 
-    public GameObject exhibitInfoMenu;
-    public GameObject exhibitQuizMenu;
-
     private ExhibitData currentExhibit;
-
-    private void Update()
-    {
-        HandleInput();
-    }
 
     public void LoadExhibitData(ExhibitData data)
     {
@@ -56,13 +48,5 @@ public class ExhibitMainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         gameObject.SetActive(true);
-    }
-
-    private void HandleInput()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitExhibitMainMenu();
-        }
     }
 }
