@@ -15,6 +15,12 @@ public class HandleInputScript : MonoBehaviour
     public GameObject SaveMenu;
     public GameObject LoadMenu;
     public List<GameObject> DeleteLoadPopUpMenus;
+    public List<GameObject> Menus = new List<GameObject>();
+
+    private void Start()
+    {
+        FindAllMenus();
+    }
 
     private void Update()
     {
@@ -23,17 +29,26 @@ public class HandleInputScript : MonoBehaviour
 
     bool AreMenusActive()
     {
-        GameObject[] menus = GameObject.FindGameObjectsWithTag("Menu");
-
-        foreach (var menu in menus)
+        foreach (var menu in Menus)
         {
-            if (menu.activeInHierarchy)
+            if (menu != null && menu.activeSelf)
             {
                 return true;
             }
         }
-
         return false;
+    }
+    void FindAllMenus()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Menu") && obj.scene.IsValid())
+            {
+                Menus.Add(obj);
+            }
+        }
     }
 
     private void HandleInput()

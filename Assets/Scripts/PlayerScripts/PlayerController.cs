@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,12 +16,15 @@ public class PlayerController : MonoBehaviour
     public float playerMoveSpeed = 2.2f;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    public List<GameObject> Menus = new List<GameObject>();
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
+        FindAllMenus();
     }
     void Update()
     {
@@ -104,16 +108,25 @@ public class PlayerController : MonoBehaviour
 
     bool AreMenusActive()
     {
-        GameObject[] menus = GameObject.FindGameObjectsWithTag("Menu");
-
-        foreach (var menu in menus)
+        foreach (var menu in Menus)
         {
-            if (menu.activeInHierarchy)
+            if (menu != null && menu.activeSelf)
             {
                 return true;
             }
         }
-
         return false;
+    }
+
+    void FindAllMenus()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Menu") && obj.scene.IsValid())
+            {
+                Menus.Add(obj);            }
+        }
     }
 }
