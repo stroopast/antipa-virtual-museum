@@ -113,7 +113,22 @@ public class HandleInputScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F8))
         {
-            AchievementsMenu.gameObject.SetActive(true);
+            int openedMenus = 0;
+
+            foreach (var menu in otherMenus)
+            {
+                if (menu.gameObject.activeSelf)
+                {
+                    openedMenus++;
+                }
+            }
+
+            if (openedMenus == 0 && !PauseMenu.gameObject.activeSelf)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                AchievementsMenu.gameObject.SetActive(true);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Return))
