@@ -6,8 +6,8 @@ using System.Xml.Serialization;
 
 public class SaveSlotDisplay : MonoBehaviour
 {
-    public int slotIndex;
-    public TextMeshProUGUI infoText;
+    [SerializeField] int slotIndex;
+    [SerializeField] TextMeshProUGUI infoText;
   
     private void Update()
     {

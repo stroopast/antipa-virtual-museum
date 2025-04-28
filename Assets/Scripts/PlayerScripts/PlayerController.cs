@@ -10,19 +10,20 @@ public class PlayerController : MonoBehaviour
 {
     Animator animator;
     CharacterController characterController;
-    public CinemachineFreeLook freeLookCamera;
-    public Transform cam;
 
-    public float playerMoveSpeed = 2.2f;
-    public float turnSmoothTime = 0.1f;
+    private CinemachineFreeLook freeLookCamera;
+    private Transform cam;
+    private List<GameObject> Menus = new List<GameObject>();
+
+    [SerializeField] float playerMoveSpeed = 2.2f;
+    [SerializeField] float turnSmoothTime = 0.1f;
+
     float turnSmoothVelocity;
 
-    public List<GameObject> Menus = new List<GameObject>();
     void Start()
     {
         InitiateScript();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         FindAllMenus();

@@ -141,15 +141,13 @@ public class ExhibitQuizMenu : MonoBehaviour
         currentQuestionIndex = 0;
         score = 0;
         scoreText.text = "";
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         gameObject.SetActive(false);
     }
 
     public void OpenQuizMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        HelperFunctions.UnlockCursor();
         gameObject.SetActive(true);
     }
     private IEnumerator WaitAndLoadNextQuestion()

@@ -24,50 +24,6 @@ public class PlayerInteract : MonoBehaviour
 
     private GameObject currentExhibit;
 
-    void InitiateScript()
-    {
-        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
-
-        foreach (var obj in allObjects)
-        {
-            if (obj.name == "Main Camera" && obj.scene.IsValid())
-            {
-                playerCamera = obj.GetComponent<Camera>();
-            }
-            if (obj.name == "InteractText" && obj.scene.IsValid())
-            {
-                interactText = obj.GetComponent<TextMeshProUGUI>();
-            }
-            if (obj.name == "ExhibitMainMenu" && obj.scene.IsValid())
-            {
-                MainMenu = obj;
-                exhibitMainMenu = obj.GetComponent<ExhibitMainMenu>();
-            }
-            if (obj.name == "PauseMenu" && obj.scene.IsValid())
-            {
-                PauseMenu = obj;
-            }
-            if (obj.name == "WinTrophyMenu" && obj.scene.IsValid())
-            {
-                TrophyPopUp = obj;
-            }
-            if (obj.name == "AchivementsMenu" && obj.scene.IsValid())
-            {
-                AchievementsMenu = obj;
-            }
-            if (obj.name == "ExhibitInfoMenu" && obj.scene.IsValid())
-            {
-                exhibitInfoMenu = obj.GetComponent<ExhibitInfoMenu>();
-            }
-            if (obj.name == "ExhibitQuizMenu" && obj.scene.IsValid())
-            {
-                exhibitQuizMenu = obj.GetComponent<ExhibitQuizMenu>();
-            }
-        }
-
-        exhibitLayer = LayerMask.GetMask("Exhibit");
-    }
-
     private void Start()
     {
         InitiateScript();
@@ -117,5 +73,49 @@ public class PlayerInteract : MonoBehaviour
             currentExhibit = null;
             interactText.gameObject.SetActive(false);
         }
+    }
+
+    void InitiateScript()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (var obj in allObjects)
+        {
+            if (obj.name == "Main Camera" && obj.scene.IsValid())
+            {
+                playerCamera = obj.GetComponent<Camera>();
+            }
+            if (obj.name == "InteractText" && obj.scene.IsValid())
+            {
+                interactText = obj.GetComponent<TextMeshProUGUI>();
+            }
+            if (obj.name == "ExhibitMainMenu" && obj.scene.IsValid())
+            {
+                MainMenu = obj;
+                exhibitMainMenu = obj.GetComponent<ExhibitMainMenu>();
+            }
+            if (obj.name == "PauseMenu" && obj.scene.IsValid())
+            {
+                PauseMenu = obj;
+            }
+            if (obj.name == "WinTrophyMenu" && obj.scene.IsValid())
+            {
+                TrophyPopUp = obj;
+            }
+            if (obj.name == "AchivementsMenu" && obj.scene.IsValid())
+            {
+                AchievementsMenu = obj;
+            }
+            if (obj.name == "ExhibitInfoMenu" && obj.scene.IsValid())
+            {
+                exhibitInfoMenu = obj.GetComponent<ExhibitInfoMenu>();
+            }
+            if (obj.name == "ExhibitQuizMenu" && obj.scene.IsValid())
+            {
+                exhibitQuizMenu = obj.GetComponent<ExhibitQuizMenu>();
+            }
+        }
+
+        exhibitLayer = LayerMask.GetMask("Exhibit");
     }
 }

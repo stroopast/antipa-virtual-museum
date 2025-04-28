@@ -38,15 +38,13 @@ public class ExhibitMainMenu : MonoBehaviour
 
     public void ExitExhibitMainMenu()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         gameObject.SetActive(false);
     }
 
     public void OpenExhibitMainMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        HelperFunctions.UnlockCursor();
         gameObject.SetActive(true);
     }
 }

@@ -90,8 +90,7 @@ public class AchievementManager : MonoBehaviour
 
     public void ExitWinTrophyMenu()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         WinTrophyMenu.SetActive(false);
     }
 

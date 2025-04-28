@@ -23,8 +23,7 @@ public class ExhibitInfoMenu : MonoBehaviour
 
     public void ExitExhibitInfoMenu()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         gameObject.SetActive(false);
     }
 
@@ -48,8 +47,7 @@ public class ExhibitInfoMenu : MonoBehaviour
 
     public void OpenExhibitInfoMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        HelperFunctions.UnlockCursor();
         gameObject.SetActive(true);
     }
 }

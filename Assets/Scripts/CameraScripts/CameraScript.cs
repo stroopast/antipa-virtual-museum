@@ -16,6 +16,5 @@ public class CameraScript : MonoBehaviour
         Transform lookAtTarget = player.transform.Find("LookAt");
         gameObject.GetComponent<CinemachineFreeLook>().Follow = player;
         gameObject.GetComponent<CinemachineFreeLook>().LookAt = lookAtTarget;
-        //gameObject.GetComponent<CinemachineFreeLook>(). = lookAtTarget.GetComponent<Transform>();
     }
 }

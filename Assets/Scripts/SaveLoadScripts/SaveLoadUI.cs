@@ -33,8 +33,7 @@ public class SaveLoadUI : MonoBehaviour
         }
         SaveManager.Instance.SaveGame(slot);
         SaveMenu.gameObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        HelperFunctions.LockCursor();
         StartCoroutine(WaitForSavingProcess("save", slot));
     }
 
@@ -45,8 +44,7 @@ public class SaveLoadUI : MonoBehaviour
         {
             SaveManager.Instance.LoadGame(slot);
             LoadMenu.gameObject.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            HelperFunctions.LockCursor();
             StartCoroutine(WaitForSavingProcess("load", slot));
         }
         else
