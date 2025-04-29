@@ -8,17 +8,14 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
-    Animator animator;
-    CharacterController characterController;
-
     private CinemachineFreeLook freeLookCamera;
     private Transform cam;
     private List<GameObject> Menus = new List<GameObject>();
-
+    private float turnSmoothVelocity;
     [SerializeField] float playerMoveSpeed = 2.2f;
     [SerializeField] float turnSmoothTime = 0.1f;
-
-    float turnSmoothVelocity;
+    Animator animator;
+    CharacterController characterController;
 
     void Start()
     {
