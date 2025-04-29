@@ -7,10 +7,10 @@ public class CameraScript : MonoBehaviour
 {
     private void Start()
     {
-        AttachCameraToPlayer();
+        //AttachCameraToPlayer();
     }
 
-    private void AttachCameraToPlayer()
+    public void AttachCameraToPlayer()
     {
         Transform player = GameObject.FindWithTag("Player").GetComponent<Transform>();
         Transform lookAtTarget = player.transform.Find("LookAt");

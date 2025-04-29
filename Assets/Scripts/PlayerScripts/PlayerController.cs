@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.Netcode;
 using UnityEngine.EventSystems;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
     private CinemachineFreeLook freeLookCamera;
     private Transform cam;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        if(!IsOwner) return;
         if(!AreMenusActive())
         {
             HandleMovement();

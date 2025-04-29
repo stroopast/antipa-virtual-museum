@@ -29,16 +29,8 @@ public class AchievementManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            InitAchievements();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
+        InitAchievements();
     }
 
     private void Update()
