@@ -16,6 +16,11 @@ public class InitialSceneScript : MonoBehaviour
     public GameObject LoadGameMenu;
     public List<GameObject> DeleteLoadPopUpVect;
     public TMP_InputField playerNameInputField;
+
+    [Header("MultiPlayer related buttons")]
+    public GameObject MultiPlayerBtn;
+    public GameObject CreateLobbyBtn;
+    public GameObject ListLobbiesBtn;
     void Start()
     {
         InitiateStartingScene();
@@ -29,6 +34,8 @@ public class InitialSceneScript : MonoBehaviour
         GenerateRandIDBtn.gameObject.SetActive(false);
         playerNameInputField.gameObject.SetActive(false);
     }
+
+    // Singleplayer buttons
 
     public void PressSinglePlayerButton()
     {
@@ -104,5 +111,17 @@ public class InitialSceneScript : MonoBehaviour
     {
         LoadGameMenu.gameObject.SetActive(true);
         DeleteLoadPopUpVect[slot - 1].gameObject.SetActive(false);
+    }
+
+
+
+    // MultiPlayer buttons
+
+    public void PressMultiPlayerButton()
+    {
+        SinglePlayerBtn.gameObject.SetActive(false);
+        MultiPlayerBtn.gameObject.SetActive(false);
+        CreateLobbyBtn.gameObject.SetActive(true);
+        ListLobbiesBtn.gameObject.SetActive(true);
     }
 }
