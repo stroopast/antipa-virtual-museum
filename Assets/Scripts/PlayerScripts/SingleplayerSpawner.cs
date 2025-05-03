@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
-public class PlayerSpawner : MonoBehaviour
+public class Singleplayer : MonoBehaviour
 {
     public GameObject playerPrefab;
 

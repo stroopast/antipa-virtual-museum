@@ -14,13 +14,13 @@ public class LobbyUI : MonoBehaviour
     {
         CreateGameBtn.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartHost();
+            MultiplayerManager.Instance.StartHost();
             NetworkManager.Singleton.SceneManager.LoadScene("CharacterSelectScene", LoadSceneMode.Single);
         });
 
         JoinGameBtn.onClick.AddListener(() =>
         {
-            NetworkManager.Singleton.StartClient();
+            MultiplayerManager.Instance.StartClient();
         });
     }
 }

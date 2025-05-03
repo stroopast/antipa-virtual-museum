@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class InitialSceneScript : MonoBehaviour
 {
@@ -18,10 +19,13 @@ public class InitialSceneScript : MonoBehaviour
     public TMP_InputField playerNameInputField;
 
     [Header("MultiPlayer related buttons")]
-    public GameObject MultiPlayerBtn;
-    public GameObject CreateLobbyBtn;
-    public GameObject ListLobbiesBtn;
-    void Start()
+    [SerializeField] private Button MultiPlayerBtn;
+
+    private void Awake()
+    {
+        MultiPlayerBtn.onClick.AddListener(PressMultiPlayerButton);
+    }
+    private void Start()
     {
         InitiateStartingScene();
     }
@@ -120,9 +124,6 @@ public class InitialSceneScript : MonoBehaviour
 
     public void PressMultiPlayerButton()
     {
-        SinglePlayerBtn.gameObject.SetActive(false);
-        MultiPlayerBtn.gameObject.SetActive(false);
-        CreateLobbyBtn.gameObject.SetActive(true);
-        ListLobbiesBtn.gameObject.SetActive(true);
+        SceneManager.LoadScene("LobbyScene");
     }
 }
