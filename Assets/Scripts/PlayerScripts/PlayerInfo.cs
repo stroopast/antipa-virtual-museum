@@ -6,28 +6,16 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    public static PlayerInfo Instance;
-
-    public TextMeshProUGUI playerName;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private TextMeshProUGUI PlayerNameField;
 
     private void Start()
     {
-        InitiateScript();
+        FindPlayerNameTextField();
         string name = PlayerPrefs.GetString("PlayerName", "Vizitator");
-        playerName.text = name;
+        PlayerNameField.text = name;
     }
 
-    public void UpdateNameOnLoad(string name)
-    {
-        playerName.text = name;
-    }
-
-    void InitiateScript()
+    private void FindPlayerNameTextField()
     {
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
 
@@ -35,7 +23,7 @@ public class PlayerInfo : MonoBehaviour
         {
             if (obj.name == "PlayerNameText" && obj.scene.IsValid())
             {
-                playerName = obj.GetComponent<TextMeshProUGUI>();
+                PlayerNameField = obj.GetComponent<TextMeshProUGUI>();
             }
         }
     }

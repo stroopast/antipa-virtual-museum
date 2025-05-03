@@ -14704,12 +14704,12 @@ GameObject:
   - component: {fileID: 1322756905}
   - component: {fileID: 1322756904}
   m_Layer: 0
-  m_Name: SpawnPoint
+  m_Name: SpawnerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1322756904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14722,7 +14722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b747d1b1828a144936a4b4a64b0781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7986390427115286877, guid: 69164252b55e2eb45aa4834fce6622ff, type: 3}
+  playerPrefab: {fileID: 7986390427115286877, guid: 779dc78fbb346b640b4811e27904b327, type: 3}
 --- !u!4 &1322756905
 Transform:
   m_ObjectHideFlags: 0

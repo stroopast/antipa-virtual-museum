@@ -18,18 +18,18 @@ public class LobbyManager : MonoBehaviour
     {
         CreateButtonListeners();
 
-        await UnityServices.InitializeAsync();
+        //await UnityServices.InitializeAsync();
 
-        AuthenticationService.Instance.SignedIn += () =>
-        {
-            Debug.Log("Signed in " + AuthenticationService.Instance.PlayerId);
-        };
-        await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        //AuthenticationService.Instance.SignedIn += () =>
+        //{
+        //    Debug.Log("Signed in " + AuthenticationService.Instance.PlayerId);
+        //};
+        //await AuthenticationService.Instance.SignInAnonymouslyAsync();
     }
 
     private void Update()
     {
-        HandleLobbyHeartbeat();
+        //HandleLobbyHeartbeat();
     }
 
     //Used to keep the lobby active after 30 seconds of incativity

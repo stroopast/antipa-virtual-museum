@@ -28,7 +28,7 @@ public class PlayerController : NetworkBehaviour
     }
     void Update()
     {
-        if(!IsOwner) return;
+        if(!IsOwner && GameModeManager.Instance.isMultiplayer) return;
         if(!AreMenusActive())
         {
             HandleMovement();

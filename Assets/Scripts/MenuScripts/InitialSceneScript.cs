@@ -40,6 +40,7 @@ public class InitialSceneScript : MonoBehaviour
     public void PressSinglePlayerButton()
     {
         SinglePlayerBtn.gameObject.SetActive(false);
+        MultiPlayerBtn.gameObject.SetActive(false);
         NewGameBtn.gameObject.SetActive(true);
         LoadGameBtn.gameObject.SetActive(true);
     }

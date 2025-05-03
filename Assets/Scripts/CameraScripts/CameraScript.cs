@@ -14,14 +14,10 @@ public class CameraScript : NetworkBehaviour
 
     public void AttachCameraToPlayer()
     {
-        if(!IsOwner) { return; }
+        if(!IsOwner && GameModeManager.Instance.isMultiplayer) { return; }
         FreeLookCamera = GameObject.FindWithTag("FreeLookCamera").GetComponent<CinemachineFreeLook>();
         FreeLookCamera.Follow = gameObject.GetComponent<Transform>();
         FreeLookCamera.LookAt = gameObject.GetComponent<Transform>().Find("LookAt");
-        //Transform player = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        //Transform lookAtTarget = player.transform.Find("LookAt");
-        //gameObject.GetComponent<CinemachineFreeLook>().Follow = player;
-        //gameObject.GetComponent<CinemachineFreeLook>().LookAt = lookAtTarget;
     }
 
 }

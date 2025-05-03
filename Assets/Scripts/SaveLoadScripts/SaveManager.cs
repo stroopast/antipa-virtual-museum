@@ -6,12 +6,37 @@ using TMPro;
 
 public class SaveManager : MonoBehaviour
 {
-    public static SaveManager Instance;
+    public static SaveManager Instance { get; private set; }
+    private TextMeshProUGUI PlayerNameField;
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
+    private void Start()
+    {
+        FindPlayerNameTextField();
+    }
+
+    private void FindPlayerNameTextField()
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+
+        foreach (var obj in allObjects)
+        {
+            if (obj.name == "PlayerNameText" && obj.scene.IsValid())
+            {
+                PlayerNameField = obj.GetComponent<TextMeshProUGUI>();
+            }
+        }
     }
 
     public string GetSlotPath(int slot) => $"{Application.persistentDataPath}/save_slot_{slot}.json";
@@ -20,7 +45,7 @@ public class SaveManager : MonoBehaviour
     {
         SaveData data = new SaveData();
 
-        data.playerName = PlayerInfo.Instance.playerName.text;
+        data.playerName = PlayerNameField.text;
 
         var player = GameObject.FindWithTag("Player");
         data.playerPosition = new Vector3Data(player.transform.position);
@@ -47,7 +72,7 @@ public class SaveManager : MonoBehaviour
         string json = File.ReadAllText(path);
         SaveData data = JsonUtility.FromJson<SaveData>(json);
 
-        PlayerInfo.Instance.UpdateNameOnLoad(data.playerName);
+        PlayerNameField.text = data.playerName;
 
         var player = GameObject.FindWithTag("Player");
         player.transform.position = data.playerPosition.ToVector3();
@@ -64,7 +89,7 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public bool SaveExists(int slot)
+    public bool DoesSaveExists(int slot)
     {
         return File.Exists(GetSlotPath(slot));
     }

@@ -40,7 +40,7 @@ public class SaveLoadUI : MonoBehaviour
     public void LoadFromSlot(int slot)
     {
         // same thing is done in the LoadGame function in SaveManager script
-        if (SaveManager.Instance.SaveExists(slot))
+        if (SaveManager.Instance.DoesSaveExists(slot))
         {
             SaveManager.Instance.LoadGame(slot);
             LoadMenu.gameObject.SetActive(false);

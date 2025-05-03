@@ -8,13 +8,9 @@ public class PlayerSpawner : MonoBehaviour
 
     void Awake()
     {
-        if (playerPrefab != null)
+        if (playerPrefab != null && GameModeManager.Instance.isMultiplayer == false)
         {
             Instantiate(playerPrefab, transform.position, Quaternion.identity);
-        }
-        else
-        {
-            Debug.LogError("Player Prefab not assigned in the inspector!");
         }
     }
 }
