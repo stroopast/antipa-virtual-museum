@@ -18,15 +18,11 @@ public class SaveManager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(this);
         }
     }
 
-    private void Start()
-    {
-        FindPlayerNameTextField();
-    }
-
-    private void FindPlayerNameTextField()
+    public void FindPlayerNameTextField()
     {
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
 
@@ -45,6 +41,7 @@ public class SaveManager : MonoBehaviour
     {
         SaveData data = new SaveData();
 
+        FindPlayerNameTextField();
         data.playerName = PlayerNameField.text;
 
         var player = GameObject.FindWithTag("Player");
@@ -72,7 +69,9 @@ public class SaveManager : MonoBehaviour
         string json = File.ReadAllText(path);
         SaveData data = JsonUtility.FromJson<SaveData>(json);
 
-        PlayerNameField.text = data.playerName;
+        //PlayerNameField.text = data.playerName;
+        PlayerPrefs.SetString("PlayerName", data.playerName);
+        PlayerPrefs.Save();
 
         var player = GameObject.FindWithTag("Player");
         player.transform.position = data.playerPosition.ToVector3();

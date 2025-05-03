@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    public GameObject SaveMenu;
-    public GameObject LoadMenu;
-    
+    [SerializeField] private GameObject SaveMenu;
+    [SerializeField] private GameObject LoadMenu;
+
+    [SerializeField] private TextMeshProUGUI PlayerNameField;
+
     public void OpenSaveMenu()
     {
         SaveMenu.gameObject.SetActive(true);
@@ -22,6 +25,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ReturnBackToGame()
     {
+        HelperFunctions.LockCursor();
         gameObject.SetActive(false);
     }
 
@@ -38,5 +42,10 @@ public class PauseMenuManager : MonoBehaviour
         Destroy(SaveManager.Instance.gameObject);
         Destroy(player);
         SceneManager.LoadScene("StartScene");
+    }
+    private void OnEnable()
+    {
+        string name = PlayerPrefs.GetString("PlayerName", "Vizitator");
+        PlayerNameField.text = name;
     }
 }

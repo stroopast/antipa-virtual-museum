@@ -111,9 +111,6 @@ PrefabInstance:
       addedObject: {fileID: 8774721239404419299}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25cc4da2c099df442bc519515c5807cd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3984263508651431244}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25cc4da2c099df442bc519515c5807cd, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8175320143446485059}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 25cc4da2c099df442bc519515c5807cd, type: 3}
       insertIndex: -1
@@ -239,19 +236,6 @@ MonoBehaviour:
   exhibitMainMenu: {fileID: 0}
   exhibitInfoMenu: {fileID: 0}
   exhibitQuizMenu: {fileID: 0}
---- !u!114 &3984263508651431244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7986390427115286877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2aeb8dac127da14ba3d919784657526, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: {fileID: 0}
 --- !u!114 &8175320143446485059
 MonoBehaviour:
   m_ObjectHideFlags: 0
