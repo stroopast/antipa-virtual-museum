@@ -1982,6 +1982,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cdf12e35534ce4881db3011c853eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerGenderList:
+  - 0
+  - 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

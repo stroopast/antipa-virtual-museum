@@ -6,6 +6,7 @@ public class CharacterSelectPlayer : MonoBehaviour
 {
     [SerializeField] private int playerIndex;
     [SerializeField] private GameObject ReadyGameObject;
+    [SerializeField] private PlayerVisual playerVisual;
 
     private void Start()
     {
@@ -31,6 +32,8 @@ public class CharacterSelectPlayer : MonoBehaviour
 
             PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromPlayerIndex(playerIndex);
             ReadyGameObject.SetActive(CharacterSelectReady.Instance.IsPlayerReady(playerData.clientId));
+
+            playerVisual.SetPlayerGender(MultiplayerManager.Instance.GetPlayerGender(playerData.genderId));
         }
         else
         {

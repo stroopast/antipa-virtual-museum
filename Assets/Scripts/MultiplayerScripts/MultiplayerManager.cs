@@ -18,6 +18,8 @@ public class MultiplayerManager : NetworkBehaviour
     public event EventHandler OnFailedToJoinGame;
     public event EventHandler OnPlayerDataNetworkListChanged;
 
+    [SerializeField] private List<int> playerGenderList;
+
     private NetworkList<PlayerData> playerDataNetworkList;
 
     //Here add and update the score from guided tour/achievements so the players can inspect each other
@@ -54,6 +56,7 @@ public class MultiplayerManager : NetworkBehaviour
         playerDataNetworkList.Add(new PlayerData
         {
             clientId = clientId,
+            genderId = (int)clientId % 2,
         });
     }
 
@@ -97,5 +100,56 @@ public class MultiplayerManager : NetworkBehaviour
     public PlayerData GetPlayerDataFromPlayerIndex(int playerIndex)
     {
         return playerDataNetworkList[playerIndex];
+    }
+
+    public int GetPlayerGender(int genderId)
+    {
+        return playerGenderList[genderId];
+    }
+
+    public PlayerData GetPlayerDataFromClientId(ulong clientId)
+    {
+        foreach(PlayerData playerData in playerDataNetworkList)
+        {
+            if(playerData.clientId == clientId)
+            {
+                return playerData;
+            }
+        }
+        return default;
+    }
+
+    public int GetPlayerDataIndexFromClientId(ulong clientId)
+    {
+        for(int i = 0; i < playerDataNetworkList.Count; i++)
+        {
+            if (playerDataNetworkList[i].clientId == clientId)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public PlayerData GetPlayerData()
+    {
+        return GetPlayerDataFromClientId(NetworkManager.Singleton.LocalClientId);
+    }
+
+    public void ChangePlayerGender(int genderId)
+    {
+        ChangePlayerGenderServerRpc(genderId);
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void ChangePlayerGenderServerRpc(int genderId, ServerRpcParams serverRpcParams = default)
+    {
+        int playerDataIndex = GetPlayerDataIndexFromClientId(serverRpcParams.Receive.SenderClientId);
+
+        PlayerData playerData = playerDataNetworkList[playerDataIndex];
+
+        playerData.genderId = genderId;
+
+        playerDataNetworkList[playerDataIndex] = playerData;
     }
 }

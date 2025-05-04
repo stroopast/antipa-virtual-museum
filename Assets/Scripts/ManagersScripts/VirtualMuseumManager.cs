@@ -9,6 +9,9 @@ public class VirtualMuseumManager : NetworkBehaviour
 
     [SerializeField] private Transform playerPrefab;
 
+    [SerializeField] private Transform playerPrefabMale;
+    [SerializeField] private Transform playerPrefabFemale;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)

@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2259567849795601028}
   - component: {fileID: -1559366691925560063}
+  - component: {fileID: 9082420719747319346}
   m_Layer: 0
   m_Name: CharacterSelectPlayer
   m_TagString: Untagged
@@ -220,6 +221,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   ReadyGameObject: {fileID: 3514752256994711354}
+  playerVisual: {fileID: 9082420719747319346}
+--- !u!114 &9082420719747319346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7445260185066576931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec9bf27159d4654f93842022126bb02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FemaleCharacter: {fileID: 146832093389146065}
+  MaleCharacter: {fileID: 7878683157206718671}
 --- !u!1001 &1065328718380759680
 PrefabInstance:
   m_ObjectHideFlags: 0
