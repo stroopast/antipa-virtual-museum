@@ -36,8 +36,16 @@ public class VirtualMuseumManager : NetworkBehaviour
     {
         foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
-            Transform playerTransform = Instantiate(playerPrefab);
-            playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
+            if (MultiplayerManager.Instance.genderToBePassedInGame == 1)
+            {
+                Transform playerTransform = Instantiate(playerPrefabMale);
+                playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
+            }
+            else
+            {
+                Transform playerTransform = Instantiate(playerPrefabFemale);
+                playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
+            }
         }
     }
 }

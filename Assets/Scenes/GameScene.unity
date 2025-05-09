@@ -5036,8 +5036,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 7322443335954148327, guid: 69164252b55e2eb45aa4834fce6622ff, type: 3}
-  playerPrefabMale: {fileID: 7322443335954148327, guid: 36dc1ba2e6fcfeb40b12ade4d38b6137, type: 3}
-  playerPrefabFemale: {fileID: 7322443335954148327, guid: 19bab1d06962d6642b740fe85a44a643, type: 3}
+  playerPrefabMale: {fileID: 8295006548126994061, guid: 5a33b2194e4828a46975b8cedc414ef7, type: 3}
+  playerPrefabFemale: {fileID: 7284109013665234730, guid: 391427bd5fef32f49a4d6af9339e286e, type: 3}
 --- !u!1 &487791479
 GameObject:
   m_ObjectHideFlags: 0

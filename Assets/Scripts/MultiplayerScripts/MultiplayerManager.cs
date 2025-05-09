@@ -22,6 +22,8 @@ public class MultiplayerManager : NetworkBehaviour
 
     private NetworkList<PlayerData> playerDataNetworkList;
 
+    public int genderToBePassedInGame;
+
     //Here add and update the score from guided tour/achievements so the players can inspect each other
 
     private void Awake()
@@ -58,6 +60,8 @@ public class MultiplayerManager : NetworkBehaviour
             clientId = clientId,
             genderId = (int)clientId % 2,
         });
+
+        genderToBePassedInGame = (int)clientId % 2;
     }
 
     private void NetworkManager_ConnectionApprovalCallback(NetworkManager.ConnectionApprovalRequest connectionApprovalRequest, NetworkManager.ConnectionApprovalResponse connectionApprovalResponse)
@@ -139,6 +143,7 @@ public class MultiplayerManager : NetworkBehaviour
     public void ChangePlayerGender(int genderId)
     {
         ChangePlayerGenderServerRpc(genderId);
+        genderToBePassedInGame = genderId;
     }
 
     [ServerRpc(RequireOwnership = false)]
