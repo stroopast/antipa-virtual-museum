@@ -7,8 +7,6 @@ public class VirtualMuseumManager : NetworkBehaviour
 {
     public static VirtualMuseumManager Instance { get; private set; }
 
-    [SerializeField] private Transform playerPrefab;
-
     [SerializeField] private Transform playerPrefabMale;
     [SerializeField] private Transform playerPrefabFemale;
 
@@ -36,12 +34,13 @@ public class VirtualMuseumManager : NetworkBehaviour
     {
         foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
-            if (MultiplayerManager.Instance.genderToBePassedInGame == 1)
+            PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromClientId(clientId);
+            if (playerData.genderId == 1)
             {
                 Transform playerTransform = Instantiate(playerPrefabMale);
                 playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
             }
-            else
+            else if(playerData.genderId == 0)
             {
                 Transform playerTransform = Instantiate(playerPrefabFemale);
                 playerTransform.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);

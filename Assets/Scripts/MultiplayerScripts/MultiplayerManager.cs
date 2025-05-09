@@ -22,8 +22,7 @@ public class MultiplayerManager : NetworkBehaviour
 
     private NetworkList<PlayerData> playerDataNetworkList;
 
-    public int genderToBePassedInGame;
-
+    public int genderToBePassedInGame = 0;
     //Here add and update the score from guided tour/achievements so the players can inspect each other
 
     private void Awake()
@@ -50,7 +49,21 @@ public class MultiplayerManager : NetworkBehaviour
     {
         NetworkManager.Singleton.ConnectionApprovalCallback += NetworkManager_ConnectionApprovalCallback;
         NetworkManager.Singleton.OnClientConnectedCallback += NetworkManager_OnClientConnectedCallback;
+        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_Server_OnClientDisconnectCallback;
         NetworkManager.Singleton.StartHost();
+    }
+
+    private void NetworkManager_Server_OnClientDisconnectCallback(ulong clientId)
+    {
+        for(int i = 0; i < playerDataNetworkList.Count; i++)
+        {
+            PlayerData playerData = playerDataNetworkList[i];
+            if(playerData.clientId == clientId)
+            {
+                //Disconnected
+                playerDataNetworkList.RemoveAt(i);
+            }
+        }
     }
 
     private void NetworkManager_OnClientConnectedCallback(ulong clientId)
@@ -58,10 +71,9 @@ public class MultiplayerManager : NetworkBehaviour
         playerDataNetworkList.Add(new PlayerData
         {
             clientId = clientId,
-            genderId = (int)clientId % 2,
+            genderId = 0,
         });
-
-        genderToBePassedInGame = (int)clientId % 2;
+        Debug.Log("Avem un playuer");
     }
 
     private void NetworkManager_ConnectionApprovalCallback(NetworkManager.ConnectionApprovalRequest connectionApprovalRequest, NetworkManager.ConnectionApprovalResponse connectionApprovalResponse)
@@ -86,12 +98,11 @@ public class MultiplayerManager : NetworkBehaviour
     public void StartClient()
     {
         OnTryingToJoinGame?.Invoke(this, EventArgs.Empty);
-
-        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
+        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_Client_OnClientDisconnectCallback;
         NetworkManager.Singleton.StartClient();
     }
 
-    private void NetworkManager_OnClientDisconnectCallback(ulong clientId)
+    private void NetworkManager_Client_OnClientDisconnectCallback(ulong clientId)
     {
         OnFailedToJoinGame?.Invoke(this, EventArgs.Empty);
     }
@@ -143,7 +154,6 @@ public class MultiplayerManager : NetworkBehaviour
     public void ChangePlayerGender(int genderId)
     {
         ChangePlayerGenderServerRpc(genderId);
-        genderToBePassedInGame = genderId;
     }
 
     [ServerRpc(RequireOwnership = false)]

@@ -19,7 +19,7 @@ public class Player : NetworkBehaviour
             LocalInstance = this;
         }
 
-        transform.position = SpawnPositionList[(int)OwnerClientId];
+        transform.position = SpawnPositionList[MultiplayerManager.Instance.GetPlayerDataIndexFromClientId(OwnerClientId)];
 
         OnAnyPlayerSpawned?.Invoke(this, EventArgs.Empty);
     }

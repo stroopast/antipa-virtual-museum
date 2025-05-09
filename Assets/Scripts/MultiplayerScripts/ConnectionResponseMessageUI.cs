@@ -30,6 +30,8 @@ public class ConnectionResponseMessageUI : MonoBehaviour
         {
             MessageText.text = "Failed to connect";
         }
+
+        NetworkManager.Singleton.Shutdown();
     }
 
     private void Show()
