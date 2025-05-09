@@ -55,6 +55,11 @@ public class PlayerController : NetworkBehaviour
         bool isSPressed = Input.GetKey(KeyCode.S);
         bool isDPressed = Input.GetKey(KeyCode.D);
 
+        if (isWPressed && isSPressed && !isAPressed && !isDPressed || isAPressed && isDPressed && !isWPressed && !isSPressed)
+        {
+            return false;
+        }
+
         return isWPressed || isAPressed || isSPressed || isDPressed;
     }
 
