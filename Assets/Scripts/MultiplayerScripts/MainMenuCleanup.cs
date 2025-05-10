@@ -16,5 +16,10 @@ public class MainMenuCleanup : MonoBehaviour
         {
             Destroy(MultiplayerManager.Instance.gameObject);
         }
+
+        if(AntipaMuseumLobby.Instance != null) 
+        {
+            Destroy(AntipaMuseumLobby.Instance.gameObject);
+        }
     }
 }

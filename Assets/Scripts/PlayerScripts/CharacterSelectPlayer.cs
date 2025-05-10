@@ -1,31 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Netcode;
+using Unity.Services.Authentication;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterSelectPlayer : MonoBehaviour
 {
     [SerializeField] private int playerIndex;
-    [SerializeField] private GameObject ReadyGameObject;
+    [SerializeField] private GameObject readyGameObject;
     [SerializeField] private PlayerVisual playerVisual;
-    [SerializeField] private Button KickBtn;
+    [SerializeField] private Button kickBtn;
+    [SerializeField] private TextMeshPro playerNameText;
 
     private void Awake()
     {
-        KickBtn.onClick.AddListener(() =>
+        kickBtn.onClick.AddListener(() =>
         {
             PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromPlayerIndex(playerIndex);
+            AntipaMuseumLobby.Instance.KickPlayer(playerData.playerId.ToString());
             MultiplayerManager.Instance.KickPlayer(playerData.clientId);
         });
     }
 
     private void Start()
     {
-        MultiplayerManager.Instance.OnPlayerDataNetworkListChanged += Instance_OnPlayerDataNetworkListChanged;
+        MultiplayerManager.Instance.OnPlayerDataNetworkListChanged += MultiplayerManager_OnPlayerDataNetworkListChanged;
         CharacterSelectReady.Instance.OnReadyChanged += CharacterSelectReady_OnReadyChanged;
 
-        KickBtn.gameObject.SetActive(NetworkManager.Singleton.IsServer);
+        kickBtn.gameObject.SetActive(NetworkManager.Singleton.IsServer);
+
+        if(playerIndex == 0)
+        {
+            kickBtn.gameObject.SetActive(false);
+        }
 
         UpdatePlayer();
     }
@@ -34,7 +43,7 @@ public class CharacterSelectPlayer : MonoBehaviour
     {
         UpdatePlayer();
     }
-    private void Instance_OnPlayerDataNetworkListChanged(object sender, System.EventArgs e)
+    private void MultiplayerManager_OnPlayerDataNetworkListChanged(object sender, System.EventArgs e)
     {
         UpdatePlayer();
     }
@@ -46,7 +55,10 @@ public class CharacterSelectPlayer : MonoBehaviour
             Show();
 
             PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromPlayerIndex(playerIndex);
-            ReadyGameObject.SetActive(CharacterSelectReady.Instance.IsPlayerReady(playerData.clientId));
+
+            readyGameObject.SetActive(CharacterSelectReady.Instance.IsPlayerReady(playerData.clientId));
+
+            playerNameText.text = playerData.playerName.ToString();
 
             playerVisual.SetPlayerGender(MultiplayerManager.Instance.GetPlayerGender(playerData.genderId));
         }
@@ -64,5 +76,10 @@ public class CharacterSelectPlayer : MonoBehaviour
     private void Hide()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        MultiplayerManager.Instance.OnPlayerDataNetworkListChanged -= MultiplayerManager_OnPlayerDataNetworkListChanged;
     }
 }

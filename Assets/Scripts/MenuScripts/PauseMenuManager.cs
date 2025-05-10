@@ -45,7 +45,7 @@ public class PauseMenuManager : MonoBehaviour
     }
     private void OnEnable()
     {
-        string name = PlayerPrefs.GetString("PlayerName", "Vizitator");
-        PlayerNameField.text = name;
+        //string name = PlayerPrefs.GetString("PlayerName", "Vizitator");
+        PlayerNameField.text = MultiplayerManager.Instance.GetPlayerName();
     }
 }

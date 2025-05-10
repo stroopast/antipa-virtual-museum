@@ -1,27 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Netcode;
+using Unity.Services.Lobbies.Models;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CharacterSelectUI : MonoBehaviour
 {
-    [SerializeField] private Button MainMenuBtn;
-    [SerializeField] private Button ReadyBtn;
+    [SerializeField] private Button mainMenuBtn;
+    [SerializeField] private Button readyBtn;
+    [SerializeField] private TextMeshProUGUI lobbyNameText;
+    [SerializeField] private TextMeshProUGUI lobbyCodeText;
 
     private void Awake()
     {
-        MainMenuBtn.onClick.AddListener(() =>
+        mainMenuBtn.onClick.AddListener(() =>
         {
             NetworkManager.Singleton.Shutdown();
             SceneManager.LoadScene("StartScene");
         });
 
-        ReadyBtn.onClick.AddListener(() =>
+        readyBtn.onClick.AddListener(() =>
         {
             CharacterSelectReady.Instance.SetPlayerReady();
         });
+    }
+
+    private void Start()
+    {
+        Lobby lobby = AntipaMuseumLobby.Instance.GetLobby();
+
+        lobbyNameText.text = "Numele Camerei: " + lobby.Name;
+        lobbyCodeText.text = "Codul Camerei: " + lobby.LobbyCode;
     }
 
 }
