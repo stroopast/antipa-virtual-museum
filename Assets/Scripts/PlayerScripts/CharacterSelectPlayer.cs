@@ -1,17 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelectPlayer : MonoBehaviour
 {
     [SerializeField] private int playerIndex;
     [SerializeField] private GameObject ReadyGameObject;
     [SerializeField] private PlayerVisual playerVisual;
+    [SerializeField] private Button KickBtn;
+
+    private void Awake()
+    {
+        KickBtn.onClick.AddListener(() =>
+        {
+            PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromPlayerIndex(playerIndex);
+            MultiplayerManager.Instance.KickPlayer(playerData.clientId);
+        });
+    }
 
     private void Start()
     {
         MultiplayerManager.Instance.OnPlayerDataNetworkListChanged += Instance_OnPlayerDataNetworkListChanged;
         CharacterSelectReady.Instance.OnReadyChanged += CharacterSelectReady_OnReadyChanged;
+
+        KickBtn.gameObject.SetActive(NetworkManager.Singleton.IsServer);
+
         UpdatePlayer();
     }
 

@@ -167,4 +167,10 @@ public class MultiplayerManager : NetworkBehaviour
 
         playerDataNetworkList[playerDataIndex] = playerData;
     }
+
+    public void KickPlayer(ulong clientId)
+    {
+        NetworkManager.Singleton.DisconnectClient(clientId);
+        NetworkManager_Server_OnClientDisconnectCallback(clientId);
+    }
 }
