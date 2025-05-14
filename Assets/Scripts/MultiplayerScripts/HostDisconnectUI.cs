@@ -26,8 +26,9 @@ public class HostDisconnectUI : MonoBehaviour
 
     private void NetworkManager_OnClientDisconnectCallback(ulong clientId)
     {
-        Debug.Log($"Client {clientId} disconnected. Server ID is {NetworkManager.ServerClientId}");
-        if (clientId == NetworkManager.ServerClientId)
+        PlayerData playerData = MultiplayerManager.Instance.GetPlayerDataFromClientId(clientId);
+        Debug.Log($"Client {clientId} disconnected. Server ID is {playerData.clientId}");
+        if (playerData.clientId == clientId)
         {
             Debug.Log("Host disconnected. Showing disconnect UI.");
             // Server is shutting down
