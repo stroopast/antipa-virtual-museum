@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Multiplayer.Samples.Utilities;
@@ -13,6 +14,12 @@ using UnityEngine.SceneManagement;
 public class AntipaMuseumLobby : MonoBehaviour
 {
     public static AntipaMuseumLobby Instance { get; private set; }
+
+    public event EventHandler OnCreateLobbyStarted;
+    public event EventHandler OnCreateLobbyFailed;
+    public event EventHandler OnJoinStarted;
+    public event EventHandler OnQuickJoinFailed;
+    public event EventHandler OnRegularJoinFailed;
 
     private Lobby joinedLobby;
     private float hearthBeatTimer;
@@ -37,7 +44,7 @@ public class AntipaMuseumLobby : MonoBehaviour
         {
             //For testing on the same machine, initialize with a different profile beacuse on the same machine they initialize with the same profile -> multiple builds
             InitializationOptions initializationOptions = new InitializationOptions();
-            initializationOptions.SetProfile(Random.Range(0, 1000).ToString());
+            initializationOptions.SetProfile(UnityEngine.Random.Range(0, 1000).ToString());
 
             await UnityServices.InitializeAsync();
 
@@ -73,6 +80,7 @@ public class AntipaMuseumLobby : MonoBehaviour
 
     public async void CreateLobby(string lobbyName, bool isPrivate)
     {
+        OnCreateLobbyStarted?.Invoke(this, EventArgs.Empty);
         try
         {
             joinedLobby = await LobbyService.Instance.CreateLobbyAsync(lobbyName, MultiplayerManager.MAX_PLAYER_AMOUNT, new CreateLobbyOptions
@@ -86,11 +94,13 @@ public class AntipaMuseumLobby : MonoBehaviour
         catch (LobbyServiceException e)
         {
             Debug.Log(e);
+            OnCreateLobbyFailed?.Invoke(this, EventArgs.Empty);
         }
     }
 
     public async void QuickJoin()
     {
+        OnJoinStarted?.Invoke(this, EventArgs.Empty);
         try
         {
 
@@ -101,11 +111,13 @@ public class AntipaMuseumLobby : MonoBehaviour
         catch(LobbyServiceException e)
         {
             Debug.Log(e);
+            OnQuickJoinFailed?.Invoke(this, EventArgs.Empty);
         }
     }
 
     public async void JoinWithCode(string lobbyCode)
     {
+        OnJoinStarted?.Invoke(this, EventArgs.Empty);
         try
         {
             joinedLobby = await LobbyService.Instance.JoinLobbyByCodeAsync(lobbyCode);
@@ -115,6 +127,7 @@ public class AntipaMuseumLobby : MonoBehaviour
         catch(LobbyServiceException e)
         {
             Debug.Log(e);
+            OnRegularJoinFailed?.Invoke(this, EventArgs.Empty);
         }
     }
 

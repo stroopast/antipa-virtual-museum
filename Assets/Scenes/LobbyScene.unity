@@ -2508,7 +2508,7 @@ GameObject:
   - component: {fileID: 811430190}
   - component: {fileID: 811430191}
   m_Layer: 5
-  m_Name: ConnectionResponseMessageUI
+  m_Name: LobbyMessageUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb17eeb527f86e041a8e0835c91f1ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MessageText: {fileID: 1332057744}
+  messageText: {fileID: 1332057744}
   CloseButton: {fileID: 1672433067}
 --- !u!1 &866563847
 GameObject:
@@ -2644,11 +2644,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1150330718}
-  - {fileID: 138186343}
-  - {fileID: 811430190}
   - {fileID: 292814255}
   - {fileID: 1219586408}
+  - {fileID: 811430190}
+  - {fileID: 1150330718}
+  - {fileID: 138186343}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
