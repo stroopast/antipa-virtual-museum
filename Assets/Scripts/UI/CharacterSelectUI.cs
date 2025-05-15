@@ -18,6 +18,7 @@ public class CharacterSelectUI : MonoBehaviour
     {
         mainMenuBtn.onClick.AddListener(() =>
         {
+            AntipaMuseumLobby.Instance.LeaveLobby();
             NetworkManager.Singleton.Shutdown();
             SceneManager.LoadScene("StartScene");
         });

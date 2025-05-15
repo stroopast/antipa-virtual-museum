@@ -20,9 +20,16 @@ public class AntipaMuseumLobby : MonoBehaviour
     public event EventHandler OnJoinStarted;
     public event EventHandler OnQuickJoinFailed;
     public event EventHandler OnRegularJoinFailed;
+    public event EventHandler<OnLobbyListChangedEventArgs> OnLobbyListChanged;
+
+    public class OnLobbyListChangedEventArgs : EventArgs
+    {
+        public List<Lobby> lobbyList;
+    }
 
     private Lobby joinedLobby;
     private float hearthBeatTimer;
+    private float listLobbiesTimer;
 
     private void Awake()
     {
@@ -55,6 +62,7 @@ public class AntipaMuseumLobby : MonoBehaviour
     private void Update()
     {
         HandleHeartbeat();
+        HandlePeriodicListLobbies();
     }
 
     private void HandleHeartbeat()
@@ -73,9 +81,47 @@ public class AntipaMuseumLobby : MonoBehaviour
         }
     }
 
+    private void HandlePeriodicListLobbies()
+    {
+        if (joinedLobby == null && AuthenticationService.Instance.IsSignedIn)
+        {
+            listLobbiesTimer -= Time.deltaTime;
+            if (listLobbiesTimer <= 0f)
+            {
+                float listLobbiesTimerMax = 3f;
+                listLobbiesTimer = listLobbiesTimerMax;
+                ListLobbies();
+            }
+        }
+    }
+
     private bool IsLobbyHost()
     {
         return joinedLobby != null && joinedLobby.HostId == AuthenticationService.Instance.PlayerId;
+    }
+
+    private async void ListLobbies()
+    {
+        try
+        {
+            QueryLobbiesOptions queryLobbiesOptions = new QueryLobbiesOptions
+            {
+                Filters = new List<QueryFilter>
+            {
+                new QueryFilter(QueryFilter.FieldOptions.AvailableSlots, "0", QueryFilter.OpOptions.GT)
+            }
+            };
+            QueryResponse queryResponse = await LobbyService.Instance.QueryLobbiesAsync();
+
+            OnLobbyListChanged?.Invoke(this, new OnLobbyListChangedEventArgs
+            {
+                lobbyList = queryResponse.Results
+            });
+        }
+        catch (LobbyServiceException e)
+        {
+            Debug.Log(e);
+        }
     }
 
     public async void CreateLobby(string lobbyName, bool isPrivate)
@@ -125,6 +171,22 @@ public class AntipaMuseumLobby : MonoBehaviour
             MultiplayerManager.Instance.StartClient();
         }
         catch(LobbyServiceException e)
+        {
+            Debug.Log(e);
+            OnRegularJoinFailed?.Invoke(this, EventArgs.Empty);
+        }
+    }
+
+    public async void JoinWithId(string lobbyId)
+    {
+        OnJoinStarted?.Invoke(this, EventArgs.Empty);
+        try
+        {
+            joinedLobby = await LobbyService.Instance.JoinLobbyByIdAsync(lobbyId);
+
+            MultiplayerManager.Instance.StartClient();
+        }
+        catch (LobbyServiceException e)
         {
             Debug.Log(e);
             OnRegularJoinFailed?.Invoke(this, EventArgs.Empty);
