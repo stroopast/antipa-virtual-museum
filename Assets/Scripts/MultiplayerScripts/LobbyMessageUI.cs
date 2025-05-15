@@ -81,6 +81,11 @@ public class LobbyMessageUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        MultiplayerManager.Instance.OnFailedToJoinGame -= MultiplayerManager_OnFailedToJoinGame;
+        MultiplayerManager.Instance.OnFailedToJoinGame  -= MultiplayerManager_OnFailedToJoinGame;
+        AntipaMuseumLobby.Instance.OnCreateLobbyStarted -= AntipaMuseumLobby_OnCreateLobbyStarted;
+        AntipaMuseumLobby.Instance.OnCreateLobbyFailed  -= AntipaMuseumLobby_OnCreateLobbyFailed;
+        AntipaMuseumLobby.Instance.OnJoinStarted        -= AntipaMuseumLobby_OnJoinStarted;
+        AntipaMuseumLobby.Instance.OnQuickJoinFailed    -= AntipaMuseumLobby_OnQuickJoinFailed;
+        AntipaMuseumLobby.Instance.OnRegularJoinFailed  -= AntipaMuseumLobby_OnRegularJoinFailed;
     }
 }

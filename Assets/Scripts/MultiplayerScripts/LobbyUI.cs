@@ -77,4 +77,9 @@ public class LobbyUI : MonoBehaviour
             lobbyTransform.GetComponent<LobbyListSingleUI>().SetLobby(lobby);
         }
     }
+
+    private void OnDestroy()
+    {
+        AntipaMuseumLobby.Instance.OnLobbyListChanged -= AntipaMuseumLobby_OnLobbyListChanged;
+    }
 }
