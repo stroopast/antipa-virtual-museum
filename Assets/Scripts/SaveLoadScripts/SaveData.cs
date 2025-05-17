@@ -6,9 +6,10 @@ using UnityEngine;
 public class SaveData
 {
     public string playerName;
+    public string playerGender;
     public Vector3Data playerPosition;
     public List<string> unlockedAchievements;
-    public float progressPercentage; // nou
+    public float progressPercentage;
 }
 
 [System.Serializable]

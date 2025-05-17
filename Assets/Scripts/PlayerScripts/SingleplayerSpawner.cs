@@ -9,7 +9,7 @@ public class Singleplayer : MonoBehaviour
 
     void Awake()
     {
-        if (playerPrefab != null && GameModeManager.Instance.isMultiplayer == false)
+        if (playerPrefab != null && GameModeManager.Instance.GetGameMode() == 0)
         {
             Instantiate(playerPrefab, transform.position, Quaternion.identity);
         }

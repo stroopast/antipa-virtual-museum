@@ -7,7 +7,6 @@ using TMPro;
 public class SaveManager : MonoBehaviour
 {
     public static SaveManager Instance { get; private set; }
-    private TextMeshProUGUI PlayerNameField;
 
     private void Awake()
     {
@@ -22,27 +21,13 @@ public class SaveManager : MonoBehaviour
         }
     }
 
-    public void FindPlayerNameTextField()
-    {
-        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
-
-        foreach (var obj in allObjects)
-        {
-            if (obj.name == "PlayerNameText" && obj.scene.IsValid())
-            {
-                PlayerNameField = obj.GetComponent<TextMeshProUGUI>();
-            }
-        }
-    }
-
     public string GetSlotPath(int slot) => $"{Application.persistentDataPath}/save_slot_{slot}.json";
 
     public void SaveGame(int slot)
     {
         SaveData data = new SaveData();
 
-        FindPlayerNameTextField();
-        data.playerName = PlayerNameField.text;
+        data.playerName = GameModeManager.Instance.GetPlayerName();
 
         var player = GameObject.FindWithTag("Player");
         data.playerPosition = new Vector3Data(player.transform.position);
@@ -69,9 +54,8 @@ public class SaveManager : MonoBehaviour
         string json = File.ReadAllText(path);
         SaveData data = JsonUtility.FromJson<SaveData>(json);
 
-        //PlayerNameField.text = data.playerName;
-        PlayerPrefs.SetString("PlayerName", data.playerName);
-        PlayerPrefs.Save();
+        GameModeManager.Instance.SetPlayerName(data.playerName);
+        GameModeManager.Instance.SetPlayerGender(data.playerGender);
 
         var player = GameObject.FindWithTag("Player");
         player.transform.position = data.playerPosition.ToVector3();
