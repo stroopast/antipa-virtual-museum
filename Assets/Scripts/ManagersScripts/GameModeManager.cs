@@ -26,8 +26,7 @@ public class GameModeManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("NUME Jucator: " + playerName);
-        Debug.Log("SEX Jucator: " + playerGender);
+        
     }
 
     public void SetGameMode(short mode)
