@@ -72,7 +72,7 @@ public class HandleInputScript : MonoBehaviour
             else
             {
                 // Open Pause Menu if nothing else was open
-                var pauseMenu = Menus.Find(menu => menu.name == "PauseMenu");
+                var pauseMenu = Menus.Find(menu => menu.name == "PauseMenuUI");
                 if (pauseMenu != null)
                 {
                     HelperFunctions.UnlockCursor();

@@ -15,7 +15,7 @@ public class SingleplayerLoadUI : MonoBehaviour
     [SerializeField] private Button removeLoadFromSlot3Btn;
     [SerializeField] private Button backBtn;
 
-    [SerializeField] private GameObject singleplayerNewGameUI;
+    [SerializeField] private GameObject startSingleplayerUI;
     [SerializeField] private GameObject deleteSaveUI;
 
     private void Awake()
@@ -54,7 +54,7 @@ public class SingleplayerLoadUI : MonoBehaviour
         backBtn.onClick.AddListener(() =>
         {
             gameObject.SetActive(false);
-            singleplayerNewGameUI.gameObject.SetActive(true);
+            startSingleplayerUI.gameObject.SetActive(true);
 
         });
     }

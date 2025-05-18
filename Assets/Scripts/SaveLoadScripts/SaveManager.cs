@@ -28,6 +28,7 @@ public class SaveManager : MonoBehaviour
         SaveData data = new SaveData();
 
         data.playerName = GameModeManager.Instance.GetPlayerName();
+        data.playerGender = GameModeManager.Instance.GetPlayerGender();
 
         var player = GameObject.FindWithTag("Player");
         data.playerPosition = new Vector3Data(player.transform.position);

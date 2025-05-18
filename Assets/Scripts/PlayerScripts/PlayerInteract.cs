@@ -14,7 +14,7 @@ public class PlayerInteract : MonoBehaviour
     public TextMeshProUGUI interactText;
     public LayerMask exhibitLayer;
     public GameObject MainMenu;
-    public GameObject PauseMenu;
+    public GameObject pauseMenuUI;
     public GameObject TrophyPopUp;
     public GameObject AchievementsMenu;
 
@@ -40,7 +40,7 @@ public class PlayerInteract : MonoBehaviour
             currentExhibit = hit.collider.gameObject;
 
             if(exhibitMainMenu.gameObject.activeSelf || exhibitInfoMenu.gameObject.activeSelf || 
-                exhibitQuizMenu.gameObject.activeSelf || PauseMenu.gameObject.activeSelf ||
+                exhibitQuizMenu.gameObject.activeSelf || pauseMenuUI.gameObject.activeSelf ||
                 TrophyPopUp.gameObject.activeSelf || MainMenu.gameObject.activeSelf || AchievementsMenu.gameObject.activeSelf)
             {
                 interactText.gameObject.SetActive(false);
@@ -50,7 +50,7 @@ public class PlayerInteract : MonoBehaviour
                 interactText.gameObject.SetActive(true);
             }
             
-            if (Input.GetKeyDown(KeyCode.E) && !PauseMenu.gameObject.activeSelf)
+            if (Input.GetKeyDown(KeyCode.E) && !pauseMenuUI.gameObject.activeSelf)
             {
                 MainMenu.SetActive(true);
                 interactText.gameObject.SetActive(false);
@@ -94,9 +94,9 @@ public class PlayerInteract : MonoBehaviour
                 MainMenu = obj;
                 exhibitMainMenu = obj.GetComponent<ExhibitMainMenu>();
             }
-            if (obj.name == "PauseMenu" && obj.scene.IsValid())
+            if (obj.name == "PauseMenuUI" && obj.scene.IsValid())
             {
-                PauseMenu = obj;
+                pauseMenuUI = obj;
             }
             if (obj.name == "WinTrophyMenu" && obj.scene.IsValid())
             {

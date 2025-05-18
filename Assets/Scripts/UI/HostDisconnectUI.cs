@@ -19,7 +19,10 @@ public class HostDisconnectUI : MonoBehaviour
 
     private void Start()
     {
-        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
+        if(GameModeManager.Instance.GetGameMode() == 1)
+        {
+            NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
+        }
 
         Hide();
     }

@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 0
+  m_CharacterLimit: 12
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -2661,7 +2661,7 @@ MonoBehaviour:
   m_CaretWidth: 1
   m_ReadOnly: 0
   m_RichText: 1
-  m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_GlobalFontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
   m_OnFocusSelectAll: 1
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   removeLoadFromSlot2Btn: {fileID: 1562595222}
   removeLoadFromSlot3Btn: {fileID: 1552644397}
   backBtn: {fileID: 1499073211}
-  singleplayerNewGameUI: {fileID: 2057488743}
+  startSingleplayerUI: {fileID: 1764523712}
   deleteSaveUI: {fileID: 33504630}
 --- !u!1 &843851996
 GameObject:
