@@ -53,7 +53,7 @@ public class SingleplayerLoadUI : MonoBehaviour
 
         backBtn.onClick.AddListener(() =>
         {
-            gameObject.SetActive(false);
+            Hide();
             startSingleplayerUI.gameObject.SetActive(true);
 
         });
@@ -77,8 +77,13 @@ public class SingleplayerLoadUI : MonoBehaviour
     {
         if (!File.Exists(SaveManager.Instance.GetSlotPath(slot))) return;
 
-        gameObject.SetActive(false);
+        Hide();
         deleteSaveUI.gameObject.SetActive(true);
         deleteSaveUI.GetComponent<DeleteSaveUI>().SetCurrentSlot(slot);
+    }
+
+    private void Hide()
+    {
+        gameObject.SetActive(false);
     }
 }

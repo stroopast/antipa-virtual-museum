@@ -24,11 +24,6 @@ public class GameModeManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        
-    }
-
     public void SetGameMode(short mode)
     {
         gameMode = mode;

@@ -56,15 +56,24 @@ public class PauseMenuUI : MonoBehaviour
 
     private void Start()
     {
-        if(GameModeManager.Instance.GetGameMode() == 1)
+        Hide();
+    }
+
+    private void UpdatePlayerNameText()
+    {
+        if (GameModeManager.Instance.GetGameMode() == 1)
         {
             playerNameText.text = MultiplayerManager.Instance.GetPlayerName();
         }
-        else if(GameModeManager.Instance.GetGameMode() == 0)
+        else if (GameModeManager.Instance.GetGameMode() == 0)
         {
             playerNameText.text = GameModeManager.Instance.GetPlayerName();
         }
-        Hide();
+    }
+
+    private void OnEnable()
+    {
+        UpdatePlayerNameText();
     }
 
     private void Show()
