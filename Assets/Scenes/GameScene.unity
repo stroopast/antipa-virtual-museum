@@ -13649,7 +13649,7 @@ GameObject:
   - component: {fileID: 1322756905}
   - component: {fileID: 1322756904}
   m_Layer: 0
-  m_Name: SingleplayerSpawnerManager
+  m_Name: SingleplayerSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13667,7 +13667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b747d1b1828a144936a4b4a64b0781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 7986390427115286877, guid: 779dc78fbb346b640b4811e27904b327, type: 3}
+  manPrefab: {fileID: 8295006548126994061, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
+  womanPrefab: {fileID: 7284109013665234730, guid: c98457d5bdd0d654ab233272355b2d8d, type: 3}
 --- !u!4 &1322756905
 Transform:
   m_ObjectHideFlags: 0
@@ -20799,8 +20800,8 @@ SceneRoots:
   - {fileID: 1063310561}
   - {fileID: 671443161}
   - {fileID: 1943417138}
-  - {fileID: 1322756905}
   - {fileID: 478914153}
+  - {fileID: 1322756905}
   - {fileID: 1462908211}
   - {fileID: 505836126}
   - {fileID: 820793579}

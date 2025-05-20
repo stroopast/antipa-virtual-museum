@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 
-public class Singleplayer : MonoBehaviour
+public class SingleplayerSpawner : MonoBehaviour
 {
-    public GameObject playerPrefab;
+    [SerializeField] private Transform manPrefab;
+    [SerializeField] private Transform womanPrefab;
 
-    void Awake()
+    private void Awake()
     {
-        if (playerPrefab != null && GameModeManager.Instance.GetGameMode() == 0)
+        if (GameModeManager.Instance.GetGameMode() == 1) return;
+
+        switch(GameModeManager.Instance.GetPlayerGender())
         {
-            Instantiate(playerPrefab, transform.position, Quaternion.identity);
+            case "female":
+                Instantiate(womanPrefab, transform.position, Quaternion.identity);
+                break;
+            case "male":
+                Instantiate(manPrefab, transform.position, Quaternion.identity);
+                break;
+            default:
+                break;
         }
     }
 }
