@@ -19,7 +19,7 @@ public class PlayerInteract : MonoBehaviour
     public GameObject AchievementsMenu;
 
     public ExhibitMainMenuUI exhibitMainMenu;
-    public ExhibitInfoMenu exhibitInfoMenu;
+    public ExhibitInfoMenuUI exhibitInfoMenu;
     public ExhibitQuizMenu exhibitQuizMenu;
 
     private GameObject currentExhibit;
@@ -106,9 +106,9 @@ public class PlayerInteract : MonoBehaviour
             {
                 AchievementsMenu = obj;
             }
-            if (obj.name == "ExhibitInfoMenu" && obj.scene.IsValid())
+            if (obj.name == "ExhibitInfoMenuUI" && obj.scene.IsValid())
             {
-                exhibitInfoMenu = obj.GetComponent<ExhibitInfoMenu>();
+                exhibitInfoMenu = obj.GetComponent<ExhibitInfoMenuUI>();
             }
             if (obj.name == "ExhibitQuizMenu" && obj.scene.IsValid())
             {
