@@ -41,7 +41,7 @@ public class ExhibitMainMenuUI : MonoBehaviour
         exhibitQuizButton.onClick.AddListener(() =>
         {
             ExhibitQuizMenuUI.gameObject.SetActive(true);
-            ExhibitQuizMenuUI.GetComponent<ExhibitQuizMenu>().StartQuiz();
+            ExhibitQuizMenuUI.GetComponent<ExhibitQuizMenuUI>().StartQuiz();
             Hide();
         });
 

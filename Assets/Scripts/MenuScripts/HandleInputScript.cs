@@ -53,7 +53,7 @@ public class HandleInputScript : MonoBehaviour
             {
                 if (menu != null && menu.activeSelf)
                 {
-                    if (menu.TryGetComponent(out ExhibitQuizMenu quizMenu))
+                    if (menu.TryGetComponent(out ExhibitQuizMenuUI quizMenu))
                     {
                         quizMenu.ExitQuiz();
                     }
@@ -98,7 +98,7 @@ public class HandleInputScript : MonoBehaviour
         {
             foreach (var menu in Menus)
             {
-                if (menu != null && menu.activeSelf && menu.TryGetComponent(out ExhibitQuizMenu quizMenu))
+                if (menu != null && menu.activeSelf && menu.TryGetComponent(out ExhibitQuizMenuUI quizMenu))
                 {
                     quizMenu.CheckAnswer();
                     break;

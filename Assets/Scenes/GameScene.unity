@@ -12177,31 +12177,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1376687199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1761021862}
-        m_TargetAssemblyTypeName: ExhibitQuizMenu, Assembly-CSharp
-        m_MethodName: ExitQuiz
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 392281870}
-        m_TargetAssemblyTypeName: ExhibitMainMenu, Assembly-CSharp
-        m_MethodName: OpenExhibitMainMenu
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1376687199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15389,12 +15365,12 @@ GameObject:
   - component: {fileID: 1761021860}
   - component: {fileID: 1761021862}
   m_Layer: 5
-  m_Name: ExhibitQuizMenu
+  m_Name: ExhibitQuizMenuUI
   m_TagString: Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1761021859
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15413,6 +15389,7 @@ RectTransform:
   - {fileID: 147792240}
   - {fileID: 1569064624}
   - {fileID: 990098258}
+  - {fileID: 1866683384}
   - {fileID: 159434126}
   - {fileID: 2037989916}
   - {fileID: 1376687197}
@@ -15478,9 +15455,10 @@ MonoBehaviour:
   feedbackText: {fileID: 1947003681}
   scoreText: {fileID: 925467323}
   questionNumber: {fileID: 990098259}
-  submitButton: {fileID: 159434127}
-  tryAgainButton: {fileID: 2037989917}
-  backButton: {fileID: 1376687198}
+  submitBtn: {fileID: 159434127}
+  tryAgainBtn: {fileID: 2037989917}
+  backBtn: {fileID: 1376687198}
+  ExhibitMainMenuUI: {fileID: 392281866}
 --- !u!1 &1769890637
 GameObject:
   m_ObjectHideFlags: 0
@@ -16085,6 +16063,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1866683383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1866683384}
+  m_Layer: 5
+  m_Name: ---Buttons---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1866683384
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866683383}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1761021859}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1868312773
 GameObject:
   m_ObjectHideFlags: 0
@@ -17582,19 +17595,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2037989918}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1761021862}
-        m_TargetAssemblyTypeName: ExhibitQuizMenu, Assembly-CSharp
-        m_MethodName: ResetQuiz
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2037989918
 MonoBehaviour:
   m_ObjectHideFlags: 0

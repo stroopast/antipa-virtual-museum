@@ -7,16 +7,19 @@ using UnityEngine.SocialPlatforms.Impl;
 
 
 
-public class ExhibitQuizMenu : MonoBehaviour
+public class ExhibitQuizMenuUI : MonoBehaviour
 {
-    public TextMeshProUGUI questionText;
-    public TMP_InputField answerInput;
-    public TextMeshProUGUI feedbackText;
-    public TextMeshProUGUI scoreText;
-    public Button questionNumber;
-    public Button submitButton;
-    public Button tryAgainButton;
-    public Button backButton;
+    [SerializeField] private TextMeshProUGUI questionText;
+    [SerializeField] private TMP_InputField answerInput;
+    [SerializeField] private TextMeshProUGUI feedbackText;
+    [SerializeField] private TextMeshProUGUI scoreText;
+
+    [SerializeField] private Button questionNumber;
+    [SerializeField] private Button submitBtn;
+    [SerializeField] private Button tryAgainBtn;
+    [SerializeField] private Button backBtn;
+
+    [SerializeField] private GameObject ExhibitMainMenuUI;
 
     private QuizData quizData;
     private string animalName;
@@ -27,6 +30,27 @@ public class ExhibitQuizMenu : MonoBehaviour
     private bool inputBlocked = false;
     private Coroutine loadNextQuestionCoroutine;
 
+    private void Awake()
+    {
+        submitBtn.onClick.AddListener(CheckAnswer);
+
+        backBtn.onClick.AddListener(() =>
+        {
+            ExitQuiz();
+            ExhibitMainMenuUI.gameObject.SetActive(true);
+        });
+
+        tryAgainBtn.onClick.AddListener(() =>
+        {
+            ResetQuiz();
+        });
+    }
+
+    private void Start()
+    {
+        Hide();
+    }
+
     public void LoadQuizData(QuizData data, ExhibitData exhibit)
     {
         quizData = data;
@@ -35,13 +59,12 @@ public class ExhibitQuizMenu : MonoBehaviour
 
     public void StartQuiz()
     {
-        tryAgainButton.gameObject.SetActive(false);
-        backButton.gameObject.SetActive(true);
+        tryAgainBtn.gameObject.SetActive(false);
+        backBtn.gameObject.SetActive(true);
         answerInput.gameObject.SetActive(true);
-        submitButton.gameObject.SetActive(true);
+        submitBtn.gameObject.SetActive(true);
         questionNumber.gameObject.SetActive(true);
-        submitButton.onClick.RemoveAllListeners();
-        submitButton.onClick.AddListener(CheckAnswer);
+        //submitBtn.onClick.RemoveAllListeners();
         LoadQuestion();
     }
 
@@ -99,9 +122,9 @@ public class ExhibitQuizMenu : MonoBehaviour
         questionText.text = "";
         feedbackText.text = "";
         answerInput.gameObject.SetActive(false);
-        submitButton.gameObject.SetActive(false);
+        submitBtn.gameObject.SetActive(false);
         questionNumber.gameObject.SetActive(false);
-        tryAgainButton.gameObject.SetActive(true);
+        tryAgainBtn.gameObject.SetActive(true);
     }
 
     void CheckQuizCompletion()
@@ -123,9 +146,9 @@ public class ExhibitQuizMenu : MonoBehaviour
         score = 0;
         scoreText.text = "";
         answerInput.gameObject.SetActive(true);
-        submitButton.gameObject.SetActive(true);
+        submitBtn.gameObject.SetActive(true);
         questionNumber.gameObject.SetActive(true);
-        tryAgainButton.gameObject.SetActive(false);
+        tryAgainBtn.gameObject.SetActive(false);
         LoadQuestion();
     }
 
@@ -145,15 +168,20 @@ public class ExhibitQuizMenu : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void OpenQuizMenu()
-    {
-        HelperFunctions.UnlockCursor();
-        gameObject.SetActive(true);
-    }
     private IEnumerator WaitAndLoadNextQuestion()
     {
         yield return new WaitForSeconds(2f);
         LoadQuestion();
         inputBlocked = false;
+    }
+
+    private void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
+    private void Show()
+    {
+        gameObject.SetActive(true);
     }
 }
