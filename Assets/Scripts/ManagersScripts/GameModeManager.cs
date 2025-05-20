@@ -9,7 +9,7 @@ public class GameModeManager : MonoBehaviour
 
     private short gameMode = 0; // 0 -> singleplayer    1 -> multiplayer
     private string playerName;
-    private string playerGender;
+    private string playerGender = "male";
 
     private void Awake()
     {

@@ -18,7 +18,7 @@ public class PlayerInteract : MonoBehaviour
     public GameObject TrophyPopUp;
     public GameObject AchievementsMenu;
 
-    public ExhibitMainMenu exhibitMainMenu;
+    public ExhibitMainMenuUI exhibitMainMenu;
     public ExhibitInfoMenu exhibitInfoMenu;
     public ExhibitQuizMenu exhibitQuizMenu;
 
@@ -89,10 +89,10 @@ public class PlayerInteract : MonoBehaviour
             {
                 interactText = obj.GetComponent<TextMeshProUGUI>();
             }
-            if (obj.name == "ExhibitMainMenu" && obj.scene.IsValid())
+            if (obj.name == "ExhibitMainMenuUI" && obj.scene.IsValid())
             {
                 MainMenu = obj;
-                exhibitMainMenu = obj.GetComponent<ExhibitMainMenu>();
+                exhibitMainMenu = obj.GetComponent<ExhibitMainMenuUI>();
             }
             if (obj.name == "PauseMenuUI" && obj.scene.IsValid())
             {
