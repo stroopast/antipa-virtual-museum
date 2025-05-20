@@ -24,7 +24,7 @@ public class LobbyUI : MonoBehaviour
         mainMenuBtn.onClick.AddListener(() =>
         {
             AntipaMuseumLobby.Instance.LeaveLobby();
-            SceneManager.LoadScene("StartScene");
+            SceneManager.LoadScene("InitialScene");
         });
 
         createLobbyBtn.onClick.AddListener(() =>
