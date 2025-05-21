@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.Services.Lobbies.Models;
@@ -11,6 +11,8 @@ public class LobbyListSingleUI : MonoBehaviour
 
     private Lobby lobby;
 
+    private int lobbyPlayers;
+
     private void Awake()
     {
         GetComponent<Button>().onClick.AddListener(() =>
@@ -19,9 +21,19 @@ public class LobbyListSingleUI : MonoBehaviour
         });
     }
 
+    private void Update()
+    {
+        CalculateLobbyPlayers();
+        lobbyNameText.text = lobby.Name + " (Jucători: " + lobbyPlayers + "/" + lobby.MaxPlayers + ")";
+    }
+
     public void SetLobby(Lobby lobby)
     {
         this.lobby = lobby;
-        lobbyNameText.text = lobby.Name;
+    }
+
+    private void CalculateLobbyPlayers()
+    {
+        lobbyPlayers = lobby.MaxPlayers - lobby.AvailableSlots;
     }
 }
