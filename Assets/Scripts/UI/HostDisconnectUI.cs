@@ -12,7 +12,7 @@ public class HostDisconnectUI : MonoBehaviour
     private void Awake()
     {
         PlayAgainButton.onClick.AddListener(() => {
-            SceneManager.LoadScene("StartScene");
+            SceneManager.LoadScene("InitialScene");
         });
     }
 

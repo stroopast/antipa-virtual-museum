@@ -20,7 +20,7 @@ public class CharacterSelectUI : MonoBehaviour
         {
             AntipaMuseumLobby.Instance.LeaveLobby();
             NetworkManager.Singleton.Shutdown();
-            SceneManager.LoadScene("StartScene");
+            SceneManager.LoadScene("InitialScene");
         });
 
         readyBtn.onClick.AddListener(() =>

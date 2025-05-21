@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
+using Unity.Services.Lobbies;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -12,7 +13,6 @@ public class CharacterSelectReady : NetworkBehaviour
 
     public event EventHandler OnReadyChanged;
     private Dictionary<ulong, bool> playerReadyDictionary;
-
 
     private void Awake()
     {
@@ -27,6 +27,14 @@ public class CharacterSelectReady : NetworkBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (AreAllPlayersReady())
+        {
+            AntipaMuseumLobby.Instance.DeleteLobby();
+            NetworkManager.Singleton.SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
+        }
+    }
 
     public void SetPlayerReady()
     {
@@ -39,23 +47,19 @@ public class CharacterSelectReady : NetworkBehaviour
         SetPlayerReadyClientRpc(serverRpcParams.Receive.SenderClientId);
 
         playerReadyDictionary[serverRpcParams.Receive.SenderClientId] = true;
+    }
 
-        bool allClientsReady = true;
+    private bool AreAllPlayersReady()
+    {
         foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
             if (!playerReadyDictionary.ContainsKey(clientId) || !playerReadyDictionary[clientId])
             {
-                // This player is NOT ready
-                allClientsReady = false;
-                break;
+                return false;
             }
         }
 
-        if (allClientsReady)
-        {
-            AntipaMuseumLobby.Instance.DeleteLobby();
-            NetworkManager.Singleton.SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
-        }
+        return true;
     }
 
     [ClientRpc]
