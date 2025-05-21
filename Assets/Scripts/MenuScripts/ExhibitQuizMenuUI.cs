@@ -38,6 +38,7 @@ public class ExhibitQuizMenuUI : MonoBehaviour
         {
             ExitQuiz();
             ExhibitMainMenuUI.gameObject.SetActive(true);
+            HelperFunctions.UnlockCursor();
         });
 
         tryAgainBtn.onClick.AddListener(() =>

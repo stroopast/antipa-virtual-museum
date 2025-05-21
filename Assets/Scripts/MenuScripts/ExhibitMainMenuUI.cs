@@ -77,23 +77,6 @@ public class ExhibitMainMenuUI : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
     }
 
-    // remove
-    public void ExitExhibitMainMenu()
-    {
-        HelperFunctions.LockCursor();
-        Hide();
-    }
-
-    public void OpenExhibitMainMenu()
-    {
-        HelperFunctions.UnlockCursor();
-        Show();
-    }
-
-
-    /// 
-
-
     private void Hide()
     {
         gameObject.SetActive(false);
