@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -57,6 +57,36 @@ public class PauseMenuUI : MonoBehaviour
     private void Start()
     {
         Hide();
+        ModifyResumeButtonsBasedOnGameMode();
+    }
+
+    private void ModifyResumeButtonsBasedOnGameMode()
+    {
+        if (GameModeManager.Instance.GetGameMode() == 1)
+        {
+            saveMenuBtn.gameObject.SetActive(false);
+            loadMenuBtn.gameObject.SetActive(false);
+
+            RectTransform resumeBtnTransform = resumeGameBtn.GetComponent<RectTransform>();
+            Vector2 resumeBtnNewPos = resumeBtnTransform.anchoredPosition;
+            resumeBtnNewPos.y = 150;
+            resumeBtnTransform.anchoredPosition = resumeBtnNewPos;
+
+            RectTransform exitBtnTransform = exitGameBtn.GetComponent<RectTransform>();
+            Vector2 exitBtnNewPos = exitBtnTransform.anchoredPosition;
+            exitBtnNewPos.y = 0;
+            exitBtnTransform.anchoredPosition = exitBtnNewPos;
+
+            backToMainMenuBtn.GetComponentInChildren<TextMeshProUGUI>().text = "Deconectează-te";
+            RectTransform backToMainMenuBtnTransform = backToMainMenuBtn.GetComponent<RectTransform>();
+            Vector2 backToMainMenuBtnNewPos = backToMainMenuBtnTransform.anchoredPosition;
+            backToMainMenuBtnNewPos.y = -150;
+            backToMainMenuBtnTransform.anchoredPosition = backToMainMenuBtnNewPos;
+        }
+        else
+        {
+            return;
+        }
     }
 
     private void UpdatePlayerNameText()

@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.Netcode;
@@ -47,7 +47,8 @@ public class LobbyUI : MonoBehaviour
 
     private void Start()
     {
-        playerNameInputField.text = MultiplayerManager.Instance.GetPlayerName();
+        //playerNameInputField.text = MultiplayerManager.Instance.GetPlayerName();
+        playerNameInputField.text = "Nume Jucător​";
         playerNameInputField.onValueChanged.AddListener((string newText) =>
         {
             MultiplayerManager.Instance.SetPlayerName(newText);
