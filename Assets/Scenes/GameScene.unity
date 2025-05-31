@@ -5806,7 +5806,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1272591343}
+  m_Mesh: {fileID: 1675924140}
 --- !u!33 &681773695
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -9449,7 +9449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8295006548126994061, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.81
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 8295006548126994061, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9457,7 +9457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8295006548126994061, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -151.66
+      value: -155
       objectReference: {fileID: 0}
     - target: {fileID: 8295006548126994061, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9493,7 +9493,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8671144714840724535, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671144714840724535, guid: 34a4f500e1afa8843a574c9a50eb16e7, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15439,7 +15443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 831, y: 410}
+  m_AnchoredPosition: {x: 831, y: 462}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1295514225
@@ -15485,8 +15489,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3359659623
-  m_fontColor: {r: 0.40392157, g: 0.3372549, b: 0.2509804, a: 0.78431374}
+    rgba: 4279785353
+  m_fontColor: {r: 0.5377358, g: 0.34308434, b: 0.0933428, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -15510,8 +15514,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -15595,7 +15599,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1137759913}
+  m_Mesh: {fileID: 1322072680}
 --- !u!33 &1314541333
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -16332,7 +16336,7 @@ Transform:
   m_GameObject: {fileID: 1322756903}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: -155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25086,7 +25090,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 1916747759}
+  m_Mesh: {fileID: 1803161843}
 --- !u!33 &1990854606
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -25660,7 +25664,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 805932022}
+  m_Mesh: {fileID: 1137759913}
 --- !u!33 &2005231421
 MeshFilter:
   m_ObjectHideFlags: 10

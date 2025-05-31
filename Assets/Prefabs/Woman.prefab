@@ -178,7 +178,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &-8904187137694120788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   MainMenu: {fileID: 0}
-  PauseMenu: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
   TrophyPopUp: {fileID: 0}
   AchievementsMenu: {fileID: 0}
   exhibitMainMenu: {fileID: 0}
@@ -309,11 +309,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnPositionList:
-  - {x: 2, y: 0, z: 0}
-  - {x: -2, y: 0, z: 0}
-  - {x: 2, y: 0, z: 2}
-  - {x: -2, y: 0, z: 2}
-  - {x: -2, y: 0, z: -2}
-  - {x: 4, y: 0, z: 0}
-  - {x: 0, y: 0, z: 4}
-  - {x: -2, y: 0, z: 0}
+  - {x: 2, y: 0.1, z: -155}
+  - {x: 1, y: 0.1, z: -155}
+  - {x: 0, y: 0.1, z: -155}
+  - {x: -1, y: 0.1, z: -155}
+  - {x: -2, y: 0.1, z: -155}
+  - {x: -3, y: 0.1, z: -155}
+  - {x: -4, y: 0.1, z: -155}
+  - {x: -5, y: 0.1, z: -155}
