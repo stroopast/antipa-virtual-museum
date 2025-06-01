@@ -26,7 +26,7 @@ public class ExhibitQuizMenuUI : MonoBehaviour
     private int currentQuestionIndex = 0;
     private int score = 0;
 
-    private const int MAX_SCORE = 4;
+    private const int MAX_SCORE = 10;
     private bool inputBlocked = false;
     private Coroutine loadNextQuestionCoroutine;
 

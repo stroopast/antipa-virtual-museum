@@ -50,7 +50,7 @@ public class PlayerInteract : MonoBehaviour
                 interactText.gameObject.SetActive(true);
             }
             
-            if (Input.GetKeyDown(KeyCode.E) && !pauseMenuUI.gameObject.activeSelf)
+            if (Input.GetKeyDown(KeyCode.E) && !pauseMenuUI.gameObject.activeSelf && !exhibitQuizMenu.gameObject.activeSelf && !exhibitInfoMenu.gameObject.activeSelf)
             {
                 MainMenu.SetActive(true);
                 interactText.gameObject.SetActive(false);

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a1816771f0059e419b934359eaf7dee, type: 3}
-  m_Name: TarantulaAchiv
+  m_Name: ScorpionAchiv
   m_EditorClassIdentifier: 
-  animalName: "Tarantula mexican\u0103"
-  achievementName: "\"Umbra S\u0103lbatic\u0103\""
-  trophyIcon: {fileID: 21300000, guid: 77d445b517638984299e54be993f1e90, type: 3}
+  animalName: Scorpion imperial
+  achievementName: "\"Regele Nop\u021Bii\""
+  trophyIcon: {fileID: 21300000, guid: e03a04bb64a8c7f4d9cf416300daccf5, type: 3}

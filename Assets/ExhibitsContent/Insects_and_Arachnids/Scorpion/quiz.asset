@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Din ce continent provine scorpionul imperial?
+    correctAnswer: Africa
+    questionNumber: 1
+  - questionText: Ce culoare are carapacea scorpionului imperial?
+    correctAnswer: Negru
+    questionNumber: 2
+  - questionText: "\xCEn ce tip de habitat tr\u0103ie\u0219te \xEEn mod obi\u0219nuit?"
+    correctAnswer: Padure
+    questionNumber: 3
+  - questionText: "Ce insecte constituie prada principal\u0103 a scorpionului imperial?"
+    correctAnswer: Termite
+    questionNumber: 4
+  - questionText: "Cu ce parte a corpului \xEE\u0219i sf\xE2\u0219ie prada?"
+    correctAnswer: Clesti
+    questionNumber: 5
+  - questionText: "Unde se ascunde \xEEn timpul zilei?"
+    correctAnswer: Vizuini
+    questionNumber: 6
+  - questionText: "Ce tip de hran\u0103 prefer\u0103?"
+    correctAnswer: Insecte
+    questionNumber: 7
+  - questionText: Cum este veninul scorpionului imperial?
+    correctAnswer: Slab
+    questionNumber: 8
+  - questionText: "\xCEn ce regiune a Africii se g\u0103se\u0219te predominant?"
+    correctAnswer: Vest
+    questionNumber: 9
+  - questionText: "C\xE2\u021Bi ani poate tr\u0103i \xEEn captivitate?"
+    correctAnswer: 8
+    questionNumber: 10
