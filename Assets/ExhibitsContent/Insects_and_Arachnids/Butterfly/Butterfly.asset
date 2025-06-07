@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Butterfly
+  m_EditorClassIdentifier: 
+  exhibitName: Fluturele Goliath
+  species: Ornithoptera goliath
+  description: "Fluturele Goliath este una dintre cele mai impresionante specii de
+    fluturi din lume, cunoscut pentru dimensiunile sale impresionante \u0219i culorile
+    vibrante. Cu o anvergur\u0103 a aripilor ce poate dep\u0103\u0219i 25 cm, acest
+    fluture exotic atrage privirile \u0219i fascineaz\u0103 pasiona\u021Bii de natur\u0103."
+  image: {fileID: 21300000, guid: 2ff1f0444c7472e4199c994bd6360416, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Fluturele Goliath Birdwing tr\u0103ie\u0219te \xEEn regiunile
+    muntoase \u0219i p\u0103durile tropicale din Papua Noua Guinee \u0219i unele
+    p\u0103r\u021Bi din Insulele Aru. Aceste zone ofer\u0103 un mediu umed \u0219i
+    cald, perfect pentru dezvoltarea acestei specii impresionante."
+  habitat: "Ace\u0219ti fluturi prefer\u0103 p\u0103durile tropicale dense, cu vegeta\u021Bie
+    luxuriant\u0103, unde pot g\u0103si plantele gazd\u0103 necesare pentru ou\u0103le
+    \u0219i hrana larvelor. De asemenea, pot fi observa\u021Bi zbur\xE2nd prin lumini\u0219uri
+    \u0219i pe l\xE2ng\u0103 r\xE2uri sau izvoare montane."
+  lifespan: "Durata de via\u021B\u0103 a adul\u021Bilor este scurt\u0103, c\xE2teva
+    s\u0103pt\u0103m\xE2ni, timp \xEEn care se ocup\u0103 de reproducere. \xCEntregul
+    ciclu de via\u021B\u0103, de la ou p\xE2n\u0103 la adult, poate dura c\xE2teva
+    luni, incluz\xE2nd stadiile de larv\u0103 \u0219i pup\u0103."
+  food: "Larvele se hr\u0103nesc cu frunzele anumitor specii de plante din familia
+    Aristolochiaceae, care le ofer\u0103 substan\u021Be toxice ce le protejeaz\u0103
+    de pr\u0103d\u0103tori. Adul\u021Bii consum\u0103 nectar de flori, care le furnizeaz\u0103
+    energia necesar\u0103 pentru zbor \u0219i reproducere."
+  habitatTitle: Papua Noua Guinee
+  lifespanTitle: "~ s\u0103pt\u0103m\xE2ni"
+  dietTitle: Nectarivor
+  map: {fileID: 21300000, guid: c39ca54cfe59c9a40a53583d08faf4c3, type: 3}

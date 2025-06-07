@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "De unde sunt originari g\xE2ndacii verzi de iunie?"
+    correctAnswer: Statele Unite
+    questionNumber: 1
+  - questionText: "\xCEn ce lun\u0103 devin adul\u021Bii activi?"
+    correctAnswer: Iunie
+    questionNumber: 2
+  - questionText: "C\xE2te genera\u021Bii produc pe an?"
+    correctAnswer: 1
+    questionNumber: 3
+  - questionText: "Ce tip de fructe consum\u0103 adul\u021Bii?"
+    correctAnswer: Rosii
+    questionNumber: 4
+  - questionText: "Ce consum\u0103 larvele?"
+    correctAnswer: Radacini
+    questionNumber: 5
+  - questionText: "Ce m\u0103n\xE2nc\u0103 adul\u021Bii \xEEn afar\u0103 de fructe?"
+    correctAnswer: Nectar
+    questionNumber: 6
+  - questionText: "Pot adul\u021Bii mesteca alimente tari?"
+    correctAnswer: Nu
+    questionNumber: 7
+  - questionText: "Ce fel de materie consum\u0103 larvele?"
+    correctAnswer: Descompusa
+    questionNumber: 8
+  - questionText: "Unde tr\u0103iesc larvele g\xE2ndacilor verzi de iunie?"
+    correctAnswer: Sol
+    questionNumber: 9
+  - questionText: "Unde pot fi g\u0103si\u021Bi adul\u021Bii g\xE2ndacilor verzi
+      de iunie?"
+    correctAnswer: Peluze
+    questionNumber: 10

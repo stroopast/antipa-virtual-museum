@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Hornet
+  m_EditorClassIdentifier: 
+  exhibitName: "Viespea gigant asiatic\u0103"
+  species: Vespa mandarinia
+  description: "Viespea gigant asiatic\u0103 (Vespa mandarinia) este o specie de
+    insect\u0103 pr\u0103d\u0103toare, originar\u0103 din regiunile temperate \u0219i
+    tropicale ale Asiei de Est, \xEEn special din Japonia, China \u0219i Coreea.
+    Este cea mai mare specie de viespe din lume \u0219i se distinge prin dimensiunile
+    sale impresionante, coloritul portocaliu cu dungi negre \u0219i mandibulele puternice."
+  image: {fileID: 21300000, guid: 68b188ef982e89f42987f1b82ade2740, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Vespa mandarinia se g\u0103se\u0219te \xEEn p\u0103r\u021Bile
+    de est \u0219i sud-est ale Asiei, la nord de tropice. Este cel mai frecvent\u0103
+    \xEEn Japonia, unde a fost bine studiat\u0103."
+  habitat: "Vespa mandarinia tinde s\u0103 tr\u0103iasc\u0103 \xEEn mun\u021Bi jo\u0219i
+    \u0219i/sau zone \xEEmp\u0103durite. Este \xEEn mod notabil absent\u0103 \xEEn
+    c\xE2mpie \u0219i la altitudini mai mari. Specia \xEE\u0219i creeaz\u0103 cuiburi
+    subterane prin s\u0103pare, prin cooptarea cavit\u0103\u021Bilor s\u0103pate
+    de roz\u0103toare mici sau prin g\u0103sirea de spa\u021Bii potrivite l\xE2ng\u0103
+    r\u0103d\u0103cinile de pin putrezite. Ad\xE2ncimea cuiburilor lor variaz\u0103
+    \xEEntre 6 \u0219i 60 cm."
+  lifespan: "Lucr\u0103toarele tr\u0103iesc din prim\u0103var\u0103 p\xE2n\u0103
+    iarn\u0103. Masculii mor de obicei la scurt timp dup\u0103 \xEEmperechere, \xEEn
+    toamn\u0103. Reginele tr\u0103iesc p\xE2n\u0103 la un an, ele construiesc colonii
+    prim\u0103vara, dup\u0103 sezonul de \xEEmperechere, \xEEn timp ce reginele adulte
+    actuale mor iarna."
+  food: "Vespa mandarinia este o specie omnivor\u0103, \xEEn principal insectivor\u0103.
+    Lucr\u0103toarele se hr\u0103nesc \xEEn principal cu g\xE2ndaci dar v\xE2neaz\u0103
+    \u0219i viespi, mantide \u0219i albine. Vespa mandarinia este singura specie
+    de viespe eusocial\u0103 care atac\u0103 stupii de albine \u0219i alte cuiburi
+    de viespi eusociale. Vespa mandarinia este singura specie de viespe eusocial\u0103
+    care atac\u0103 stupii de albine \u0219i alte cuiburi de viespi eusociale. Coloniile
+    de Apis mellifera, Apis cerana \u0219i toate speciile simpatice de Vespa \u0219i
+    Vespula sunt \u021Binta atacurilor de grup ale V. mandarinia. Prada de albin\u0103
+    sau viespe colectat\u0103 \xEEn aceste atacuri este mestecat\u0103 \xEEntr-o
+    bil\u0103, care este dus\u0103 \xEEn cuibul de V. mandarinia \u0219i hr\u0103nit\u0103
+    larvelor. Dup\u0103 un atac reu\u0219it al unui stup de albine sau al altui cuib,
+    pupele speciei-prad\u0103 sunt scoase din coconi. Corpurile larvelor \u0219i
+    pupelor din stupul sau cuibul ocupat sunt mestecate \xEEn bile \u0219i hr\u0103nite
+    larvelor de V. mandarinia . Sunt preferate pupele cele mai mature, iar larvele
+    sunt luate numai atunci c\xE2nd nu mai r\u0103m\xE2n pupe. Unele dintre victimele
+    adulte \u0219i atacatorii mor\u021Bi sunt, de asemenea, hr\u0103ni\u021Bi larvelor
+    de V. mandarinia . Lucr\u0103torii vor recupera hrana dintr-un cuib ocupat pentru
+    o perioad\u0103 de c\xE2teva zile p\xE2n\u0103 la dou\u0103 s\u0103pt\u0103m\xE2ni.
+    Atacurile \xEEn mas\u0103 se observ\u0103 doar toamna, c\xE2nd sute de noi regine
+    \u0219i masculi de viespi sunt crescu\u021Bi \xEEn cuib. Vespa mandarinia m\u0103n\xE2nc\u0103
+    frecvent seva copacilor, \xEEn special la stejari ( Quercus). De asemenea, consum\u0103
+    fructe cu pericarp moale \u0219i niveluri ridicate de zah\u0103r. Vespa mandarinia
+    este singura specie de Vespa care se angajeaz\u0103 frecvent \xEEn trofalaxie
+    extranidal\u0103, sau se hr\u0103ne\u0219te \xEEn afara cuibului prin regurgitare.
+    Lucr\u0103toarele adulte nu pot digera alimente solide; prin urmare, se hr\u0103nesc
+    cu sev\u0103 \u0219i saliv\u0103 larvar\u0103. Toate alimentele solide sunt hr\u0103nite
+    larvelor prin trofalaxie. Trofalaxia extranidal\u0103 apare adesea \xEEn r\xE2ndul
+    lucr\u0103toarelor la sursele de sev\u0103. Cel mai adesea, fluxul de hran\u0103
+    este unidirec\u021Bional. Trofalaxia reciproc\u0103 are loc \xEEn r\xE2ndul lucr\u0103toarelor
+    \xEEnfometate."
+  habitatTitle: Asia de sud-est
+  lifespanTitle: ~ 1 an
+  dietTitle: "Omnivor\u0103"
+  map: {fileID: 21300000, guid: 62c42f5224d9cc64097eb6424b300227, type: 3}

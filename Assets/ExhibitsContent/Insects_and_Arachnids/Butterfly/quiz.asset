@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Unde tr\u0103ie\u0219te fluturele Goliath?"
+    correctAnswer: Papua Noua Guinee
+    questionNumber: 1
+  - questionText: "Ce tip de p\u0103duri prefer\u0103 ca habitat?"
+    correctAnswer: Tropicale
+    questionNumber: 2
+  - questionText: "Care este principala hran\u0103 a larvelor?"
+    correctAnswer: Larve
+    questionNumber: 3
+  - questionText: "Ce consum\u0103 adul\u021Bii fluturelui Goliath?"
+    correctAnswer: Nectar
+    questionNumber: 4
+  - questionText: "Din ce familie de plante se hr\u0103nesc larvele?"
+    correctAnswer: Aristolochiaceae
+    questionNumber: 5
+  - questionText: "C\xE2t dureaz\u0103 via\u021Ba unui adult?"
+    correctAnswer: Saptamani
+    questionNumber: 6
+  - questionText: "Cum se nume\u0219te tipul de diet\u0103 al larvelor?"
+    correctAnswer: "Fitofag\u0103"
+    questionNumber: 7
+  - questionText: "\xCEn ce etap\u0103 se hr\u0103ne\u0219te cu nectar?"
+    correctAnswer: Adult
+    questionNumber: 8
+  - questionText: "Ce ofer\u0103 larvelor plantele din familia Aristolochiaceae?"
+    correctAnswer: Toxine
+    questionNumber: 9
+  - questionText: "Ce tip de climat prefer\u0103 fluturele Goliath?"
+    correctAnswer: Cald
+    questionNumber: 10

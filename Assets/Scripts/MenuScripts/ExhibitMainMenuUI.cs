@@ -24,7 +24,9 @@ public class ExhibitMainMenuUI : MonoBehaviour
     [SerializeField] private GameObject ExhibitQuizMenuUI;
 
     private ExhibitData currentExhibit;
-    private List<string> noSoundAnimals = new List<string> { "Tarantula mexicană", "Scorpion imperial" };
+    private List<string> noSoundAnimals = new List<string> { "Tarantula mexicană", "Scorpion imperial", "Viespea gigant asiatică",
+                                                             "Gândacul verde", "Fluturele Goliath", "Văduva neagră", "Călugărița",
+                                                             "Crab Dungeness"};
 
     private void Awake()
     {

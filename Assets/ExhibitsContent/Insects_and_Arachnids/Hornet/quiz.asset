@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Pe ce continent se g\u0103se\u0219te Vespa mandarinia?"
+    correctAnswer: Asia
+    questionNumber: 1
+  - questionText: "Ce tip de relief prefer\u0103 Vespa mandarinia pentru habitat?"
+    correctAnswer: Munti
+    questionNumber: 2
+  - questionText: "Unde \xEE\u0219i construie\u0219te cuibul Vespa mandarinia?"
+    correctAnswer: Subteran
+    questionNumber: 3
+  - questionText: "Care este ad\xE2ncimea maxim\u0103 a unui cuib de Vespa mandarinia
+      (\xEEn cm)?"
+    correctAnswer: 60
+    questionNumber: 4
+  - questionText: "Cu ce tip de insecte se hr\u0103ne\u0219te cel mai des Vespa mandarinia?"
+    correctAnswer: Gandaci
+    questionNumber: 5
+  - questionText: "Ce specie de albin\u0103 este frecvent atacat\u0103 de Vespa mandarinia?"
+    correctAnswer: Apis
+    questionNumber: 6
+  - questionText: "\xCEn ce anotimp au loc atacurile \xEEn mas\u0103 asupra stupilor?"
+    correctAnswer: Toamna
+    questionNumber: 7
+  - questionText: "Ce stadiu al dezvolt\u0103rii pr\u0103zii este preferat ca hran\u0103
+      pentru larve?"
+    correctAnswer: Pupe
+    questionNumber: 8
+  - questionText: "Din ce copac prefer\u0103 Vespa mandarinia s\u0103 consume sev\u0103?"
+    correctAnswer: Stejar
+    questionNumber: 9
+  - questionText: "Cum se nume\u0219te procesul prin care viespile se hr\u0103nesc
+      reciproc prin regurgitare?"
+    correctAnswer: Trofalaxie
+    questionNumber: 10

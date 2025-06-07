@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce pozi\u021Bie caracteristic\u0103 au picioarele din fa\u021B\u0103?"
+    correctAnswer: Rugaciune
+    questionNumber: 1
+  - questionText: "Unde tr\u0103ie\u0219te?"
+    correctAnswer: Pasuni
+    questionNumber: 2
+  - questionText: "C\xE2te luni tr\u0103ie\u0219te?"
+    correctAnswer: 6
+    questionNumber: 3
+  - questionText: "Ce m\u0103n\xE2nc\u0103?"
+    correctAnswer: Insecte
+    questionNumber: 4
+  - questionText: "Este cunoscut\u0103 pentru ce tip de camuflaj?"
+    correctAnswer: Verde
+    questionNumber: 5
+  - questionText: "\xCEn ce continente g\u0103sim c\u0103lug\u0103ri\u021Ba?"
+    correctAnswer: Toate
+    questionNumber: 6
+  - questionText: "Poate consuma \u0219i alte..."
+    correctAnswer: Calugarite
+    questionNumber: 7
+  - questionText: "Care este postura lor specific\u0103?"
+    correctAnswer: Rugaciune
+    questionNumber: 8
+  - questionText: "Cum se ascunde c\u0103lug\u0103ri\u021Ba de pr\u0103d\u0103tori?"
+    correctAnswer: Camuflaj
+    questionNumber: 9
+  - questionText: "Ce fel de insect\u0103 este c\u0103lug\u0103ri\u021Ba?"
+    correctAnswer: Pradator
+    questionNumber: 10

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Crab
+  m_EditorClassIdentifier: 
+  exhibitName: Crab Dungeness
+  species: Cancer magister
+  description: "Cancer magister, este o specie de crab marin apreciat\u0103 pentru
+    dimensiunea \u0219i valoarea sa comercial\u0103. Acest crab tr\u0103ie\u0219te
+    \xEEn apele de coast\u0103 din estul \u0219i vestul Pacificului, de-a lungul
+    coastei Americii de Nord, \xEEn special \xEEn California, Mexic \u0219i alte
+    regiuni temperate \u0219i subtropicale."
+  image: {fileID: 21300000, guid: 5cd08addda24a8d429b1c360e09d8d7d, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Crabii Dungeness, se g\u0103sesc \xEEn apele de coast\u0103 de
+    la Point Concepcion, California, p\xE2n\u0103 la Insulele Pribilof, Alaska. Crabii
+    Dungeness locuiesc \xEEn estuarele de la Morro Bay, California, p\xE2n\u0103
+    la Puget Sound, Washington."
+  habitat: "Crabii Dungeness se g\u0103sesc pe coasta Pacificului, \xEEn funduri
+    nisipoase, sub linia de maree. De asemenea, pot fi g\u0103si\u021Bi la reflux,
+    \xEEn golfuri nisipoase sau noroioase, unde exist\u0103 o cre\u0219tere bun\u0103
+    a ierbii de anghil\u0103. Crabii Dungeness nu tolereaz\u0103 condi\u021Biile
+    de oxigen dizolvat sc\u0103zut. De asemenea, chiar \u0219i cantit\u0103\u021Bi
+    mici de amoniac sunt toxice pentru crabi. De asemenea, crabii Dungeness tind
+    s\u0103 creasc\u0103 mai bine \xEEn ap\u0103 cu temperaturi peste \u0219ase grade
+    Celsius."
+  lifespan: "Durata de via\u021B\u0103 a crabului este in medie de 3-5 ani."
+  food: "Crabii m\u0103n\xE2nc\u0103 o varietate de nevertebrate marine \u0219i pe\u0219ti.
+    Ca juvenili, crabii Dungeness se hr\u0103nesc cu pe\u0219ti, creve\u021Bi, molu\u0219te
+    \u0219i crustacee. Adul\u021Bii se hr\u0103nesc cu bivalve, crustacee \u0219i
+    pe\u0219ti. Crabii sunt capabili s\u0103 deschid\u0103 cochiliile ciobindu-le
+    cu ghearele lor grele."
+  habitatTitle: Pacificul de est - vest
+  lifespanTitle: 3 - 5 ani
+  dietTitle: Omnivor
+  map: {fileID: 21300000, guid: 3fa32ab3d4d3fdc4babdf5fb3bd78944, type: 3}
