@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Grasshopper
+  m_EditorClassIdentifier: 
+  exhibitName: "L\u0103cust\u0103 cu dungi verzi"
+  species: Chortophaga viridifasciata
+  description: "L\u0103custele cu dungi verzi au o lungime cuprins\u0103 \xEEntre
+    23 \u0219i 38 mm. Masculii au 23-30 mm, \xEEn timp ce femelele mai mari au 28-38
+    mm. Unele pot fi de culoare cafenie. Masculii sunt adesea maronii, iar femelele
+    sunt adesea verzi. Masculii au capul mai mare \u0219i picioarele mai groase."
+  image: {fileID: 21300000, guid: fea0bdd942536fb47a56ec57373844a6, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Chortophaga viridifasciata, cunoscut\u0103 \xEEn mod obi\u0219nuit
+    sub numele de l\u0103custe cu dungi verzi, se g\u0103se\u0219te \xEEn toat\u0103
+    America de Nord. Aria lor de r\u0103sp\xE2ndire se \xEEntinde de la New Brunswick
+    \u0219i Georgia spre vest p\xE2n\u0103 \xEEn Arizona, Saskatchewan \u0219i Columbia
+    Britanic\u0103. Pot fi g\u0103site \xEEn Mexic \u0219i p\xE2n\u0103 \xEEn Costa
+    Rica la sud."
+  habitat: "L\u0103custele cu dungi verzi prefer\u0103 s\u0103 tr\u0103iasc\u0103
+    \xEEn habitate umede. Pot fi g\u0103site l\xE2ng\u0103 marginile drumurilor,
+    paji\u0219ti cu f\xE2n, p\u0103\u0219uni \u0219i zone \xEEnsorite cu iarb\u0103.
+    Pot fi g\u0103site \xEEn multe zone umede, \xEEnsorite \u0219i ierboase din p\u0103r\u021Bile
+    estice ale arealului lor de r\u0103sp\xE2ndire. Habitatele lor sunt mai pu\u021Bin
+    frecvente \xEEn p\u0103r\u021Bile vestice ale arealului lor de r\u0103sp\xE2ndire
+    datorit\u0103 preferin\u021Bei lor pentru habitate umede."
+  lifespan: "Crabii m\u0103n\xE2nc\u0103 o varietate de nevertebrate marine \u0219i
+    pe\u0219ti. Ca juvenili, crabii Dungeness se hr\u0103nesc cu pe\u0219ti, creve\u021Bi,
+    molu\u0219te \u0219i crustacee. Adul\u021Bii se hr\u0103nesc cu bivalve, crustacee
+    \u0219i pe\u0219ti. Crabii sunt capabili s\u0103 deschid\u0103 cochiliile ciobindu-le
+    cu ghearele lor grele. L\u0103custele cu dungi verzi ierneaz\u0103 \xEEn stadiul
+    lor nimfal aproape matur, spre deosebire de multe alte specii de l\u0103custe."
+  food: "L\u0103custele cu dungi verzi m\u0103n\xE2nc\u0103 \xEEn principal ierburi
+    \u0219i plante suculente. L\u0103custele cu dungi verzi se hr\u0103nesc pe marginea
+    frunzelor cam p\xE2n\u0103 la jum\u0103tatea \xEEn\u0103l\u021Bimii. Pot m\xE2nca
+    frunza, se pot \u021Bine de partea t\u0103iat\u0103 \u0219i o pot introduce \xEEn
+    aparatul bucal."
+  habitatTitle: America de nord
+  lifespanTitle: 3 - 6 luni
+  dietTitle: Omnivor
+  map: {fileID: 21300000, guid: 7a0ad89583f8a42408e5b234833c7ebc, type: 3}

@@ -26,7 +26,7 @@ public class ExhibitMainMenuUI : MonoBehaviour
     private ExhibitData currentExhibit;
     private List<string> noSoundAnimals = new List<string> { "Tarantula mexicană", "Scorpion imperial", "Viespea gigant asiatică",
                                                              "Gândacul verde", "Fluturele Goliath", "Văduva neagră", "Călugărița",
-                                                             "Crab Dungeness"};
+                                                             "Crab Dungeness", "Furnica gigant", "Lăcustă cu dungi verzi"};
 
     private void Awake()
     {

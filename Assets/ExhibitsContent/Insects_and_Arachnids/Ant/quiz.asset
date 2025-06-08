@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "\xCEn ce continent tr\u0103ie\u0219te Dinoponera gigantea?"
+    correctAnswer: America de sud
+    questionNumber: 1
+  - questionText: "Ce tip de habitat prefer\u0103 aceast\u0103 furnic\u0103?"
+    correctAnswer: padure
+    questionNumber: 2
+  - questionText: "Cum se nume\u0219te lucr\u0103toarea reproductiv\u0103 dominant\u0103?"
+    correctAnswer: Gamergate
+    questionNumber: 3
+  - questionText: Ce culoare are Dinoponera gigantea?
+    correctAnswer: negru
+    questionNumber: 4
+  - questionText: "Care este cea mai mare tr\u0103s\u0103tur\u0103 distinctiv\u0103
+      a speciei?"
+    correctAnswer: dimensiunea
+    questionNumber: 5
+  - questionText: "Este carnivor\u0103, erbivor\u0103 sau omnivor\u0103?"
+    correctAnswer: carnivora
+    questionNumber: 6
+  - questionText: "\xCEn ce \u021Bar\u0103 sud-american\u0103 este cel mai frecvent\u0103?"
+    correctAnswer: Brazilia
+    questionNumber: 7
+  - questionText: "Ce parte a plantei consum\u0103 ocazional?"
+    correctAnswer: fructul
+    questionNumber: 8
+  - questionText: "Ce tip de organizare social\u0103 nu are aceast\u0103 specie?"
+    correctAnswer: regina
+    questionNumber: 9
+  - questionText: "Unde \xEE\u0219i construie\u0219te cuibul?"
+    correctAnswer: sol
+    questionNumber: 10
