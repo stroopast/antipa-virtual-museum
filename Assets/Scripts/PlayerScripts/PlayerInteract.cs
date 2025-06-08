@@ -102,7 +102,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 TrophyPopUp = obj;
             }
-            if (obj.name == "AchivementsMenu" && obj.scene.IsValid())
+            if (obj.name == "AchievementsMenuUI" && obj.scene.IsValid())
             {
                 AchievementsMenu = obj;
             }
