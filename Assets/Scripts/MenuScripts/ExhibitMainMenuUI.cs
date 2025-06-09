@@ -69,6 +69,8 @@ public class ExhibitMainMenuUI : MonoBehaviour
         exhibitDescription.text = data.description;
         exhibitImage.sprite = data.image;
 
+        exhibitSoundButton.gameObject.SetActive(true);
+
         // If can't play a animal sound beacuse it produce no sound e.g. spider -> remove play sound button and rearrange the other 2 buttons
         Vector3 currentQuizBtnPosition = exhibitQuizButton.GetComponent<RectTransform>().anchoredPosition;
         Vector3 currentInfoBtnPosition = exhibitInformationButton.GetComponent<RectTransform>().anchoredPosition;
