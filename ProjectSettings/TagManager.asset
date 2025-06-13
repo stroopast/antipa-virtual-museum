@@ -10,12 +10,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - NPC
+  - 
   - Water
   - UI
   - Exhibit
-  - 
-  - 
+  - MovingNpc
+  - IdleNpc
   - 
   - 
   - 
