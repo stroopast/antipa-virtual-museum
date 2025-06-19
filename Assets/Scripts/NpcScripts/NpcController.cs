@@ -13,10 +13,7 @@ public class NpcController : MonoBehaviour
 
     private void Update()
     {
-        if(CheckPoistionEquivalence(checkpoints[9]))
-        {
-            gameObject.layer = 8; // Set layer back to IdleNpc when Npc finish the guided tour
-        }
+        
     }
 
     private void Start()
@@ -32,12 +29,34 @@ public class NpcController : MonoBehaviour
         StartCoroutine(WaitForCheckpoint());
     }
 
+    //private IEnumerator WaitForCheckpoint()
+    //{
+    //    for (int i = 0; i < checkpoints.Length; i++)
+    //    {
+    //        agent.SetDestination(checkpoints[i].position);
+
+    //        animator.SetBool("isWalking", true);
+
+    //        while (agent.pathPending || agent.remainingDistance > 0.2f)
+    //        {
+    //            yield return null;
+    //        }
+
+    //        animator.SetBool("isWalking", false);
+    //        yield return new WaitForSeconds(1f);
+
+    //        if (CheckPoistionEquivalence(checkpoints[10]))
+    //        {
+    //            gameObject.layer = 8; // Set layer back to IdleNpc when Npc finish the guided tour
+    //        }
+    //    }
+    //}
+
     private IEnumerator WaitForCheckpoint()
     {
         for (int i = 0; i < checkpoints.Length; i++)
         {
             agent.SetDestination(checkpoints[i].position);
-
             animator.SetBool("isWalking", true);
 
             while (agent.pathPending || agent.remainingDistance > 0.2f)
@@ -46,25 +65,40 @@ public class NpcController : MonoBehaviour
             }
 
             animator.SetBool("isWalking", false);
-            yield return StartCoroutine(RotateSmoothly(180f));
-            yield return new WaitForSeconds(3f);
+
+            Quaternion turnAroundRotation = Quaternion.Euler(0f, transform.eulerAngles.y + 180f, 0f);
+            yield return StartCoroutine(SmoothRotate(turnAroundRotation));
+
+            yield return new WaitForSeconds(1f);
+
+            //Smoothly rotate to face the next checkpoint (if not last)
+            if (i + 1 < checkpoints.Length)
+            {
+                Vector3 directionToNext = (checkpoints[i + 1].position - transform.position).normalized;
+                Quaternion faceNextCheckpoint = Quaternion.LookRotation(new Vector3(directionToNext.x, 0f, directionToNext.z));
+                yield return StartCoroutine(SmoothRotate(faceNextCheckpoint));
+            }
+
+            if (CheckPoistionEquivalence(checkpoints[10]))
+            {
+                gameObject.layer = 8; // Set layer back to IdleNpc when tour ends
+            }
         }
     }
 
-    private IEnumerator RotateSmoothly(float angleDegrees, float duration = 1f)
+    private IEnumerator SmoothRotate(Quaternion targetRotation, float duration = 0.5f)
     {
         Quaternion startRotation = transform.rotation;
-        Quaternion endRotation = startRotation * Quaternion.Euler(0f, angleDegrees, 0f);
-        float elapsed = 0f;
+        float time = 0f;
 
-        while (elapsed < duration)
+        while (time < duration)
         {
-            transform.rotation = Quaternion.Slerp(startRotation, endRotation, elapsed / duration);
-            elapsed += Time.deltaTime;
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, time / duration);
+            time += Time.deltaTime;
             yield return null;
         }
 
-        transform.rotation = endRotation;
+        transform.rotation = targetRotation;
     }
 
     private bool CheckPoistionEquivalence(Transform pos)
