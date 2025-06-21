@@ -29,29 +29,6 @@ public class NpcController : MonoBehaviour
         StartCoroutine(WaitForCheckpoint());
     }
 
-    //private IEnumerator WaitForCheckpoint()
-    //{
-    //    for (int i = 0; i < checkpoints.Length; i++)
-    //    {
-    //        agent.SetDestination(checkpoints[i].position);
-
-    //        animator.SetBool("isWalking", true);
-
-    //        while (agent.pathPending || agent.remainingDistance > 0.2f)
-    //        {
-    //            yield return null;
-    //        }
-
-    //        animator.SetBool("isWalking", false);
-    //        yield return new WaitForSeconds(1f);
-
-    //        if (CheckPoistionEquivalence(checkpoints[10]))
-    //        {
-    //            gameObject.layer = 8; // Set layer back to IdleNpc when Npc finish the guided tour
-    //        }
-    //    }
-    //}
-
     private IEnumerator WaitForCheckpoint()
     {
         for (int i = 0; i < checkpoints.Length; i++)
