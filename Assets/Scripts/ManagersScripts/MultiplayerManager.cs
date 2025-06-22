@@ -208,6 +208,16 @@ public class MultiplayerManager : NetworkBehaviour
         ChangePlayerGenderServerRpc(genderId);
     }
 
+    public void UpdatePlayerNpcQuizScore(int npcQuizScore)
+    {
+        UpdatePlayerNpcQuizScoreServerRpc(npcQuizScore);
+    }
+
+    public int GetPlayerNpcQuizScore()
+    {
+        return GetPlayerDataFromClientId(NetworkManager.Singleton.LocalClientId).npcQuizScore;
+    }
+
     [ServerRpc(RequireOwnership = false)]
     private void ChangePlayerGenderServerRpc(int genderId, ServerRpcParams serverRpcParams = default)
     {
@@ -216,6 +226,18 @@ public class MultiplayerManager : NetworkBehaviour
         PlayerData playerData = playerDataNetworkList[playerDataIndex];
 
         playerData.genderId = genderId;
+
+        playerDataNetworkList[playerDataIndex] = playerData;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void UpdatePlayerNpcQuizScoreServerRpc(int npcQuizScore, ServerRpcParams serverRpcParams = default)
+    {
+        int playerDataIndex = GetPlayerDataIndexFromClientId(serverRpcParams.Receive.SenderClientId);
+
+        PlayerData playerData = playerDataNetworkList[playerDataIndex];
+
+        playerData.npcQuizScore = npcQuizScore;
 
         playerDataNetworkList[playerDataIndex] = playerData;
     }

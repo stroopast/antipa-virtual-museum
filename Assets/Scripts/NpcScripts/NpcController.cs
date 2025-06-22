@@ -1,19 +1,35 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Net;
+using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEditor.PlayerSettings;
+using UnityEngine.UI;
 
-public class NpcController : MonoBehaviour
+public class NpcController : NetworkBehaviour
 {
     [SerializeField] private Transform[] checkpoints;
+    [SerializeField] private GameObject NpcQuizUI;
+    [SerializeField] private GameObject NpcQuiz2UI;
+    //[SerializeField] private TextMeshProUGUI waitingText;
     private NavMeshAgent agent;
     private Animator animator;
+    private int currentCheckpoint = 0;
 
     private void Update()
     {
-        
+        //if (GameModeManager.Instance.GetGameMode() == 1)
+        //{
+        //    if (currentCheckpoint == 0 && NpcQuizUI.activeSelf && NpcQuiz2UI.activeSelf)
+        //    {
+        //        waitingText.text = "Așteaptă ca ceilalti jucători sa termine testul";
+        //    }
+        //    else
+        //    {
+        //        waitingText.text = "";
+        //    }
+        //}
     }
 
     private void Start()
@@ -22,10 +38,25 @@ public class NpcController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    public void RequestStartTourFromClient()
+    {
+        if (IsOwner || IsClient)
+        {
+            RequestStartTourServerRpc();
+        }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void RequestStartTourServerRpc()
+    {
+        TriggerGuidedTour();
+    }
+
     public void TriggerGuidedTour()
     {
-        gameObject.layer = 7; // Set layer to MovingNpc when player starts the guided tour
+        //if (!IsServer) return;
 
+        gameObject.layer = 7;
         StartCoroutine(WaitForCheckpoint());
     }
 
@@ -33,6 +64,7 @@ public class NpcController : MonoBehaviour
     {
         for (int i = 0; i < checkpoints.Length; i++)
         {
+            currentCheckpoint = i;
             agent.SetDestination(checkpoints[i].position);
             animator.SetBool("isWalking", true);
 
@@ -43,42 +75,49 @@ public class NpcController : MonoBehaviour
 
             animator.SetBool("isWalking", false);
 
-            Quaternion turnAroundRotation = Quaternion.Euler(0f, transform.eulerAngles.y + 180f, 0f);
-            yield return StartCoroutine(SmoothRotate(turnAroundRotation));
-
-            yield return new WaitForSeconds(1f);
-
-            //Smoothly rotate to face the next checkpoint (if not last)
-            if (i + 1 < checkpoints.Length)
+            if(i == 0)
             {
-                Vector3 directionToNext = (checkpoints[i + 1].position - transform.position).normalized;
-                Quaternion faceNextCheckpoint = Quaternion.LookRotation(new Vector3(directionToNext.x, 0f, directionToNext.z));
-                yield return StartCoroutine(SmoothRotate(faceNextCheckpoint));
+                if(GameModeManager.Instance.GetGameMode() == 1)
+                {
+                    ShowQuiz1ClientRpc();
+                    yield return new WaitForSeconds(10f);
+                    HideQuiz1ClientRpc();
+                    yield return new WaitForSeconds(1f);
+
+                    ShowQuiz2ClientRpc();
+                    yield return new WaitForSeconds(10f);
+                    HideQuiz2ClientRpc();
+                    HelperFunctions.LockCursor();
+                }
+                else
+                {
+                    NpcQuizUI.gameObject.SetActive(true);
+                    yield return new WaitForSeconds(10f);
+                    NpcQuizUI.gameObject.SetActive(false);
+                    yield return new WaitForSeconds(1f);
+                    if(!NpcQuiz2UI.gameObject.activeSelf)
+                    {
+                        NpcQuiz2UI.gameObject.SetActive(true);
+                    }
+                    yield return new WaitForSeconds(10f);
+                    NpcQuiz2UI.gameObject.SetActive(false);
+                    HelperFunctions.LockCursor();
+                }
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f);
             }
 
-            if (CheckPoistionEquivalence(checkpoints[10]))
+            if (CheckPositionEquivalence(checkpoints[10]))
             {
                 gameObject.layer = 8; // Set layer back to IdleNpc when tour ends
             }
         }
     }
 
-    private IEnumerator SmoothRotate(Quaternion targetRotation, float duration = 0.5f)
-    {
-        Quaternion startRotation = transform.rotation;
-        float time = 0f;
 
-        while (time < duration)
-        {
-            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.rotation = targetRotation;
-    }
-
-    private bool CheckPoistionEquivalence(Transform pos)
+    private bool CheckPositionEquivalence(Transform pos)
     {
         if (pos == null) return false;
 
@@ -95,5 +134,29 @@ public class NpcController : MonoBehaviour
         }
 
         return false;
+    }
+
+    [ClientRpc]
+    private void ShowQuiz1ClientRpc()
+    {
+        NpcQuizUI.gameObject.SetActive(true);
+    }
+
+    [ClientRpc]
+    private void HideQuiz1ClientRpc()
+    {
+        NpcQuizUI.gameObject.SetActive(false);
+    }
+
+    [ClientRpc]
+    private void ShowQuiz2ClientRpc()
+    {
+        NpcQuiz2UI.gameObject.SetActive(true);
+    }
+
+    [ClientRpc]
+    private void HideQuiz2ClientRpc()
+    {
+        NpcQuiz2UI.gameObject.SetActive(false);
     }
 }

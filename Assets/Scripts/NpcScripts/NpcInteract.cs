@@ -9,6 +9,7 @@ public class NpcInteract : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private LayerMask idleNpcLayer;
     [SerializeField] private TextMeshProUGUI interactText;
+    [SerializeField] private GameObject NpcMenuUI;
 
     private float interactionRange = 7f;
 
@@ -23,7 +24,14 @@ public class NpcInteract : MonoBehaviour
             interactText.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                gameObject.GetComponent<NpcController>().TriggerGuidedTour();
+                if(GameModeManager.Instance.GetGameMode() == 1)
+                {
+                    gameObject.GetComponent<NpcController>().RequestStartTourFromClient();
+                }
+                else
+                {
+                    gameObject.GetComponent<NpcController>().TriggerGuidedTour();
+                }
             }
         }
         else
