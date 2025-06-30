@@ -13,8 +13,8 @@ public class NpcQuizUI : MonoBehaviour
 
     [SerializeField] private Button questionNumber;
     [SerializeField] private Button submitBtn;
-    [SerializeField]  private QuizData quizData;
-    [SerializeField]  private GameObject npcQuiz2UI;
+    [SerializeField] private QuizData quizData;
+    [SerializeField] private GameObject npcQuiz2UI;
 
     private int currentQuestionIndex = 0;
     private int score = 0;
@@ -68,14 +68,10 @@ public class NpcQuizUI : MonoBehaviour
 
     void ShowFinalScore()
     {
-        scoreText.text = $"Felicitări ai acumulat {score} puncte la primul test!";
+        PlayerScore.Instance.UpdateScore(score);
+        scoreText.text = $"Felicitări ai acumulat {score} puncte la primul test! Pregătește-te pentru urmatorul test!";
         questionText.text = "";
         feedbackText.text = "";
-        if (GameModeManager.Instance.GetGameMode() == 1)
-        {
-            MultiplayerManager.Instance.UpdatePlayerNpcQuizScore(score);
-            Debug.Log(MultiplayerManager.Instance.GetPlayerNpcQuizScore());
-        }
         HideContent();
         StartCoroutine(WaitUntilNextQuiz());
     }
@@ -84,15 +80,7 @@ public class NpcQuizUI : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
-        if(GameModeManager.Instance.GetGameMode() == 1)
-        {
-            HelperFunctions.LockCursor();
-        }
-        else
-        {
-
-            npcQuiz2UI.gameObject.SetActive(true);
-        }
+        npcQuiz2UI.gameObject.SetActive(true);
     }
 
     private IEnumerator WaitAndLoadNextQuestion()

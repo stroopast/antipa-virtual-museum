@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NpcInteract : MonoBehaviour
+public class NpcInteract : NetworkBehaviour
 {
     [SerializeField] private Camera playerCamera;
     [SerializeField] private LayerMask idleNpcLayer;

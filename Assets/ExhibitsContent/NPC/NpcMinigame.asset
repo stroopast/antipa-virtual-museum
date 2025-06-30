@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b9e7b7e6f01724a8ce5214114d216f, type: 3}
+  m_Name: NpcMinigame
+  m_EditorClassIdentifier: 
+  questions:
+  - animalTracks: {fileID: 21300000, guid: b54e2111b4197d74d8521f2eada2abaa, type: 3}
+    correctAnswer: Urs
+    answers:
+    - Urs
+    - Bursuc
+    - Jder
+    - Lup
+  - animalTracks: {fileID: 21300000, guid: 477256cf9ecb05144b180e4d35da853c, type: 3}
+    correctAnswer: "Mistre\u021B"
+    answers:
+    - Tapir
+    - Elan
+    - "C\u0103prior"
+    - "Mistre\u021B"
+  - animalTracks: {fileID: 21300000, guid: 857842e6135e9b2498b78297ce5ce246, type: 3}
+    correctAnswer: "Pisic\u0103"
+    answers:
+    - Raton
+    - Vulpe
+    - "Pisic\u0103"
+    - "Genet\u0103"
+  - animalTracks: {fileID: 21300000, guid: f365b2a3a323c3f45a7fd9a8d2a93fe8, type: 3}
+    correctAnswer: "C\u0103prior"
+    answers:
+    - "C\u0103prior"
+    - "Antilop\u0103"
+    - Elan
+    - "Mistre\u021B"
+  - animalTracks: {fileID: 21300000, guid: 378925e0f67c7f44dab58284f2cc7c4f, type: 3}
+    correctAnswer: Elan
+    answers:
+    - "C\u0103prior"
+    - Elan
+    - Ren
+    - "Mistre\u021B"
+  - animalTracks: {fileID: 21300000, guid: d29f3497641290d449391ecac7ba9efd, type: 3}
+    correctAnswer: "Iepure de c\xE2mp"
+    answers:
+    - "Veveri\u021B\u0103"
+    - "Iepure de c\xE2mp"
+    - Pika
+    - Furnicar
+  - animalTracks: {fileID: 21300000, guid: 033ef4bc415136c4cb0c69637f98f08d, type: 3}
+    correctAnswer: Iepure
+    answers:
+    - Furnicar
+    - "Veveri\u021B\u0103"
+    - Pika
+    - Iepure
+  - animalTracks: {fileID: 21300000, guid: 19c96e5eda388524abbfabbf763e0d05, type: 3}
+    correctAnswer: Raton
+    answers:
+    - Sconcs
+    - Oposum
+    - Raton
+    - Vulpe
+  - animalTracks: {fileID: 21300000, guid: 3657728f1c9a7c147b27111be9a2ae9d, type: 3}
+    correctAnswer: "Veveri\u021B\u0103"
+    answers:
+    - Iepure
+    - "Veveri\u021B\u0103"
+    - "Nev\u0103stuic\u0103"
+    - Oposum
+  - animalTracks: {fileID: 21300000, guid: fc08632e737acb74dba1f3e686ed67aa, type: 3}
+    correctAnswer: Lup
+    answers:
+    - "C\xE2ine"
+    - Coiot
+    - "R\xE2s"
+    - Lup
