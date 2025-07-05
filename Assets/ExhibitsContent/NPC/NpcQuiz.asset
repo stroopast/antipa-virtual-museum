@@ -13,9 +13,65 @@ MonoBehaviour:
   m_Name: NpcQuiz
   m_EditorClassIdentifier: 
   questions:
-  - questionText: Intrebare 1
-    correctAnswer: 1
+  - questionText: "Ce specie de p\u0103ianjen uria\u0219 tr\u0103ie\u0219te adesea
+      \xEEn regiunile tropicale \u0219i este cunoscut\u0103 pentru p\u0103rul s\u0103u
+      lung?"
+    correctAnswer: Tarantula
     questionNumber: 1
-  - questionText: Intrebare 2
-    correctAnswer: 2
+  - questionText: "Ce insect\u0103 invaziv\u0103 din Asia este faimoas\u0103 pentru
+      \xEEn\u021Bep\u0103tura ei extrem de dureroas\u0103 \u0219i dimensiunile mari?"
+    correctAnswer: Viespe
     questionNumber: 2
+  - questionText: "Ce pr\u0103d\u0103tor marin are mai multe r\xE2nduri de din\u021Bi
+      \u0219i este considerat unul dintre cei mai periculo\u0219i din ocean?"
+    correctAnswer: Rechin
+    questionNumber: 3
+  - questionText: "Ce reptil\u0103 mare, semiaquatic\u0103, este cunoscut\u0103 pentru
+      maxilarele sale puternice \u0219i tr\u0103ie\u0219te \xEEn r\xE2uri \u0219i
+      mla\u0219tini?"
+    correctAnswer: Crocodil
+    questionNumber: 4
+  - questionText: "Ce pas\u0103re de prad\u0103 este simbol al libert\u0103\u021Bii
+      \u0219i are o vedere extrem de ascu\u021Bit\u0103?"
+    correctAnswer: Vultur
+    questionNumber: 5
+  - questionText: "Ce mamifer marin gigantic este cunoscut pentru c\xE2ntecele sale
+      \u0219i dimensiunea uria\u0219\u0103?"
+    correctAnswer: Balena
+    questionNumber: 6
+  - questionText: "Ce \u0219arpe uria\u0219 din America de Sud poate \xEEnghi\u021Bi
+      pr\u0103zi \xEEntregi \u0219i tr\u0103ie\u0219te \xEEn ap\u0103?"
+    correctAnswer: Anaconda
+    questionNumber: 7
+  - questionText: "Ce mamifer marin inteligent este cunoscut pentru s\u0103riturile
+      sale \u0219i comunicarea prin sunete?"
+    correctAnswer: Delfin
+    questionNumber: 8
+  - questionText: "Ce dinozaur carnivor este faimos pentru dimensiunea sa mare \u0219i
+      f\u0103lcile puternice?"
+    correctAnswer: T-Rex
+    questionNumber: 9
+  - questionText: "Ce dinozaur zbur\u0103tor avea aripi mari \u0219i este adesea
+      ilustrat plan\xE2nd deasupra oceanelor preistorice?"
+    correctAnswer: Pterodactil
+    questionNumber: 10
+  - questionText: "Ce felin\u0103 este considerat\u0103 \u201Eregele junglei\u201D
+      \u0219i este cunoscut\u0103 pentru coama sa impun\u0103toare?"
+    correctAnswer: Leu
+    questionNumber: 11
+  - questionText: "Ce animal mare, cu dungi, este cunoscut pentru agilitate \u0219i
+      putere \xEEn jungl\u0103?"
+    correctAnswer: Tigru
+    questionNumber: 12
+  - questionText: "Ce mamifer uria\u0219 are col\u021Bi lungi de filde\u0219 \u0219i
+      tr\u0103ie\u0219te \xEEn turme \xEEn savanele africane?"
+    correctAnswer: Elefant
+    questionNumber: 13
+  - questionText: "Ce carnivor alb tr\u0103ie\u0219te \xEEn regiunile arctice \u0219i
+      este un \xEEnot\u0103tor excelent?"
+    correctAnswer: Urs Polar
+    questionNumber: 14
+  - questionText: "Ce animal are g\xE2tul extrem de lung \u0219i este cel mai \xEEnalt
+      mamifer terestru?"
+    correctAnswer: Girafa
+    questionNumber: 15

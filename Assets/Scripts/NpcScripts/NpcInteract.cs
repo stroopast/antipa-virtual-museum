@@ -25,14 +25,8 @@ public class NpcInteract : NetworkBehaviour
             interactText.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(GameModeManager.Instance.GetGameMode() == 1)
-                {
-                    gameObject.GetComponent<NpcController>().RequestStartTourFromClient();
-                }
-                else
-                {
-                    gameObject.GetComponent<NpcController>().TriggerGuidedTour();
-                }
+                NpcMenuUI.gameObject.SetActive(true);
+                HelperFunctions.UnlockCursor();
             }
         }
         else

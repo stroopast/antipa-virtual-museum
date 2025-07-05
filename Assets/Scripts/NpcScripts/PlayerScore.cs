@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerScore : MonoBehaviour
 {
     int quizScore = 0;
-
+    public bool finishedInTime = false;
     public static PlayerScore Instance { get; private set; }
 
     private void Awake()

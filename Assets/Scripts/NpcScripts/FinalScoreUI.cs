@@ -11,6 +11,16 @@ public class FinalScoreUI : MonoBehaviour
     private void Update()
     {
         scoreText.text = $"Felicitări ai terminat testele cu un punctaj de {PlayerScore.Instance.GetPlayerScore()} puncte. Vorbește cu ghidul pentru a vedea clasamentul!";
+        HelperFunctions.LockCursor();
+        if (gameObject.activeSelf)
+        {
+            StartCoroutine(WaitAndExit());
+        }
     }
 
+    private IEnumerator WaitAndExit()
+    {
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
+    }
 }

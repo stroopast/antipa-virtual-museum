@@ -41,6 +41,12 @@ public class NpcQuizUI : MonoBehaviour
         {
             feedbackText.text = "<color=green>Răspuns Corect!</color>";
             score++;
+            PlayerScore.Instance.UpdateScore(1);
+            if (GameModeManager.Instance.GetGameMode() == 1)
+            {
+                MultiplayerManager.Instance.UpdatePlayerNpcQuizScore(PlayerScore.Instance.GetPlayerScore());
+
+            }
         }
         else
         {
@@ -68,17 +74,12 @@ public class NpcQuizUI : MonoBehaviour
 
     void ShowFinalScore()
     {
-        PlayerScore.Instance.UpdateScore(score);
-        scoreText.text = $"Felicitări ai acumulat {score} puncte la primul test! Pregătește-te pentru urmatorul test!";
-        questionText.text = "";
-        feedbackText.text = "";
-        HideContent();
         StartCoroutine(WaitUntilNextQuiz());
     }
 
     private IEnumerator WaitUntilNextQuiz()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         gameObject.SetActive(false);
         npcQuiz2UI.gameObject.SetActive(true);
     }

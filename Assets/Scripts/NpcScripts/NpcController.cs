@@ -13,11 +13,16 @@ public class NpcController : NetworkBehaviour
     [SerializeField] private Transform[] checkpoints;
     [SerializeField] private GameObject npcQuizUI;
     [SerializeField] private GameObject npcQuiz2UI;
-    [SerializeField] private GameObject finalScoreUI;
+    [SerializeField] private GameObject timeExpiredUI;
+    [SerializeField] private TextMeshProUGUI countdownTimer;
 
     private NavMeshAgent agent;
     private Animator animator;
     private int currentCheckpoint = 0;
+
+    public float startTime = 40f;
+    private float timeLeft;
+    private bool isCountingEnabled = false;
 
     private void Update()
     {
@@ -31,6 +36,8 @@ public class NpcController : NetworkBehaviour
         {
             gameObject.layer = 7;
         }
+
+        StartCountdownTimer();
     }
 
     private void Start()
@@ -38,6 +45,35 @@ public class NpcController : NetworkBehaviour
 
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+    }
+
+    private void StartCountdownTimer()
+    {
+        if (isCountingEnabled)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+                countdownTimer.text = timeLeft.ToString("0.0");
+            }
+            else
+            {
+                timeLeft = startTime;
+            }
+        }
+    }
+
+    private void ActivateTimer()
+    {
+        timeLeft = startTime;
+        countdownTimer.gameObject.SetActive(true);
+        isCountingEnabled = true;
+    }
+
+    private void DisableTimer()
+    {
+        countdownTimer.gameObject.SetActive(false);
+        isCountingEnabled = false;
     }
 
     public void RequestStartTourFromClient()
@@ -71,57 +107,50 @@ public class NpcController : NetworkBehaviour
 
             animator.SetBool("isWalking", false);
 
-            if(i == 0) // when reaches the last checkpoint trigger quizzes (i == 9)
+            if(i == 0)
             {
+                // for multiplayer
                 if (GameModeManager.Instance.GetGameMode() == 1)
                 {
+                    ActivateTimerClientRpc();
                     ShowQuiz1ClientRpc();
-                    yield return new WaitForSeconds(20f); // timer for first test
+                    yield return new WaitForSeconds(40f); // timer for both tests
                     HideQuiz1ClientRpc();
-                    yield return new WaitForSeconds(2f);
-
-                    if (!IsQuiz2Opened())
-                    {
-                        ShowQuiz2ClientRpc();
-                    }
-                    yield return new WaitForSeconds(80f); // Timer for second test
                     HideQuiz2ClientRpc();
 
-                    if(!IsFinalScoreOpened())
+                    if (PlayerScore.Instance.finishedInTime == false)
                     {
                         ShowFinalScoreClientRpc();
                     }
-                    HideFinalScoreClientRpc();
-
                     HelperFunctions.LockCursor();
+                    DisableTimerClientRpc();
+                    yield return new WaitForSeconds(5f);
+                    HideFinalScoreClientRpc();
                 }
+                // for singleplayer
                 else
                 {
+                    ActivateTimer();
                     npcQuizUI.gameObject.SetActive(true);
-                    yield return new WaitForSeconds(10f); // timer for first test
+                    yield return new WaitForSeconds(40f);
                     npcQuizUI.gameObject.SetActive(false);
-                    yield return new WaitForSeconds(1f);
-
-                    if (!IsQuiz2Opened())
-                    {
-                        npcQuiz2UI.gameObject.SetActive(true);
-                    }
-                    yield return new WaitForSeconds(80f); // Timer for second test
                     npcQuiz2UI.gameObject.SetActive(false);
 
-                    if (!IsFinalScoreOpened())
+                    if (PlayerScore.Instance.finishedInTime == false)
                     {
-                        finalScoreUI.gameObject.SetActive(true);
+                        timeExpiredUI.gameObject.SetActive(true);
                     }
-                    finalScoreUI.gameObject.SetActive(false);
-
                     HelperFunctions.LockCursor();
+                    DisableTimer();
+                    yield return new WaitForSeconds(5f);
+                    timeExpiredUI.gameObject.SetActive(false);
                 }
             }
             else
             {
                 yield return new WaitForSeconds(1f);
             }
+          
 
             if (CheckPositionEquivalence(checkpoints[10]))
             {
@@ -169,12 +198,6 @@ public class NpcController : NetworkBehaviour
     }
 
     [ClientRpc]
-    private void ShowQuiz2ClientRpc()
-    {
-        npcQuiz2UI.gameObject.SetActive(true);
-    }
-
-    [ClientRpc]
     private void HideQuiz2ClientRpc()
     {
         npcQuiz2UI.gameObject.SetActive(false);
@@ -183,21 +206,28 @@ public class NpcController : NetworkBehaviour
     [ClientRpc]
     private void ShowFinalScoreClientRpc()
     {
-        finalScoreUI.gameObject.SetActive(true);
+        timeExpiredUI.gameObject.SetActive(true);
     }
 
     [ClientRpc]
     private void HideFinalScoreClientRpc()
     {
-        finalScoreUI.gameObject.SetActive(false);
-    }
-    private bool IsQuiz2Opened()
-    {
-        return npcQuiz2UI.gameObject.activeSelf;
+        timeExpiredUI.gameObject.SetActive(false);
     }
 
-    private bool IsFinalScoreOpened()
+    [ClientRpc]
+    private void ActivateTimerClientRpc()
     {
-        return finalScoreUI.gameObject.activeSelf;
+        timeLeft = startTime;
+        countdownTimer.gameObject.SetActive(true);
+        isCountingEnabled = true;
     }
+
+    [ClientRpc]
+    private void DisableTimerClientRpc()
+    {
+        countdownTimer.gameObject.SetActive(false);
+        isCountingEnabled = false;
+    }
+
 }

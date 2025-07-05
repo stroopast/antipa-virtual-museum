@@ -74,6 +74,12 @@ public class MinigameUI : MonoBehaviour
         if(correctAnswer == userAnswer)
         {
             score++;
+            PlayerScore.Instance.UpdateScore(1);
+            if (GameModeManager.Instance.GetGameMode() == 1)
+            {
+                MultiplayerManager.Instance.UpdatePlayerNpcQuizScore(PlayerScore.Instance.GetPlayerScore());
+
+            }
             StartCoroutine(Flash(btn.GetComponent<Image>(), Color.green));
         }
         else
@@ -86,12 +92,12 @@ public class MinigameUI : MonoBehaviour
 
     private void FinishQuiz()
     {
-        PlayerScore.Instance.UpdateScore(score);
         if(GameModeManager.Instance.GetGameMode() == 1)
         {
             MultiplayerManager.Instance.UpdatePlayerNpcQuizScore(PlayerScore.Instance.GetPlayerScore());
 
         }
+        PlayerScore.Instance.finishedInTime = true;
         finalScoreUI.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
