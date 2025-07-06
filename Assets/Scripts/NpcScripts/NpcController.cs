@@ -114,7 +114,7 @@ public class NpcController : NetworkBehaviour
                 {
                     ActivateTimerClientRpc();
                     ShowQuiz1ClientRpc();
-                    yield return new WaitForSeconds(40f); // timer for both tests
+                    yield return new WaitForSeconds(startTime); // timer for both tests
                     HideQuiz1ClientRpc();
                     HideQuiz2ClientRpc();
 
@@ -132,7 +132,7 @@ public class NpcController : NetworkBehaviour
                 {
                     ActivateTimer();
                     npcQuizUI.gameObject.SetActive(true);
-                    yield return new WaitForSeconds(40f);
+                    yield return new WaitForSeconds(startTime);
                     npcQuizUI.gameObject.SetActive(false);
                     npcQuiz2UI.gameObject.SetActive(false);
 
