@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Scorpion
+  m_EditorClassIdentifier: 
+  exhibitName: Scorpion imperial
+  species: Pandinus imperator
+  description: "Scorpionul imperial (Pandinus imperator) este o specie de arahnid\u0103
+    carnivor\u0103, originar\u0103 din p\u0103durile tropicale \u0219i savanele din
+    vestul Africii. Este unul dintre cei mai mari scorpioni din lume \u0219i se remarc\u0103
+    prin aspectul s\u0103u masiv, carapacea lucioas\u0103 de culoare neagr\u0103
+    \u0219i cle\u0219tii puternici. Veninul s\u0103u este relativ slab, baz\xE2ndu-se
+    pe for\u021Ba fizic\u0103."
+  image: {fileID: 21300000, guid: d31a79d8a3509c0469f1f83d7a35142e, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Scorpionii imperiali, Pandinus imperator, sunt originari din
+    Africa de Vest \u0219i se g\u0103sesc predominant \xEEn p\u0103durile din Nigeria,
+    Togo, Sierra Leone, Ghana \u0219i regiunea Congo."
+  habitat: "Scorpionii imperiali se g\u0103sesc de obicei \xEEn p\u0103duri calde
+    \u0219i umede. Ei locuiesc \xEEn vizuini \u0219i prefer\u0103 s\u0103 tr\u0103iasc\u0103
+    sub a\u0219ternut de frunze, resturi forestiere, maluri de r\xE2uri \u0219i,
+    de asemenea, \xEEn movile de termite, prada lor principal\u0103. Scorpionii \xEEmp\u0103rat
+    tind s\u0103 tr\u0103iasc\u0103 \xEEn comunitate \u0219i se g\u0103sesc \xEEn
+    num\u0103r mare \xEEn regiunile locuite de oameni."
+  lifespan: "Scorpionii \xEEmp\u0103rat tr\u0103iesc de obicei \xEEntre 5 \u0219i
+    8 ani \xEEn captivitate. Durata de via\u021B\u0103 este probabil mai scurt\u0103
+    \xEEn s\u0103lb\u0103ticie."
+  food: "Scorpionii \xEEmp\u0103rat m\u0103n\xE2nc\u0103 de obicei insecte \u0219i
+    alte artropode \u0219i, ocazional, v\xE2neaz\u0103 vertebrate mici. De obicei,
+    m\u0103n\xE2nc\u0103 termite . Adul\u021Bii, \xEEn general, nu \xEE\u0219i ucid
+    prada folosind acul, ci mai degrab\u0103 o sf\xE2\u0219ie cu penseta lor puternic\u0103."
+  habitatTitle: Africa de Vest
+  lifespanTitle: 5-8 ani
+  dietTitle: Carnivora
+  map: {fileID: 21300000, guid: d774c1f0c4eeb1a43843296e589705d9, type: 3}

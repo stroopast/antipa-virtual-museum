@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Beetle
+  m_EditorClassIdentifier: 
+  exhibitName: "G\xE2ndacul verde"
+  species: Cotinis nitida
+  description: "Cotinis nitida, cunoscut \u0219i sub numele de g\xE2ndacul verde
+    sau g\xE2ndacul de trandafir, este o specie de g\xE2ndac din familia Scarabaeidae.
+    Are un corp oval, lucios, de culoare verde metalic cu reflexii aurii, \u0219i
+    atinge o lungime de aproximativ 15\u201320 mm. Este originar din America de Nord
+    \u0219i este activ \xEEn special vara."
+  image: {fileID: 21300000, guid: 637f31d77e31c5a4ca9e76f2c8427e35, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "G\xE2ndacii verzi de iunie sunt o specie nearctic\u0103 originar\u0103
+    din Statele Unite. Aria lor de r\u0103sp\xE2ndire se \xEEntinde de la New York
+    \u0219i Florida p\xE2n\u0103 la Nebraska \u0219i Texas."
+  habitat: "Larvele g\xE2ndacilor verzi de iunie tr\u0103iesc \xEEn solul subteran.
+    Adul\u021Bii tr\u0103iesc pe plantele gazd\u0103. Pot fi g\u0103si\u021Bi pe
+    peluze, c\xE2mpuri \u0219i p\u0103duri. Ocup\u0103 habitate extinse."
+  lifespan: "G\xE2ndacii verzi de iunie tr\u0103iesc aproximativ un an. Produc o
+    genera\u021Bie pe an. Adul\u021Bii sunt activi din iunie p\xE2n\u0103 \xEEn august."
+  food: "Adul\u021Bii consum\u0103 sev\u0103, fructe cu coaj\u0103 moale, ro\u0219ii
+    \u0219i porumb \xEEn stadiile de lapte. Adul\u021Bii m\u0103n\xE2nc\u0103 \u0219i
+    nectar, polen \u0219i frunze. Nu sunt capabili s\u0103 mestece alimente tari.
+    Larvele m\u0103n\xE2nc\u0103 materie organic\u0103 \xEEn descompunere, r\u0103d\u0103cini
+    \u0219i rizomi ai unei variet\u0103\u021Bi de plante."
+  habitatTitle: Statele Unite
+  lifespanTitle: 1 an
+  dietTitle: Fitofag
+  map: {fileID: 21300000, guid: 464ca99e20ce3d445b5f109f6a9599a6, type: 3}

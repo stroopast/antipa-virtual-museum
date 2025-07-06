@@ -22,7 +22,6 @@ public class AchievementManager : MonoBehaviour
     public List<TophyContent> achievementsIcons;
     public Dictionary<string, bool> unlockedAchievements = new();
 
-    public GameObject AchievementsMenu;
     public GameObject WinTrophyMenu;
     public Image winTrophyIcon;
     public TextMeshProUGUI winTrophyName;

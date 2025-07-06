@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +24,9 @@ public class ExhibitMainMenuUI : MonoBehaviour
     [SerializeField] private GameObject ExhibitQuizMenuUI;
 
     private ExhibitData currentExhibit;
+    private List<string> noSoundAnimals = new List<string> { "Tarantula mexicană", "Scorpion imperial", "Viespea gigant asiatică",
+                                                             "Gândacul verde", "Fluturele Goliath", "Văduva neagră", "Călugărița",
+                                                             "Crab Dungeness", "Furnica gigant", "Lăcustă cu dungi verzi"};
 
     private void Awake()
     {
@@ -65,6 +68,29 @@ public class ExhibitMainMenuUI : MonoBehaviour
         speciesName.text = data.species;
         exhibitDescription.text = data.description;
         exhibitImage.sprite = data.image;
+
+        exhibitSoundButton.gameObject.SetActive(true);
+
+        // If can't play a animal sound beacuse it produce no sound e.g. spider -> remove play sound button and rearrange the other 2 buttons
+        Vector3 currentQuizBtnPosition = exhibitQuizButton.GetComponent<RectTransform>().anchoredPosition;
+        Vector3 currentInfoBtnPosition = exhibitInformationButton.GetComponent<RectTransform>().anchoredPosition;
+        foreach (string name in noSoundAnimals)
+        {
+            if (name == exhibitName.text)
+            {
+                exhibitSoundButton.gameObject.SetActive(false);
+                currentQuizBtnPosition.y = -5;
+                currentInfoBtnPosition.y = 135;
+                exhibitQuizButton.GetComponent<RectTransform>().anchoredPosition = currentQuizBtnPosition;
+                exhibitInformationButton.GetComponent<RectTransform>().anchoredPosition = currentInfoBtnPosition;
+                return;
+            }
+        }
+
+        currentQuizBtnPosition.y = -55;
+        currentInfoBtnPosition.y = 185;
+        exhibitQuizButton.GetComponent<RectTransform>().anchoredPosition = currentQuizBtnPosition;
+        exhibitInformationButton.GetComponent<RectTransform>().anchoredPosition = currentInfoBtnPosition;
     }
 
     public void PlayExhibitSound()

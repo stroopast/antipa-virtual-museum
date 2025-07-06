@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Mantis
+  m_EditorClassIdentifier: 
+  exhibitName: "C\u0103lug\u0103ri\u021Ba"
+  species: Mantis religiosa
+  description: "C\u0103lug\u0103ri\u021Ba (Mantis religiosa) este una dintre cele
+    mai fascinante insecte pr\u0103d\u0103toare, renumit\u0103 pentru postura sa
+    distinctiv\u0103, cu picioarele din fa\u021B\u0103 ridicate \xEEn pozi\u021Bie
+    de \u201Erug\u0103ciune\u201D. Se \xEEnt\xE2lne\u0219te \xEEn lunci, stepe, la
+    liziera p\u0103durilor, prefer\xE2nd pov\xE2rni\u0219urile uscate \u0219i \xEEnsorite."
+  image: {fileID: 21300000, guid: 1a50e0d4026a0a34d9a085ab98a25bb8, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "C\u0103lug\u0103ri\u021Ba este o specie r\u0103sp\xE2ndit\u0103
+    \xEEn Europa, Asia \u0219i Africa, cu popula\u021Bii introduse \u0219i \xEEn
+    America de Nord \u0219i Australia. Se adapteaz\u0103 bine \xEEn zonele temperate
+    \u0219i subtropicale, fiind \xEEnt\xE2lnit\u0103 at\xE2t \xEEn zone rurale, c\xE2t
+    \u0219i \xEEn cele urbane."
+  habitat: "Aceast\u0103 insect\u0103 prefer\u0103 zone cu vegeta\u021Bie bogat\u0103,
+    precum gr\u0103dini, c\xE2mpuri cultivate, margini de p\u0103duri \u0219i paji\u0219ti.
+    Se ascunde adesea printre plante \u0219i flori, folosindu-\u0219i camuflajul
+    pentru a se proteja de pr\u0103d\u0103tori \u0219i pentru a v\xE2na eficient"
+  lifespan: "Durata de via\u021B\u0103 a c\u0103lug\u0103ri\u021Bei este de aproximativ
+    6 luni p\xE2n\u0103 la un an, \xEEn func\u021Bie de condi\u021Biile de mediu
+    \u0219i specie. Ea parcurge toate stadiile de dezvoltare rapid, de la ou, larv\u0103,
+    ninfa \u0219i p\xE2n\u0103 la adult, iar adul\u021Bii tr\u0103iesc \xEEn special
+    pentru reproducere."
+  food: "C\u0103lug\u0103ri\u021Ba este un pr\u0103d\u0103tor feroce, hr\u0103nindu-se
+    cu alte insecte, inclusiv fluturi, mu\u0219te, g\xE2ze, \u0219i chiar alte c\u0103lug\u0103ri\u021Be.
+    \xCE\u0219i prinde prada cu picioarele din fa\u021B\u0103, prev\u0103zute cu
+    \u021Bepi, imobiliz\xE2nd rapid victima pentru a o consuma."
+  habitatTitle: Toate continentele
+  lifespanTitle: ~ 6 luni
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: de05ca16551fa124ca84aee1c6867194, type: 3}

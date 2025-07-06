@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce simbol ro\u0219u are pe abdomen? "
+    correctAnswer: Clepsidra
+    questionNumber: 1
+  - questionText: "Ce folose\u0219te pentru a prinde prada?"
+    correctAnswer: Panza
+    questionNumber: 2
+  - questionText: "Care este tipul de hran\u0103?"
+    correctAnswer: Insecte
+    questionNumber: 3
+  - questionText: "Ce culoare are corpul v\u0103duvei negre?"
+    correctAnswer: Negru
+    questionNumber: 4
+  - questionText: "Unde prefer\u0103 s\u0103 tr\u0103iasc\u0103?"
+    correctAnswer: Uscat
+    questionNumber: 5
+  - questionText: "\xCEn ce continent se g\u0103se\u0219te?"
+    correctAnswer: America
+    questionNumber: 6
+  - questionText: "C\xE2\u021Bi ani tr\u0103iesc adul\u021Bii?"
+    correctAnswer: 1
+    questionNumber: 7
+  - questionText: "V\u0103duva neagr\u0103 este o specie..."
+    correctAnswer: Veninoasa
+    questionNumber: 8
+  - questionText: "Ce tip de pr\u0103d\u0103tor este?"
+    correctAnswer: Agil
+    questionNumber: 9
+  - questionText: Ce fel de insecte prinde?
+    correctAnswer: Tantari
+    questionNumber: 10

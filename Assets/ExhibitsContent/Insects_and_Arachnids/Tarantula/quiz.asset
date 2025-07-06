@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "\u021Aara de origine a tarantulei cu genunchi ro\u0219ii?"
+    correctAnswer: Mexic
+    questionNumber: 1
+  - questionText: "Tipul principal de habitat \xEEn care tr\u0103ie\u0219te?"
+    correctAnswer: Desert
+    questionNumber: 2
+  - questionText: "Locul \xEEn care \xEE\u0219i construie\u0219te vizuina?"
+    correctAnswer: Tufisuri
+    questionNumber: 3
+  - questionText: "Cu ce este acoperit\u0103 intrarea \xEEn vizuin\u0103?"
+    correctAnswer: Matase
+    questionNumber: 4
+  - questionText: "Durata de via\u021B\u0103 maxim\u0103 a unei femele, \xEEn ani?"
+    correctAnswer: 30
+    questionNumber: 5
+  - questionText: "Reac\u021Bie defensiv\u0103 principal\u0103?"
+    correctAnswer: Peri
+    questionNumber: 6
+  - questionText: "Un tip de prad\u0103 consumat\u0103?"
+    correctAnswer: Soareci
+    questionNumber: 7
+  - questionText: "Organ folosit pentru detectarea pr\u0103zii?"
+    correctAnswer: Palpi
+    questionNumber: 8
+  - questionText: "Unde \xEE\u0219i duce tarantula resturile pr\u0103zii?"
+    correctAnswer: Vizuina
+    questionNumber: 9
+  - questionText: "Speran\u021Ba de via\u021B\u0103 a masculului, \xEEn ani?"
+    correctAnswer: 10
+    questionNumber: 10

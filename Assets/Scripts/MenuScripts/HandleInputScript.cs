@@ -85,7 +85,7 @@ public class HandleInputScript : MonoBehaviour
         {
             if (!AreMenusActive())
             {
-                var achievementsMenu = Menus.Find(menu => menu.name == "AchivementsMenu");
+                var achievementsMenu = Menus.Find(menu => menu.name == "AchievementsMenuUI");
                 if (achievementsMenu != null)
                 {
                     HelperFunctions.UnlockCursor();

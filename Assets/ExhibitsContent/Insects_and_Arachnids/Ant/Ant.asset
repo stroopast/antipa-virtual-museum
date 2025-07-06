@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Ant
+  m_EditorClassIdentifier: 
+  exhibitName: Furnica gigant
+  species: Dinoponera gigantea
+  description: "Dinoponera gigantea, cunoscut\u0103 \u0219i ca furnica gigant sud-american\u0103,
+    este cea mai mare specie de furnic\u0103 din lume, ajung\xE2nd p\xE2n\u0103 la
+    4 cm lungime. Tr\u0103ie\u0219te \xEEn p\u0103durile tropicale din nordul Americii
+    de Sud, unde duce o via\u021B\u0103 terestr\u0103, activ\u0103 \u0219i pr\u0103d\u0103toare."
+  image: {fileID: 21300000, guid: dcc68c4e4ba9e9f4fa88d6824b864d43, type: 3}
+  sound: {fileID: 8300000, guid: 6ba0c04fdb8a6eb43951d68ef8bba5e1, type: 3}
+  geographicRange: "Dinoponera gigantea este \xEEnt\xE2lnit\u0103 \xEEn principal
+    \xEEn nordul Americii de Sud, \xEEn special \xEEn regiuni din Brazilia, Guyana
+    \u0219i Peru. Este endemic\u0103 zonelor tropicale ale Amazonului, fiind una
+    dintre cele mai mari furnici native acestei regiuni. Datorit\u0103 dimensiunii
+    sale impresionante, este o specie u\u0219or de recunoscut \xEEn arealul s\u0103u
+    natural."
+  habitat: "Aceast\u0103 furnic\u0103 prefer\u0103 p\u0103durile tropicale umede,
+    unde solul este bogat \xEEn materie organic\u0103 \u0219i bine drenat. Cuiburile
+    sunt adesea construite la baza copacilor sau \xEEn zone umbrite, fiind compuse
+    din galerii subterane. Habitatul s\u0103u este adesea umed, cald \u0219i relativ
+    stabil din punct de vedere termic, oferind condi\u021Bii ideale pentru supravie\u021Buire."
+  lifespan: "Durata de via\u021B\u0103 a indivizilor variaz\u0103 \xEEn func\u021Bie
+    de cast\u0103: lucr\u0103toarele pot tr\u0103i c\xE2\u021Biva ani, \xEEn timp
+    ce reginele \u2013 sau \xEEn cazul acestei specii, femelele alfa \u2013 pot tr\u0103i
+    mai mult. Dinoponera gigantea este interesant\u0103 prin faptul c\u0103 nu are
+    o regin\u0103 propriu-zis\u0103; \xEEn schimb, o lucr\u0103toare dominant\u0103
+    (numit\u0103 \"gamergate\") se reproduce. Aceast\u0103 organizare neobi\u0219nuit\u0103
+    influen\u021Beaz\u0103 durata de via\u021B\u0103 \u0219i rolurile \xEEn colonie."
+  food: "Dinoponera gigantea este omnivor\u0103 \u0219i pr\u0103d\u0103toare, hr\u0103nindu-se
+    cu insecte mici, artropode, dar \u0219i cu resturi organice. Ele pot consuma
+    \u0219i substan\u021Be dulci din fructe c\u0103zute sau seva plantelor. Sunt
+    v\xE2n\u0103tori activi, folosindu-\u0219i mandibulele puternice \u0219i veninul
+    pentru a imobiliza prada. De asemenea, joac\u0103 un rol ecologic important \xEEn
+    reciclarea materiei organice din p\u0103durile tropicale."
+  habitatTitle: America de Sud
+  lifespanTitle: "C\xE2\u021Biva ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 00d36d72905c0cb4aa9067638208cb0d, type: 3}
