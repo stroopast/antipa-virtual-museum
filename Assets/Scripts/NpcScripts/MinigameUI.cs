@@ -95,7 +95,6 @@ public class MinigameUI : MonoBehaviour
         if(GameModeManager.Instance.GetGameMode() == 1)
         {
             MultiplayerManager.Instance.UpdatePlayerNpcQuizScore(PlayerScore.Instance.GetPlayerScore());
-
         }
         PlayerScore.Instance.finishedInTime = true;
         finalScoreUI.gameObject.SetActive(true);

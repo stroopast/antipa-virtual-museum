@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.Collections;
 using Unity.Netcode;
 using Unity.Services.Authentication;
@@ -29,7 +30,7 @@ public class MultiplayerManager : NetworkBehaviour
 
     public int genderToBePassedInGame = 0;
 
-    private List<(string playerName, int score)> scoreList = new List<(string, int)>();
+    private List<(string playerName, int score)> scoreList = new();
     //Here add and update the score from guided tour/achievements so the players can inspect each other
 
     private void Awake()
@@ -245,9 +246,10 @@ public class MultiplayerManager : NetworkBehaviour
         playerDataNetworkList[playerDataIndex] = playerData;
     }
 
-    [ServerRpc(RequireOwnership = false)]
-    private void GetSortedPlayerScoresServerRpc(ServerRpcParams serverRpcParams = default)
+    private void GetSortedPlayerScores()
     {
+        scoreList.Clear();
+
         foreach (PlayerData playerData in playerDataNetworkList)
         {
             scoreList.Add((playerData.playerName.ToString(), playerData.npcQuizScore));
@@ -258,7 +260,7 @@ public class MultiplayerManager : NetworkBehaviour
 
     public List<(string playerName, int score)> GetPlayersScore()
     {
-        GetSortedPlayerScoresServerRpc();
+        GetSortedPlayerScores();
         return scoreList;
     }
 

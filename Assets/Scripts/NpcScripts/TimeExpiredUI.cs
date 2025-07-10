@@ -9,6 +9,15 @@ public class TimeExpiredUI : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = $"Din păcate timpul a expirat, dar ai terminat testele cu un punctaj de {PlayerScore.Instance.GetPlayerScore()} puncte. Vorbește cu ghidul pentru a vedea clasamentul!";
+        
+        if (GameModeManager.Instance.GetGameMode() == 1)
+        {
+            scoreText.text = $"Din păcate timpul a expirat, dar ai terminat testele cu un punctaj de {PlayerScore.Instance.GetPlayerScore()} puncte. Vorbește cu ghidul pentru a vedea clasamentul!";
+        }
+        else
+        {
+            scoreText.text = $"Din păcate timpul a expirat, dar ai terminat testele cu un punctaj de {PlayerScore.Instance.GetPlayerScore()} puncte. Felicitări!";
+
+        }
     }
 }
