@@ -18,7 +18,7 @@ public class ChatManager : NetworkBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.T))
+        if(Input.GetKeyDown(KeyCode.T) && GameModeManager.Instance.GetGameMode() == 1)
         {
             chatUI.gameObject.SetActive(true);
             HelperFunctions.UnlockCursor();
