@@ -14,6 +14,7 @@ public class NpcController : NetworkBehaviour
     [SerializeField] private GameObject npcQuizUI;
     [SerializeField] private GameObject npcQuiz2UI;
     [SerializeField] private GameObject timeExpiredUI;
+    [SerializeField] private GameObject npcRoomDialogue;
     [SerializeField] private TextMeshProUGUI countdownTimer;
 
     private NavMeshAgent agent;
@@ -107,7 +108,16 @@ public class NpcController : NetworkBehaviour
 
             animator.SetBool("isWalking", false);
 
-            if(i == 0)
+            if(i == 10 || i == 9)
+            {
+                animator.SetBool("isTalking", false);
+            }
+            else
+            {
+                animator.SetBool("isTalking", true);
+            }
+
+            if (i == 9)
             {
                 // for multiplayer
                 if (GameModeManager.Instance.GetGameMode() == 1)
@@ -126,6 +136,11 @@ public class NpcController : NetworkBehaviour
                     DisableTimerClientRpc();
                     yield return new WaitForSeconds(5f);
                     HideFinalScoreClientRpc();
+                   
+                    if (PlayerScore.Instance.GetPlayerScore() > 1)
+                    {
+                        UnlockSpecialAchievementClientRpc();
+                    }
                 }
                 // for singleplayer
                 else
@@ -144,19 +159,130 @@ public class NpcController : NetworkBehaviour
                     DisableTimer();
                     yield return new WaitForSeconds(5f);
                     timeExpiredUI.gameObject.SetActive(false);
+
+                    if (PlayerScore.Instance.GetPlayerScore() > 1)
+                    {
+                        AchievementManager.Instance.UnlockAchievement("Tur");
+                    }
                 }
+            }
+            else if(i == 10)
+            {
+                animator.SetBool("isTalking", false);
             }
             else
             {
-                yield return new WaitForSeconds(1f);
+                if (GameModeManager.Instance.GetGameMode() == 1)
+                {
+                    TriggerRoomDialogue(i);
+                }
+                else
+                {
+                    TriggerRoomDialogue(i);
+                }
+                yield return new WaitForSeconds(10f);
+                npcRoomDialogue.SetActive(false);
+                animator.SetBool("isTalking", false);
             }
-          
+            
+
 
             if (CheckPositionEquivalence(checkpoints[10]))
             {
+                StartCoroutine(RotateSmoothly(180f, 1.5f)); // Rotate over 1.5 seconds
                 gameObject.layer = 8; // Set layer back to IdleNpc when tour ends
             }
         }
+    }
+
+    [ClientRpc]
+    private void TriggerRoomDialogueClientRpc(int room)
+    {
+        npcRoomDialogue.SetActive(true);
+        TextMeshProUGUI dialogueText = npcRoomDialogue.GetComponentInChildren<TextMeshProUGUI>();
+        switch (room)
+        {
+            case 0:
+                dialogueText.text = "";
+                break;
+            case 1:
+                dialogueText.text = "";
+                break;
+            case 2:
+                dialogueText.text = "";
+                break;
+            case 3:
+                dialogueText.text = "";
+                break;
+            case 4:
+                dialogueText.text = "";
+                break;
+            case 5:
+                dialogueText.text = "";
+                break;
+            case 6:
+                dialogueText.text = "";
+                break;
+            case 7:
+                dialogueText.text = "";
+                break;
+            case 8:
+                dialogueText.text = "";
+                break;
+        }
+    }
+
+    private void TriggerRoomDialogue(int room)
+    {
+        npcRoomDialogue.SetActive(true);
+        TextMeshProUGUI dialogueText = npcRoomDialogue.GetComponentInChildren<TextMeshProUGUI>();
+        switch (room)
+        {
+            case 0:
+                dialogueText.text = "";
+                break;
+            case 1:
+                dialogueText.text = "";
+                break;
+            case 2:
+                dialogueText.text = "";
+                break;
+            case 3:
+                dialogueText.text = "";
+                break;
+            case 4:
+                dialogueText.text = "";
+                break;
+            case 5:
+                dialogueText.text = "";
+                break;
+            case 6:
+                dialogueText.text = "";
+                break;
+            case 7:
+                dialogueText.text = "";
+                break;
+            case 8:
+                dialogueText.text = "";
+                break;
+            default:
+                break;
+        }
+    }
+
+    private IEnumerator RotateSmoothly(float angle, float duration)
+    {
+        Quaternion startRotation = transform.rotation;
+        Quaternion endRotation = startRotation * Quaternion.Euler(0, angle, 0);
+
+        float time = 0f;
+        while (time < duration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, endRotation, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = endRotation; // ensure it ends exactly at target rotation
     }
 
 
@@ -228,6 +354,12 @@ public class NpcController : NetworkBehaviour
     {
         countdownTimer.gameObject.SetActive(false);
         isCountingEnabled = false;
+    }
+
+    [ClientRpc]
+    private void UnlockSpecialAchievementClientRpc()
+    {
+        AchievementManager.Instance.UnlockAchievement("Tur");
     }
 
 }

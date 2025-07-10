@@ -11,6 +11,7 @@ public class AchivementsMenuUI : MonoBehaviour
     [SerializeField] private Button fishBtn;
     [SerializeField] private Button mammalsBtn;
     [SerializeField] private Button dinosaurBtn;
+    [SerializeField] private Button specialBtn;
 
     [SerializeField] private GameObject insectsAchievementsMenu;
     [SerializeField] private GameObject reptilesAchievementsMenu;
@@ -18,6 +19,7 @@ public class AchivementsMenuUI : MonoBehaviour
     [SerializeField] private GameObject fishAchievementsMenu;
     [SerializeField] private GameObject mammalsAchievementsMenu;
     [SerializeField] private GameObject dinosaurAchievementsMenu;
+    [SerializeField] private GameObject specialAchievementsMenu;
 
     private void Awake()
     {
@@ -55,6 +57,12 @@ public class AchivementsMenuUI : MonoBehaviour
         {
             Hide();
             dinosaurAchievementsMenu.gameObject.SetActive(true);
+        });
+
+        specialBtn.onClick.AddListener(() =>
+        {
+            Hide();
+            specialAchievementsMenu.gameObject.SetActive(true);
         });
     }
 
