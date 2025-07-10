@@ -12,7 +12,6 @@ using UnityEngine.SceneManagement;
 
 public class MultiplayerManager : NetworkBehaviour
 {
-
     public const int MAX_PLAYER_AMOUNT = 8;
     private const string PLAYER_PREFS_PLAYER_NAME_MULTIPLAYER = "PlayerNameMultiplayer";
 
