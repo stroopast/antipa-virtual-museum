@@ -12,6 +12,7 @@ public class StartUI : MonoBehaviour
     [SerializeField] private Button exitGameBtn;
 
     [SerializeField] private GameObject startSinglePlayerUI;
+    [SerializeField] private GameObject settingsUI;
 
 
     private void Awake()
@@ -27,6 +28,12 @@ public class StartUI : MonoBehaviour
         {
             GameModeManager.Instance.SetGameMode(1);
             SceneManager.LoadScene("LobbyScene");
+        });
+
+        settingsBtn.onClick.AddListener(() =>
+        {
+            gameObject.SetActive(false);
+            settingsUI.gameObject.SetActive(true);
         });
     }
 }

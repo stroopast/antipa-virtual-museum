@@ -9,6 +9,7 @@ public class HandleUI : MonoBehaviour
     [SerializeField] private GameObject singleplayerNewGameUI;
     [SerializeField] private GameObject singleplayerLoadUI;
     [SerializeField] private GameObject deleteSaveUI;
+    [SerializeField] private GameObject settingsUI;
     [SerializeField] private GameObject character;
 
     private void Start()
@@ -18,6 +19,7 @@ public class HandleUI : MonoBehaviour
         singleplayerNewGameUI.gameObject.SetActive(false);
         singleplayerLoadUI.gameObject.SetActive(false);
         deleteSaveUI.gameObject.SetActive(false);
+        settingsUI.gameObject.SetActive(false);
         character.gameObject.SetActive(false);
     }
 }
