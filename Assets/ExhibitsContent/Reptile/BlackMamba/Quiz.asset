@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Pe ce continent tr\u0103ie\u0219te mamba neagr\u0103?"
+    correctAnswer: Africa
+    questionNumber: 1
+  - questionText: "Ce tip de venin are mamba neagr\u0103?"
+    correctAnswer: Neurotoxic
+    questionNumber: 2
+  - questionText: "C\xE2t este durata medie de via\u021B\u0103 \xEEn s\u0103lb\u0103ticie?"
+    correctAnswer: 12
+    questionNumber: 3
+  - questionText: "\xCEn ce parte a zilei este activ\u0103 mamba neagr\u0103?"
+    correctAnswer: ziua
+    questionNumber: 4
+  - questionText: "Care este culoarea interioar\u0103 a gurii mambelor negre, de
+      unde vine \u0219i numele?"
+    correctAnswer: Neagra
+    questionNumber: 5
+  - questionText: "Ce vitez\u0103 uimitoare poate atinge mamba neagr\u0103 (\xEEn
+      km/h)?"
+    correctAnswer: 20
+    questionNumber: 6
+  - questionText: "Unde \xEE\u0219i face adesea ad\u0103post?"
+    correctAnswer: Vizuini
+    questionNumber: 7
+  - questionText: "Cu ce animal mamifer mic se hr\u0103ne\u0219te frecvent?"
+    correctAnswer: Soarece
+    questionNumber: 8
+  - questionText: "Ce alt tip de reptil\u0103 poate fi uneori \xEEn dieta mambelor?"
+    correctAnswer: Sarpe
+    questionNumber: 9
+  - questionText: "\xCEn ce \u021Bar\u0103 sud-african\u0103 este adesea \xEEnt\xE2lnit\u0103?"
+    correctAnswer: Zimbabwe
+    questionNumber: 10

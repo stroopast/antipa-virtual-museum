@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "\xCEn ce continent tr\u0103iesc anacondele verzi?"
+    correctAnswer: America de sud
+    questionNumber: 1
+  - questionText: "Ce tip de \u0219arpe este anaconda verde?"
+    correctAnswer: Boa
+    questionNumber: 2
+  - questionText: Ce fluviu important din Brazilia este habitat pentru anaconde?
+    correctAnswer: Amazon
+    questionNumber: 3
+  - questionText: "Care este durata medie de via\u021B\u0103 a anacondei verzi \xEEn
+      s\u0103lb\u0103ticie?"
+    correctAnswer: 10
+    questionNumber: 4
+  - questionText: "Ce tip de mediu prefer\u0103 anaconda verde?"
+    correctAnswer: Acvatic
+    questionNumber: 5
+  - questionText: "Anaconda verde este carnivor\u0103 sau erbivor\u0103?"
+    correctAnswer: Carnivora
+    questionNumber: 6
+  - questionText: "Ce specie de caiman se poate reg\u0103si \xEEn dieta anacondei
+      juvenile?"
+    correctAnswer: Juvenil
+    questionNumber: 7
+  - questionText: "C\xE2t de mari sunt de obicei pintenii masculilor?"
+    correctAnswer: 7,5
+    questionNumber: 8
+  - questionText: "Ce organ tubular din gur\u0103 ajut\u0103 la detectarea pr\u0103zii?"
+    correctAnswer: Jacobson
+    questionNumber: 9
+  - questionText: "\xCEn captivitate, anaconda verde poate tr\u0103i peste c\xE2\u021Bi
+      ani?"
+    correctAnswer: 30
+    questionNumber: 10

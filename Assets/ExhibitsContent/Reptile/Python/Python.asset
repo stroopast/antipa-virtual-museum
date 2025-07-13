@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Python
+  m_EditorClassIdentifier: 
+  exhibitName: Piton verde de copac
+  species: Morelia viridis
+  description: "Pitonul verde de copac (Morelia viridis) este un \u0219arpe arboricol
+    spectaculos, originar din p\u0103durile tropicale ale Noii Guinee \u0219i Australiei.
+    Se hr\u0103ne\u0219te cu p\u0103s\u0103ri \u0219i roz\u0103toare, iar via\u021Ba
+    sa se desf\u0103\u0219oar\u0103 aproape integral \xEEn copaci, unde \xEE\u0219i
+    petrece zilele \xEEncol\u0103cit pe crengi."
+  image: {fileID: 21300000, guid: 755b2d028f163c34dbdf985e7c7da29d, type: 3}
+  sound: {fileID: 8300000, guid: 84edbaa196fdfb548be15bc6d5f0c607, type: 3}
+  geographicRange: "Pitonul verde de copac este originar din regiunile tropicale
+    din Noua Guinee, nordul Australiei (Peninsula Cape York) \u0219i unele insule
+    din Indonezia. Tr\u0103ie\u0219te exclusiv \xEEn zone ecuatoriale, unde umiditatea
+    \u0219i c\u0103ldura sunt constante pe tot parcursul anului."
+  habitat: "Aceast\u0103 specie tr\u0103ie\u0219te aproape exclusiv \xEEn copaci,
+    \xEEn p\u0103durile tropicale dense \u0219i umede. Prefer\u0103 ramurile situate
+    la \xEEn\u0103l\u021Bime medie, unde \xEE\u0219i petrece majoritatea timpului
+    \xEEncol\u0103cit pe o creang\u0103, \xEEntr-o pozi\u021Bie specific\u0103 \xEEn
+    form\u0103 de \u201ES\u201D. Este un \u0219arpe arboricol, excelent adaptat pentru
+    via\u021Ba deasupra solului, unde v\xE2neaz\u0103 \u0219i se odihne\u0219te."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, pitonul verde de copac tr\u0103ie\u0219te
+    \xEEn medie 15-20 de ani, \xEEn func\u021Bie de condi\u021Biile de mediu. \xCEn
+    captivitate, poate atinge peste 20 de ani dac\u0103 este \xEEngrijit corespunz\u0103tor.
+    Este o specie solitar\u0103 \u0219i nocturn\u0103, devenind activ\u0103 \xEEn
+    principal dup\u0103 l\u0103sarea serii."
+  food: "Pitonul verde de copac se hr\u0103ne\u0219te cu roz\u0103toare mici, p\u0103s\u0103ri,
+    \u0219i reptile, pe care le v\xE2neaz\u0103 prin ambuscad\u0103 din copaci. Este
+    un \u0219arpe constrictor, deci nu are venin \u2013 \xEE\u0219i omoar\u0103 prada
+    prin sufocare, apoi o \xEEnghite \xEEntreag\u0103. Juvenilii se hr\u0103nesc
+    cu \u0219op\xE2rle mici sau broa\u0219te arboricole."
+  habitatTitle: Noua Guinee
+  lifespanTitle: 15-20 ani
+  dietTitle: Carnivor
+  map: {fileID: 21300000, guid: a54ba5110170f3643a6ec30f693fd5ca, type: 3}

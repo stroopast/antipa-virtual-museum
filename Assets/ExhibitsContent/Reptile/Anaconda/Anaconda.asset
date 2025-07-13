@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Anaconda
+  m_EditorClassIdentifier: 
+  exhibitName: Anaconda verde
+  species: Eunectes murinus
+  description: "Anaconda verde (Eunectes murinus) este cel mai mare \u0219arpe din
+    lume, \xEEnt\xE2lnit \xEEn zonele tropicale joase din America de Sud, \xEEn special
+    \xEEn bazinul Amazonului \u0219i Orinoco. Este un \u0219arpe boa constrictor
+    semiacvatic, remarcabil prin dimensiunile sale impresionante \u0219i comportamentul
+    s\u0103u de pr\u0103d\u0103tor eficient."
+  image: {fileID: 21300000, guid: 2b5f16a91c3f0de4ea0bfe422934ad32, type: 3}
+  sound: {fileID: 8300000, guid: 84edbaa196fdfb548be15bc6d5f0c607, type: 3}
+  geographicRange: "Anacondele verzi se g\u0103sesc \xEEn toate zonele tropicale
+    joase din America de Sud. Aceast\u0103 specie este deosebit de comun\u0103 \xEEn
+    bazinul Orinoco din estul Columbiei, bazinul fluviului Amazon din Brazilia \u0219i
+    paji\u0219tile inundate sezonier ale Llanos din Venezuela."
+  habitat: "Anacondele verzi sunt \u0219erpi semi-acvatici care locuiesc \xEEn habitate
+    de ap\u0103 dulce pu\u021Bin ad\xE2nc\u0103, cu mi\u0219c\u0103ri lente, precum
+    \u0219i \xEEn savane tropicale, paji\u0219ti \u0219i p\u0103duri tropicale."
+  lifespan: "Durata medie de via\u021B\u0103 a anacondelor verzi \xEEn s\u0103lb\u0103ticie
+    este de 10 ani. \xCEn captivitate, acestea pot tr\u0103i peste 30 de ani."
+  food: "Anacondele verzi sunt pr\u0103d\u0103tori oportuni\u0219ti, hr\u0103nindu-se
+    cu orice prad\u0103 pe care o pot ucide \u0219i \xEEnghi\u021Bi. Dieta lor include
+    diverse vertebrate acvatice \u0219i terestre, cum ar fi pe\u0219ti, reptile,
+    amfibieni, p\u0103s\u0103ri \u0219i mamifere. Anacondele juvenile se hr\u0103nesc
+    cu prad\u0103, cum ar fi p\u0103s\u0103ri mici \u0219i caimani juvenili, care
+    au de obicei o dimensiune de 40-70 de grame. Pe m\u0103sur\u0103 ce se dezvolt\u0103,
+    dieta lor devine din ce \xEEn ce mai complex\u0103. Disponibilitatea pr\u0103zii
+    variaz\u0103 mai mult \xEEn paji\u0219ti dec\xE2t \xEEn bazinele r\xE2urilor.
+    Anacondele verzi din ambele habitate s-au hr\u0103nit cu prad\u0103 mare, de
+    obicei \xEEntre 14% \u0219i 50% din propria lor mas\u0103."
+  habitatTitle: America de Sud
+  lifespanTitle: 10-30 ani
+  dietTitle: Carnivor
+  map: {fileID: 21300000, guid: 32374537a2846ce4591cf9b77764dd50, type: 3}

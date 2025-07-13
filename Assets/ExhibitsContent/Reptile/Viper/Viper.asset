@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Viper
+  m_EditorClassIdentifier: 
+  exhibitName: Vipera cu corn
+  species: Vipera ammodytes
+  description: "Vipera cu corn (Vipera ammodytes) este cel mai veninos \u0219arpe
+    din Rom\xE2nia, \xEEnt\xE2lnit \xEEn sud-vestul \u021B\u0103rii \u0219i \xEEn
+    Subcarpa\u021Bii de Curbur\u0103. Tr\u0103ie\u0219te \xEEn zone st\xE2ncoase
+    \u0219i \xEEnsorite, are o durat\u0103 de via\u021B\u0103 de p\xE2n\u0103 la
+    15 ani \u0219i se hr\u0103ne\u0219te cu roz\u0103toare, \u0219op\xE2rle \u0219i
+    p\u0103s\u0103ri mici."
+  image: {fileID: 21300000, guid: f55d92e41ad79a441b0823be7b355e76, type: 3}
+  sound: {fileID: 8300000, guid: 84edbaa196fdfb548be15bc6d5f0c607, type: 3}
+  geographicRange: "Vipera cu corn (Vipera ammodytes) este prezent\u0103 \xEEn sud-vestul
+    Rom\xE2niei, \xEEn special \xEEn jude\u021Bele Cara\u0219-Severin, Mehedin\u021Bi,
+    Dolj \u0219i Gorj. Se mai \xEEnt\xE2lne\u0219te izolat \u0219i \xEEn zona Subcarpa\u021Bilor
+    de Curbur\u0103, precum \xEEn jude\u021Bele Prahova, Buz\u0103u \u0219i Vrancea.
+    Nu este r\u0103sp\xE2ndit\u0103 \xEEn toat\u0103 \u021Bara, ci prefer\u0103 zonele
+    mai calde \u0219i mai uscate, aproape de grani\u021Ba cu Serbia \u0219i Bulgaria.
+    Aceast\u0103 specie este una dintre cele mai veninoase din Europa \u0219i este
+    protejat\u0103 prin lege \xEEn Rom\xE2nia."
+  habitat: "Vipera cu corn prefer\u0103 habitatele aride \u0219i \xEEnsorite, precum
+    st\xE2nc\u0103rii, paji\u0219ti pietroase, versan\u021Bi cu vegeta\u021Bie rar\u0103
+    sau p\u0103duri deschise. O g\u0103sim adesea \xEEn zone deluroase \u0219i montane
+    joase, p\xE2n\u0103 la aproximativ 1000 m altitudine. Evit\u0103 locurile umede
+    \u0219i zonele cu vegeta\u021Bie deas\u0103, prefer\xE2nd terenuri uscate, cu
+    ascunz\u0103tori naturale (pietre, bu\u0219teni, scorburile copacilor). \xCEn
+    perioadele toride, se ascunde sub pietre sau \xEEn galerii s\u0103pate de alte
+    animale."
+  lifespan: "\xCEn condi\u021Bii naturale, vipera cu corn poate tr\u0103i \xEEn jur
+    de 10\u201315 ani, \xEEns\u0103 durata vie\u021Bii poate fi afectat\u0103 de
+    condi\u021Biile de mediu, pr\u0103d\u0103tori (p\u0103s\u0103ri r\u0103pitoare,
+    mamifere mici) sau interven\u021Bii umane. \xCEn captivitate, unde nu are pr\u0103d\u0103tori
+    \u0219i este hr\u0103nit\u0103 regulat, poate atinge chiar 20 de ani. Are o activitate
+    sezonier\u0103 \u2013 este activ\u0103 din martie p\xE2n\u0103 \xEEn octombrie,
+    iar iarna hiberneaz\u0103 \xEEn ad\u0103posturi subterane."
+  food: "Este un pr\u0103d\u0103tor r\u0103bd\u0103tor \u0219i eficient, folosindu-\u0219i
+    veninul pentru a imobiliza prada. Dieta sa include \xEEn principal roz\u0103toare
+    mici (\u0219oareci de c\xE2mp, pui de \u0219obolani), p\u0103s\u0103ri de talie
+    mic\u0103, \u0219op\xE2rle \u0219i uneori broa\u0219te. Juvenilii consum\u0103
+    mai ales insecte mari \u0219i miriapode p\xE2n\u0103 c\xE2nd pot ataca prad\u0103
+    mai mare. V\xE2neaz\u0103 cu ajutorul mirosului \u0219i al termoreceptorilor
+    din cap, care detecteaz\u0103 c\u0103ldura pr\u0103zii."
+  habitatTitle: Romania
+  lifespanTitle: 10-20 ani
+  dietTitle: Carnivor
+  map: {fileID: 21300000, guid: fc085be71ba3a0245a2a14e643f03938, type: 3}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Pe ce continent tr\u0103ie\u0219te broasca verde?"
+    correctAnswer: America de nord
+    questionNumber: 1
+  - questionText: "Ce stat american are o popula\u021Bie mare de astfel de broa\u0219te?"
+    correctAnswer: Florida
+    questionNumber: 2
+  - questionText: "Unde \xEE\u0219i petrece majoritatea timpului?"
+    correctAnswer: Copaci
+    questionNumber: 3
+  - questionText: "Ce culoare are pielea acestei broa\u0219te?"
+    correctAnswer: Verde
+    questionNumber: 4
+  - questionText: "\xCEn ce parte a zilei este activ\u0103?"
+    correctAnswer: Noaptea
+    questionNumber: 5
+  - questionText: "Cu ce insecte zbur\u0103toare se hr\u0103ne\u0219te frecvent?"
+    correctAnswer: "\u021A\xE2n\u021Bari"
+    questionNumber: 6
+  - questionText: "Ce organ folose\u0219te pentru a prinde prada?"
+    correctAnswer: "Limb\u0103"
+    questionNumber: 7
+  - questionText: "Ce tip de mediu prefer\u0103?"
+    correctAnswer: Umed
+    questionNumber: 8
+  - questionText: "Ce tip de animal este (\xEEn general)?"
+    correctAnswer: Amfibian
+    questionNumber: 9
+  - questionText: "C\xE2te luni tr\u0103ie\u0219te \xEEn medie \xEEn natur\u0103
+      (rotunjit)?"
+    correctAnswer: 50
+    questionNumber: 10

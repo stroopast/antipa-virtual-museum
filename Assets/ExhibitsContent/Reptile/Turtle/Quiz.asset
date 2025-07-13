@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Pe ce insule tr\u0103ie\u0219te aceast\u0103 specie?"
+    correctAnswer: Insulele Galapagos
+    questionNumber: 1
+  - questionText: "\xCEn ce ocean se afl\u0103 aceste insule?"
+    correctAnswer: Pacific
+    questionNumber: 2
+  - questionText: "Ce stat de\u021Bine insulele Gal\xE1pagos?"
+    correctAnswer: Ecuador
+    questionNumber: 3
+  - questionText: Ce tip de animal este?
+    correctAnswer: "\u021Aestoas\u0103"
+    questionNumber: 4
+  - questionText: "Ce fel de alimenta\u021Bie are?"
+    correctAnswer: "Erbivor\u0103"
+    questionNumber: 5
+  - questionText: "Ce parte a plantei consum\u0103 frecvent?"
+    correctAnswer: Frunze
+    questionNumber: 6
+  - questionText: "Ce form\u0103 poate avea carapacea?"
+    correctAnswer: "\u0218a"
+    questionNumber: 7
+  - questionText: "C\xE2t poate tr\u0103i?"
+    correctAnswer: 170
+    questionNumber: 8
+  - questionText: "Este o specie activ\u0103 sau lent\u0103?"
+    correctAnswer: "Lent\u0103"
+    questionNumber: 9
+  - questionText: "Cu ce plant\u0103 suculent\u0103 se hr\u0103ne\u0219te adesea?"
+    correctAnswer: Cactus
+    questionNumber: 10

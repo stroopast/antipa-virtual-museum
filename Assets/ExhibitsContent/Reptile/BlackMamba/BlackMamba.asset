@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: BlackMamba
+  m_EditorClassIdentifier: 
+  exhibitName: Mamba negru
+  species: Dendroaspis polylepis
+  description: "Mamba neagr\u0103 este cel mai rapid \u0219i unul dintre cei mai
+    venino\u0219i \u0219erpi din lume, originar din Africa subsaharian\u0103. Tr\u0103ie\u0219te
+    \xEEn savane \u0219i p\u0103duri rare \u0219i se hr\u0103ne\u0219te cu roz\u0103toare
+    \u0219i p\u0103s\u0103ri, ucig\xE2ndu-\u0219i prada cu un venin neurotoxic extrem
+    de puternic."
+  image: {fileID: 21300000, guid: dc6a9077adefde54ca7f6417d3f2eaff, type: 3}
+  sound: {fileID: 8300000, guid: 84edbaa196fdfb548be15bc6d5f0c607, type: 3}
+  geographicRange: "Mamba neagr\u0103 (Dendroaspis polylepis) este originar\u0103
+    din Africa subsaharian\u0103, fiind prezent\u0103 \xEEn estul \u0219i sudul continentului.
+    Se g\u0103se\u0219te \xEEn \u021B\u0103ri precum Kenya, Tanzania, Mozambic, Zimbabwe,
+    Zambia \u0219i Africa de Sud. Este una dintre cele mai cunoscute \u0219i temute
+    specii de \u0219erpi de pe continent, datorit\u0103 veninului extrem de puternic
+    \u0219i vitezei sale impresionante."
+  habitat: "Aceast\u0103 specie prefer\u0103 savanele uscate, p\u0103durile rare
+    \u0219i zonele \xEEmp\u0103durite de deal sau st\xE2ncoase. De\u0219i este adesea
+    asociat\u0103 cu via\u021Ba la sol, se poate c\u0103\u021B\u0103ra foarte bine
+    \u0219i se ascunde frecvent \xEEn copaci sau tuf\u0103ri\u0219uri dense. \xCE\u0219i
+    alege adesea vizuini abandonate, trunchiuri goale de copaci sau cr\u0103p\u0103turi
+    \xEEn st\xE2nc\u0103 pentru ad\u0103post."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, mamba neagr\u0103 tr\u0103ie\u0219te \xEEn
+    medie \xEEntre 10 \u0219i 12 ani. \xCEn captivitate, unde beneficiaz\u0103 de
+    \xEEngrijire medical\u0103 \u0219i hran\u0103 constant\u0103, poate tr\u0103i
+    p\xE2n\u0103 la 20 de ani. Este o specie activ\u0103 pe timpul zilei \u0219i
+    are un comportament teritorial \xEEn anumite perioade ale anului."
+  food: "Este un pr\u0103d\u0103tor diurn, foarte rapid, care se hr\u0103ne\u0219te
+    cu roz\u0103toare, p\u0103s\u0103ri, lilieci \u0219i uneori alte reptile. \xCE\u0219i
+    injecteaz\u0103 veninul neurotoxic \xEEn prad\u0103, care ac\u021Bioneaz\u0103
+    extrem de rapid, paraliz\xE2nd sistemul nervos. Odat\u0103 ce prada este imobilizat\u0103,
+    este \xEEnghi\u021Bit\u0103 \xEEntreag\u0103."
+  habitatTitle: Africa
+  lifespanTitle: 10-20 ani
+  dietTitle: Carnivora
+  map: {fileID: 21300000, guid: bad696e247cfeeb4a812228c360746ac, type: 3}

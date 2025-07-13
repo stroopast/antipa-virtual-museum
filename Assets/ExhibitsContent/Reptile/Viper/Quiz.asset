@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce specie de \u0219arpe este cea mai veninoas\u0103 din Rom\xE2nia?"
+    correctAnswer: Vipera
+    questionNumber: 1
+  - questionText: "\xCEn ce regiune a Rom\xE2niei se g\u0103se\u0219te frecvent vipera
+      cu corn?"
+    correctAnswer: Banat
+    questionNumber: 2
+  - questionText: "Ce tip de teren prefer\u0103 vipera cu corn?"
+    correctAnswer: Stancos
+    questionNumber: 3
+  - questionText: "\xCEn ce anotimp hiberneaz\u0103 vipera cu corn?"
+    correctAnswer: Iarna
+    questionNumber: 4
+  - questionText: "Cu ce parte a corpului detecteaz\u0103 prada?"
+    correctAnswer: Capul
+    questionNumber: 5
+  - questionText: "Ce roz\u0103toare mic\u0103 se afl\u0103 frecvent \xEEn dieta
+      ei?"
+    correctAnswer: Soarece
+    questionNumber: 6
+  - questionText: Mediul preferat al viperei cu corn?
+    correctAnswer: Uscat
+    questionNumber: 7
+  - questionText: "Ce organ folose\u0219te vipera pentru a injecta veninul?"
+    correctAnswer: Colti
+    questionNumber: 8
+  - questionText: "C\xE2te specii de vipere exist\u0103 \xEEn Rom\xE2nia?"
+    correctAnswer: 3
+    questionNumber: 9
+  - questionText: "P\xE2n\u0103 la c\xE2\u021Bi ani poate tr\u0103i vipera cu corn
+      \xEEn captivitate?"
+    correctAnswer: 20
+    questionNumber: 10

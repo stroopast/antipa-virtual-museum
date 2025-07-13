@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Cobra
+  m_EditorClassIdentifier: 
+  exhibitName: Cobra
+  species: Ophiophagus hannah
+  description: "Cobra (Ophiophagus hannah) este un \u0219arpe veninos faimos pentru
+    g\xE2tul s\u0103u l\u0103rgit \xEEn form\u0103 de glug\u0103. Tr\u0103ie\u0219te
+    \xEEn Africa \u0219i Asia \u0219i este un pr\u0103d\u0103tor eficient, temut
+    pentru mu\u0219c\u0103tura sa mortal\u0103. Cobra regal\u0103 este cea mai lung\u0103
+    specie de \u0219arpe veninos din lume."
+  image: {fileID: 21300000, guid: a8d39a6467ca251418b1d9108e8a2bd7, type: 3}
+  sound: {fileID: 8300000, guid: 84edbaa196fdfb548be15bc6d5f0c607, type: 3}
+  geographicRange: "Cobrele sunt r\u0103sp\xE2ndite \xEEn principal \xEEn Asia de
+    Sud \u0219i Asia de Sud-Est. Speciile cele mai cunoscute includ cobra indian\u0103
+    (Naja naja), cobra egiptean\u0103 (Naja haje) \u0219i cobra regal\u0103 (Ophiophagus
+    hannah), cea mai lung\u0103 specie de \u0219arpe veninos din lume. Habitatul
+    lor variaz\u0103 de la p\u0103duri tropicale \u0219i savane p\xE2n\u0103 la regiuni
+    semi-aride."
+  habitat: "Cobrele tr\u0103iesc \xEEn medii diverse, precum p\u0103duri, paji\u0219ti,
+    zone agricole, ml\u0103\u0219tini \u0219i chiar zone apropiate de a\u0219ez\u0103ri
+    umane. Unele specii prefer\u0103 solul deschis, \xEEn timp ce altele pot urca
+    \xEEn copaci sau \xEEnota \xEEn ap\u0103. Se ad\u0103postesc \xEEn vizuini, sub
+    pietre sau \xEEn trunchiuri de copac goale."
+  lifespan: "Cobrele tr\u0103iesc \xEEn medie 15\u201320 de ani \xEEn s\u0103lb\u0103ticie,
+    iar \xEEn captivitate pot atinge uneori chiar 25 de ani, \xEEn func\u021Bie de
+    specie \u0219i condi\u021Bii. Ciclul de via\u021B\u0103 cuprinde ou\u0103 (cobrele
+    sunt ovipare), din care ies pui complet independen\u021Bi, deja venino\u0219i."
+  food: "Cobra este un pr\u0103d\u0103tor carnivor. Se hr\u0103ne\u0219te cu roz\u0103toare,
+    p\u0103s\u0103ri, ou\u0103, broa\u0219te, \u0219op\xE2rle \u0219i chiar al\u021Bi
+    \u0219erpi (\xEEn cazul cobrei regale). \xCE\u0219i imobilizeaz\u0103 prada prin
+    mu\u0219c\u0103tur\u0103 veninoas\u0103, iar apoi o \xEEnghite \xEEntreag\u0103.
+    Unele specii, cum ar fi cobra scuip\u0103toare, pot pulveriza veninul pentru
+    a se ap\u0103ra."
+  habitatTitle: Asia
+  lifespanTitle: 15-25 ani
+  dietTitle: Carnivor
+  map: {fileID: 21300000, guid: 520093f8f0aba454192ac45d6ed52b33, type: 3}

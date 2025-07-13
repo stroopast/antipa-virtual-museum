@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "\xCEn ce \u021Bar\u0103 tr\u0103ie\u0219te dragonul de Komodo?"
+    correctAnswer: Indonezia
+    questionNumber: 1
+  - questionText: "Pe ce insul\u0103 poart\u0103 acela\u0219i nume ca specia?"
+    correctAnswer: Komodo
+    questionNumber: 2
+  - questionText: Ce fel de animal este?
+    correctAnswer: soparla
+    questionNumber: 3
+  - questionText: "Ce tip de ap\u0103 \xEEl \xEEnconjoar\u0103?"
+    correctAnswer: ocean
+    questionNumber: 4
+  - questionText: "Ce m\u0103n\xE2nc\u0103 frecvent (tip de prad\u0103)?"
+    correctAnswer: Cerbi
+    questionNumber: 5
+  - questionText: "Ce fel de v\xE2n\u0103tor este (prin ce omoara prada)?"
+    correctAnswer: "Ambuscad\u0103"
+    questionNumber: 6
+  - questionText: "Ce are periculos \xEEn saliv\u0103?"
+    correctAnswer: Bacterii
+    questionNumber: 7
+  - questionText: Cum este dieta sa?
+    correctAnswer: "Carnivor\u0103"
+    questionNumber: 8
+  - questionText: "La ce v\xE2rst\u0103 atinge maturitatea sexual\u0103?"
+    correctAnswer: 9
+    questionNumber: 9
+  - questionText: "Poate \xEEnota \xEEntre insule?"
+    correctAnswer: da
+    questionNumber: 10

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Turtle
+  m_EditorClassIdentifier: 
+  exhibitName: "\u021Aestoasa de Galapagos"
+  species: Chelonoidis nigra
+  description: "\u021Aestoasa de Gal\xE1pagos (Chelonoidis nigra) este un simbol
+    al biodiversit\u0103\u021Bii insulelor Gal\xE1pagos, fiind una dintre cele mai
+    mari \u0219i mai longevive specii de \u021Bestoase din lume. Tr\u0103ie\u0219te
+    \xEEn habitate aride \u0219i se hr\u0103ne\u0219te cu vegeta\u021Bie local\u0103."
+  image: {fileID: 21300000, guid: e86519314aa6ef147a5e18083d4c3269, type: 3}
+  sound: {fileID: 0}
+  geographicRange: "\u021Aestoasa de Gal\xE1pagos tr\u0103ie\u0219te exclusiv pe
+    Insulele Gal\xE1pagos, un arhipelag vulcanic aflat \xEEn Oceanul Pacific, apar\u021Bin\xE2nd
+    Ecuadorului. Este una dintre cele mai emblematice specii endemice ale acestor
+    insule, fiecare insul\u0103 major\u0103 av\xE2nd popula\u021Bii distincte de
+    \u021Bestoase."
+  habitat: "\u021Aestoasa de Gal\xE1pagos prefer\u0103 habitatele uscate \u0219i
+    semi-aride, cum ar fi savanele, p\u0103durile de cactu\u0219i \u0219i versan\u021Bii
+    munto\u0219i cu vegeta\u021Bie joas\u0103. Se adapteaz\u0103 \xEEn func\u021Bie
+    de insul\u0103: \u021Bestoasele cu carapace \xEEn form\u0103 de dom tr\u0103iesc
+    \xEEn regiunile mai umede \u0219i joase, iar cele cu carapace \xEEn form\u0103
+    de \u0219a locuiesc \xEEn zonele mai uscate, cu vegeta\u021Bie \xEEnalt\u0103.\n\n"
+  lifespan: "Este unul dintre cele mai longevive animale de pe planet\u0103. \u021Aestoasa
+    de Gal\xE1pagos poate tr\u0103i peste 100 de ani \xEEn s\u0103lb\u0103ticie,
+    iar \xEEn captivitate unele exemplare au atins chiar \u0219i 170 de ani. Longevitatea
+    lor este legat\u0103 de metabolismul lent \u0219i stilul de via\u021B\u0103 lini\u0219tit."
+  food: "\u021Aestoasa este erbivor\u0103, hr\u0103nindu-se cu ierburi, fructe, cactu\u0219i,
+    frunze, \u0219i flori. Este capabil\u0103 s\u0103 supravie\u021Buiasc\u0103 luni
+    \xEEntregi f\u0103r\u0103 ap\u0103 sau m\xE2ncare, datorit\u0103 rezervelor interne.
+    Consum\u0103 \u0219i vegeta\u021Bie suculent\u0103 pentru a se hidrata, adapt\xE2ndu-se
+    perfect condi\u021Biilor dure ale insulelor."
+  habitatTitle: Insulele Galapagos
+  lifespanTitle: 100-170 ani
+  dietTitle: "Erbivor\u0103"
+  map: {fileID: 21300000, guid: 9d0d4ad4dd48b6c4b8b3ce7b4d63d286, type: 3}

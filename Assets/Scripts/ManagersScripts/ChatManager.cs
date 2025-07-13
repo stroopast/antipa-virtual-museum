@@ -24,7 +24,7 @@ public class ChatManager : NetworkBehaviour
             HelperFunctions.UnlockCursor();
         }
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && GameModeManager.Instance.GetGameMode() == 1)
         {
             SendChatMessage(chatInput.text, MultiplayerManager.Instance.GetPlayerName());
             chatInput.text = "";
