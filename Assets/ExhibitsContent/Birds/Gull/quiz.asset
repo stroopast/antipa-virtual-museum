@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce fel de animal este pesc\u0103ru\u0219ul?"
+    correctAnswer: pasare
+    questionNumber: 1
+  - questionText: "Care este specia sa \u0219tiin\u021Bific\u0103?"
+    correctAnswer: Argentatus
+    questionNumber: 2
+  - questionText: "Unde tr\u0103ie\u0219te cel mai des?"
+    correctAnswer: Coasta
+    questionNumber: 3
+  - questionText: Este omnivor sau carnivor?
+    correctAnswer: omnivor
+    questionNumber: 4
+  - questionText: "Ce tip de hran\u0103 consum\u0103?"
+    correctAnswer: peste
+    questionNumber: 5
+  - questionText: "Ce folose\u0219te pentru a zbura?"
+    correctAnswer: aripi
+    questionNumber: 6
+  - questionText: "Unde mai cuib\u0103re\u0219te \xEEn ora\u0219e?"
+    correctAnswer: acoperis
+    questionNumber: 7
+  - questionText: "Poate fi g\u0103sit \u0219i la munte?"
+    correctAnswer: rar
+    questionNumber: 8
+  - questionText: Cum sunt sunetele sale?
+    correctAnswer: Puternice
+    questionNumber: 9
+  - questionText: "E capabil s\u0103 tr\u0103iasc\u0103 \xEEn ora\u0219e?"
+    correctAnswer: da
+    questionNumber: 10

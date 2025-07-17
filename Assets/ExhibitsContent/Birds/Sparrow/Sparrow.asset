@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Sparrow
+  m_EditorClassIdentifier: 
+  exhibitName: "Vr\u0103biu\u021Ba"
+  species: Passer domesticus
+  description: "Vr\u0103biu\u021Ba (Passer domesticus) este o pas\u0103re mic\u0103,
+    comun\u0103 \xEEn zonele urbane \u0219i rurale, cunoscut\u0103 pentru adaptabilitatea
+    sa \u0219i c\xE2ntecul scurt \u0219i repetitiv. Este prieten\u0103 a oamenilor
+    \xEEn gr\u0103dini \u0219i parcuri."
+  image: {fileID: 21300000, guid: 08f9fcae2303f174e9771aafd9e21c41, type: 3}
+  sound: {fileID: 8300000, guid: 8c83d5575a62c69419c09186aecf8eca, type: 3}
+  geographicRange: "Vr\u0103biu\u021Ba este o pas\u0103re comun\u0103, r\u0103sp\xE2ndit\u0103
+    \xEEn Europa, Asia de Vest, Africa de Nord \u0219i introdus\u0103 \xEEn America
+    de Nord, Australia \u0219i alte regiuni. Este una dintre cele mai r\u0103sp\xE2ndite
+    p\u0103s\u0103ri din zonele urbane \u0219i rurale, adapt\xE2ndu-se la diverse
+    medii."
+  habitat: "Tr\u0103ie\u0219te \xEEn ora\u0219e, sate, parcuri, gr\u0103dini \u0219i
+    zone agricole. Prefer\u0103 zonele unde poate g\u0103si hran\u0103 u\u0219or
+    \u0219i ad\u0103post, inclusiv cl\u0103diri \u0219i cuiburi \xEEn g\u0103uri
+    sau sub acoperi\u0219uri. Este o specie foarte adaptabil\u0103, rezistent\u0103
+    la prezen\u021Ba oamenilor."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, vr\u0103biu\u021Bele tr\u0103iesc \xEEn
+    medie \xEEntre 3 \u0219i 5 ani, dar \xEEn condi\u021Bii favorabile pot ajunge
+    \u0219i la 7 ani. Mortalitatea este crescut\u0103 \xEEn primii ani de via\u021B\u0103,
+    iar pr\u0103d\u0103torii \u0219i condi\u021Biile meteo influen\u021Beaz\u0103
+    speran\u021Ba de via\u021B\u0103."
+  food: "Vr\u0103biu\u021Bele sunt omnivore, hr\u0103nindu-se cu semin\u021Be, insecte,
+    fructe mici \u0219i resturi alimentare. \xCEn perioada de reproducere, insectele
+    devin o surs\u0103 principal\u0103 de protein\u0103 pentru pui. Se adapteaz\u0103
+    u\u0219or la hrana oferit\u0103 de oameni \xEEn mediul urban."
+  habitatTitle: "Toat\u0103 lumea"
+  lifespanTitle: 3-5 ani
+  dietTitle: "Omnivor\u0103"
+  map: {fileID: 21300000, guid: 56369677965a0e440b9d5525799740ef, type: 3}

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Crow
+  m_EditorClassIdentifier: 
+  exhibitName: "Cioar\u0103"
+  species: Corvus frugilegus
+  description: "Cioara (Corvus frugilegus) este o pas\u0103re inteligent\u0103 \u0219i
+    adaptabil\u0103, prezent\u0103 \xEEn aproape toate regiunile lumii. Se hr\u0103ne\u0219te
+    cu aproape orice \u0219i este cunoscut\u0103 pentru comportamentele ei ingenioase
+    \u0219i sociale."
+  image: {fileID: 21300000, guid: 1fcf0173cc8de60408903965eb14feb9, type: 3}
+  sound: {fileID: 8300000, guid: a8324a4b5e907914c9ee130fe0f79eee, type: 3}
+  geographicRange: "Cioara este una dintre cele mai r\u0103sp\xE2ndite p\u0103s\u0103ri
+    din lume, \xEEnt\xE2lnit\u0103 \xEEn Europa, Asia, America de Nord, Africa de
+    Nord \u0219i Australia. Se adapteaz\u0103 u\u0219or la diverse climate, de la
+    regiunile reci p\xE2n\u0103 la cele calde. \xCEn Rom\xE2nia, cele mai comune
+    specii sunt cioara de sem\u0103n\u0103tur\u0103 (Corvus frugilegus) \u0219i cioara
+    griv\u0103 (Corvus cornix)."
+  habitat: "Ciorile tr\u0103iesc \xEEn habitate variate, inclusiv \xEEn zone rurale,
+    p\u0103duri, c\xE2mpuri agricole, dar \u0219i \xEEn ora\u0219e sau suburbii.
+    Sunt extrem de adaptabile \u0219i inteligente, f\u0103c\xE2nd cuiburi \xEEn copaci,
+    pe cl\u0103diri sau st\xE2lpi. Prezen\u021Ba lor \xEEn mediul urban s-a intensificat
+    datorit\u0103 u\u0219urin\u021Bei cu care g\u0103sesc hran\u0103."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, ciorile pot tr\u0103i \xEEntre 10 \u0219i
+    15 ani, dar \xEEn captivitate pot dep\u0103\u0219i 20 de ani. Sunt p\u0103s\u0103ri
+    rezistente, iar inteligen\u021Ba lor le ajut\u0103 s\u0103 evite pericolele.
+    Formeaz\u0103 uneori grupuri mari, mai ales \xEEn zonele unde iernile sunt bl\xE2nde
+    \u0219i resursele abundente."
+  food: "Ciorile sunt omnivore \u0219i se hr\u0103nesc cu o gam\u0103 larg\u0103
+    de alimente: semin\u021Be, insecte, ou\u0103, carne, fructe, resturi menajere
+    sau animale moarte. Sunt recunoscute pentru capacitatea de a deschide nuci sau
+    de a folosi unelte simple. Hrana este adesea c\u0103utat\u0103 \xEEn grupuri,
+    \xEEn special \xEEn mediile urbane."
+  habitatTitle: "Toat\u0103 lumea"
+  lifespanTitle: 10-15 ani
+  dietTitle: "Omnivor\u0103"
+  map: {fileID: 21300000, guid: 9c881dea10a452d4bb75f61d140ad785, type: 3}

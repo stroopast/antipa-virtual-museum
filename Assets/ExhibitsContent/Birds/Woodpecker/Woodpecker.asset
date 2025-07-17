@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Woodpecker
+  m_EditorClassIdentifier: 
+  exhibitName: "Cioc\u0103nitoare"
+  species: Familia Picidae
+  description: "Cioc\u0103nitoarea este o pas\u0103re caracteristic\u0103 pentru
+    p\u0103durile din \xEEntreaga lume, cunoscut\u0103 pentru cioc\u0103nitul puternic
+    pe trunchiurile copacilor. Este esen\u021Bial\u0103 \xEEn controlul popula\u021Biilor
+    de insecte \u0219i \xEEn s\u0103n\u0103tatea ecosistemului forestier."
+  image: {fileID: 21300000, guid: 67cf05a4e65424d41a96933478e838f8, type: 3}
+  sound: {fileID: 8300000, guid: c03760688114c7947a3b7920ab03c4df, type: 3}
+  geographicRange: "Cioc\u0103nitoarele sunt r\u0103sp\xE2ndite pe toate continentele,
+    cu excep\u021Bia Australiei \u0219i Antarcticii. Se g\u0103sesc \xEEn Europa,
+    Asia, America de Nord \u0219i America de Sud, ocup\xE2nd p\u0103duri temperate,
+    tropicale \u0219i subtropicale. Sunt cele mai comune \xEEn zonele cu copaci b\u0103tr\xE2ni
+    \u0219i vegeta\u021Bie dens\u0103."
+  habitat: "Prefer\u0103 p\u0103durile dense, p\u0103durile de foioase \u0219i conifere,
+    precum \u0219i paji\u0219tile \xEEmp\u0103durite. Sunt dependente de copaci pentru
+    hr\u0103nire, cuiburi \u0219i ad\u0103post. Cioc\u0103nitoarele se pot adapta
+    \u0219i \xEEn parcuri \u0219i gr\u0103dini cu arbori b\u0103tr\xE2ni."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, cioc\u0103nitoarele pot tr\u0103i \xEEntre
+    5 \u0219i 10 ani, unele specii put\xE2nd ajunge p\xE2n\u0103 la 15 ani. Speran\u021Ba
+    de via\u021B\u0103 depinde mult de specie, pr\u0103d\u0103tori \u0219i condi\u021Biile
+    de mediu."
+  food: "Cioc\u0103nitoarele sunt insectivore \u0219i omnivore. Se hr\u0103nesc cu
+    insecte, larve, g\xE2ndaci, dar \u0219i cu semin\u021Be, fructe \u0219i r\u0103\u0219in\u0103.
+    Cioc\u0103nesc scoar\u021Ba copacilor pentru a g\u0103si prada ascuns\u0103 sub
+    aceasta."
+  habitatTitle: "P\u0103duri \u0219i zone \xEEmp\u0103durite"
+  lifespanTitle: "5\u201310 ani"
+  dietTitle: "Insectivor\u0103 \u0219i omnivor\u0103"
+  map: {fileID: 21300000, guid: d0e6d316d3ae6324f9272a5eebfd1f0e, type: 3}

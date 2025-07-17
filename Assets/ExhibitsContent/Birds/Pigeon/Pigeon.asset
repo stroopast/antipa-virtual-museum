@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Pigeon
+  m_EditorClassIdentifier: 
+  exhibitName: Porumbel
+  species: Columba livia
+  description: "Porumbelul (Columba livia) este una dintre cele mai r\u0103sp\xE2ndite
+    p\u0103s\u0103ri de pe glob, \xEEnt\xE2lnit\u0103 frecvent \xEEn ora\u0219e.
+    Este cunoscut pentru orientarea sa excelent\u0103, zborul lin \u0219i rolul istoric
+    \xEEn transmiterea mesajelor."
+  image: {fileID: 21300000, guid: 4c48afe68047e2845ab2266a5ce124ec, type: 3}
+  sound: {fileID: 8300000, guid: a7cc27bad8c8dc64d93d5c5b8229b48e, type: 3}
+  geographicRange: "Porumbelul comun, cunoscut \u0219i ca porumbel de st\xE2nc\u0103,
+    este originar din Europa, Africa de Nord \u0219i Asia de Vest, dar este acum
+    r\u0103sp\xE2ndit la nivel global. \xCEl \xEEnt\xE2lnim \xEEn toate marile ora\u0219e
+    din lume, pe toate continentele, cu excep\u021Bia Antarcticii. Adaptabilitatea
+    lui l-a f\u0103cut una dintre cele mai comune p\u0103s\u0103ri urbane."
+  habitat: "Tr\u0103ie\u0219te \xEEn zone urbane, rurale, faleze st\xE2ncoase, parcuri
+    \u0219i pie\u021Be publice. \xCEn ora\u0219e, porumbeii \xEE\u0219i fac cuiburi
+    \xEEn cl\u0103diri, poduri, balcoane sau acoperi\u0219uri. \xCEn mediul natural,
+    prefer\u0103 zonele st\xE2ncoase sau deschise unde are vizibilitate bun\u0103
+    \u0219i acces la hran\u0103."
+  lifespan: "Porumbeii tr\u0103iesc \xEEn medie 3\u20135 ani \xEEn s\u0103lb\u0103ticie,
+    dar \xEEn captivitate pot atinge chiar 15\u201320 de ani, \xEEn func\u021Bie
+    de specie \u0219i \xEEngrijire. Longevitatea este afectat\u0103 de pr\u0103d\u0103tori,
+    accidente \u0219i accesul la hran\u0103."
+  food: "Porumbeii sunt granivori \u0219i omnivori, consum\xE2nd \xEEn principal
+    semin\u021Be, boabe, fructe uscate, dar \u0219i firimituri, resturi alimentare,
+    insecte \u0219i verde\u021Buri. \xCEn ora\u0219e, se hr\u0103nesc adesea din
+    gunoaie sau din m\xE2ncarea oferit\u0103 de oameni."
+  habitatTitle: "Toat\u0103 lumea"
+  lifespanTitle: 3-20 ani
+  dietTitle: "Omnivor\u0103"
+  map: {fileID: 21300000, guid: 42b055cbd58963840bd23da8466cd820, type: 3}

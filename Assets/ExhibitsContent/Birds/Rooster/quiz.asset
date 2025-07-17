@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce fel de animal este coco\u0219ul?"
+    correctAnswer: pasare
+    questionNumber: 1
+  - questionText: "Ce sex are coco\u0219ul?"
+    correctAnswer: mascul
+    questionNumber: 2
+  - questionText: Este omnivor sau erbivor?
+    correctAnswer: omnivor
+    questionNumber: 3
+  - questionText: "Ce parte a zilei marcheaz\u0103 prin c\xE2ntec?"
+    correctAnswer: dimineata
+    questionNumber: 4
+  - questionText: "Cu cine tr\u0103ie\u0219te de obicei?"
+    correctAnswer: gaini
+    questionNumber: 5
+  - questionText: "Din ce continent provine ini\u021Bial?"
+    correctAnswer: asia
+    questionNumber: 6
+  - questionText: "Ce caut\u0103 \xEEn sol?"
+    correctAnswer: viermi
+    questionNumber: 7
+  - questionText: Ce culoare are adesea creasta?
+    correctAnswer: rosu
+    questionNumber: 8
+  - questionText: Unde este crescut cel mai frecvent?
+    correctAnswer: ferma
+    questionNumber: 9
+  - questionText: "Ce durat\u0103 medie de via\u021B\u0103 are?"
+    correctAnswer: 8
+    questionNumber: 10

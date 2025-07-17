@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "\xCEn ce continent tr\u0103ie\u0219te vulturul cu cap alb?"
+    correctAnswer: America
+    questionNumber: 1
+  - questionText: "Ce parte a corpului este alb\u0103?"
+    correctAnswer: Capul
+    questionNumber: 2
+  - questionText: "Cu ce se hr\u0103ne\u0219te cel mai des?"
+    correctAnswer: peste
+    questionNumber: 3
+  - questionText: Ce fel de animal este?
+    correctAnswer: pasare
+    questionNumber: 4
+  - questionText: "Ce alt tip de hran\u0103 consum\u0103 uneori?"
+    correctAnswer: resturi
+    questionNumber: 5
+  - questionText: "Ce simbol na\u021Bional reprezint\u0103?"
+    correctAnswer: SUA
+    questionNumber: 6
+  - questionText: "Unde \xEE\u0219i face cuibul?"
+    correctAnswer: copaci
+    questionNumber: 7
+  - questionText: "Cum se nume\u0219te \xEEn englez\u0103?"
+    correctAnswer: bald
+    questionNumber: 8
+  - questionText: "La ce v\xE2rst\u0103 se reproduce?"
+    correctAnswer: 5
+    questionNumber: 9
+  - questionText: Poate fura prada altora?
+    correctAnswer: da
+    questionNumber: 10

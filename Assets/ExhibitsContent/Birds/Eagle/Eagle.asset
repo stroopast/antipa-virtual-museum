@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Eagle
+  m_EditorClassIdentifier: 
+  exhibitName: Vulturul cu cap alb
+  species: Haliaeetus leucocephalus
+  description: "Vulturul (Haliaeetus leucocephalus) cu cap alb este o pas\u0103re
+    de prad\u0103 impun\u0103toare, simbol na\u021Bional al Statelor Unite, recunoscut\u0103
+    pentru capul s\u0103u alb contrastant. Tr\u0103ie\u0219te \xEEn apropierea apelor
+    \u0219i v\xE2neaz\u0103 eficient, dar este \u0219i un oportunist inteligent."
+  image: {fileID: 21300000, guid: 6ac42bf6b83c270459af5f56d87453d5, type: 3}
+  sound: {fileID: 8300000, guid: fc315bf4558a3364f879213515b0bf0f, type: 3}
+  geographicRange: "Vulturul cu cap alb este originar din America de Nord, fiind
+    r\u0103sp\xE2ndit \xEEn Statele Unite, Canada \u0219i nordul Mexicului. Este
+    simbolul na\u021Bional al SUA \u0219i poate fi \xEEnt\xE2lnit de-a lungul coastelor,
+    lacurilor mari, r\xE2urilor \u0219i \xEEn regiunile cu p\u0103duri \xEEntinse.
+    Se reg\u0103se\u0219te \xEEn special \xEEn zone unde exist\u0103 surse bogate
+    de pe\u0219te."
+  habitat: "Prefer\u0103 habitatele apropiate de ap\u0103, cum ar fi r\xE2urile,
+    laculuri, fiordurile sau coastele oceanice, unde pescuitul este facil. Este frecvent
+    \xEEnt\xE2lnit \xEEn zonele \xEEmp\u0103durite care ofer\u0103 copaci \xEEnal\u021Bi
+    pentru cuib\u0103rit. \xCEn sezonul rece, unele popula\u021Bii migreaz\u0103
+    c\u0103tre zone mai calde."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, poate tr\u0103i \xEEntre 20 \u0219i 30 de
+    ani, dar \xEEn captivitate poate dep\u0103\u0219i chiar 35 de ani, beneficiind
+    de \xEEngrijire \u0219i lipsa pericolelor. Este o pas\u0103re de lung\u0103 durat\u0103,
+    cu maturitate sexual\u0103 atins\u0103 \xEEn jurul v\xE2rstei de 4-5 ani. Longevitatea
+    sa este ajutat\u0103 \u0219i de lipsa pr\u0103d\u0103torilor naturali la v\xE2rsta
+    adult\u0103."
+  food: "Este \xEEn principal carnivor, dar comportamentul s\u0103u oportunist \xEEl
+    face omnivor. Se hr\u0103ne\u0219te mai ales cu pe\u0219ti, dar \u0219i cu p\u0103s\u0103ri
+    acvatice, mamifere mici, carcase \u0219i chiar resturi. Uneori fur\u0103 prada
+    altor p\u0103s\u0103ri, cum ar fi pesc\u0103ru\u0219ii sau alte r\u0103pitoare."
+  habitatTitle: America de Nord
+  lifespanTitle: "10\u201315 ani"
+  dietTitle: "Omnivor\u0103"
+  map: {fileID: 21300000, guid: 06d70c4a73a7f4148ba05e8bf559b8d8, type: 3}

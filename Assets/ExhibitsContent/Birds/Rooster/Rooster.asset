@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Rooster
+  m_EditorClassIdentifier: 
+  exhibitName: "Coco\u0219ul"
+  species: Gallus gallus domesticus
+  description: "Coco\u0219ul (Gallus gallus domesticus) este pas\u0103rea domestic\u0103
+    recunoscut\u0103 pentru c\xE2ntecul s\u0103u matinal \u0219i penajul viu colorat.
+    Este prezent \xEEn gospod\u0103rii din \xEEntreaga lume \u0219i joac\u0103 un
+    rol important \xEEn structura social\u0103 a stolului."
+  image: {fileID: 21300000, guid: f53bbe1a5304bb74cbe6abbce8556dab, type: 3}
+  sound: {fileID: 8300000, guid: aafa596ab3c3a354ba176b238394c15e, type: 3}
+  geographicRange: "Coco\u0219ul este masculul g\u0103inii domestice, o specie crescut\u0103
+    \xEEn toat\u0103 lumea. Originar din Asia de Sud-Est, mai ales din regiunea Indiei
+    \u0219i Thailandei, este acum prezent la nivel global, \xEEn ferme, sate \u0219i
+    gospod\u0103rii. Se \xEEnt\xE2lne\u0219te \xEEn aproape orice zon\u0103 locuit\u0103
+    de oameni, indiferent de clim\u0103."
+  habitat: "Tr\u0103ie\u0219te \xEEn gospod\u0103rii rurale, ferme, ad\u0103posturi
+    special amenajate \u0219i cur\u021Bi. Coco\u0219ii prefer\u0103 zonele unde pot
+    ciuguli, scurma solul \u0219i sta \xEEn siguran\u021B\u0103, adesea al\u0103turi
+    de g\u0103ini. Se adapteaz\u0103 at\xE2t \xEEn medii tradi\u021Bionale, c\xE2t
+    \u0219i \xEEn ferme industriale."
+  lifespan: "Coco\u0219ii tr\u0103iesc \xEEn medie 5\u20138 ani, dar \xEEn condi\u021Bii
+    bune pot atinge 10\u201312 ani. \xCEn fermele comerciale, durata lor de via\u021B\u0103
+    este adesea mai scurt\u0103. \xCEn mediul domestic, longevitatea este influen\u021Bat\u0103
+    de \xEEngrijire, siguran\u021B\u0103 \u0219i alimenta\u021Bie."
+  food: "Coco\u0219ii sunt omnivori. Se hr\u0103nesc cu cereale, semin\u021Be, insecte,
+    verdea\u021B\u0103, dar \u0219i cu resturi alimentare. \xCEn libertate, scurm\u0103
+    \xEEn p\u0103m\xE2nt pentru a g\u0103si larve \u0219i viermi. Hrana echilibrat\u0103
+    asigur\u0103 s\u0103n\u0103tatea penajului \u0219i energia necesar\u0103 comportamentului
+    activ."
+  habitatTitle: "Toat\u0103 lumea"
+  lifespanTitle: 5-12 ani
+  dietTitle: Omnivor
+  map: {fileID: 21300000, guid: 88d1358747d10a548a274efccb5a1b28, type: 3}
