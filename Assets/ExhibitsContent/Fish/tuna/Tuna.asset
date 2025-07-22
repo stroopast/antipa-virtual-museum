@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Tuna
+  m_EditorClassIdentifier: 
+  exhibitName: Ton
+  species: Thunnus spp
+  description: "Tonul este un pe\u0219te migrator de mare vitez\u0103, esen\u021Bial
+    pentru ecosistemele marine \u0219i industria alimentar\u0103. Se remarc\u0103
+    prin rezisten\u021B\u0103 \u0219i agilitate."
+  image: {fileID: 21300000, guid: 3447c00866878f146b9cbd9ba433b2cf, type: 3}
+  sound: {fileID: 8300000, guid: 8c83d5575a62c69419c09186aecf8eca, type: 3}
+  geographicRange: "Tonul tr\u0103ie\u0219te \xEEn toate oceanele mari ale lumii
+    \u2013 Atlantic, Pacific, Indian \u0219i chiar \xEEn Marea Mediteran\u0103. Specii
+    precum tonul ro\u0219u sunt migratoare \u0219i pot traversa oceane \xEEntregi."
+  habitat: "Este un pe\u0219te de ape deschise, tr\u0103ind \xEEn straturile superioare
+    ale oceanului. Prefer\u0103 apele calde \u0219i temperate, dar poate plonja p\xE2n\u0103
+    la ad\xE2ncimi de 500 metri."
+  lifespan: "\xCEn func\u021Bie de specie, tonul poate tr\u0103i \xEEntre 15 \u0219i
+    40 de ani. De exemplu, tonul ro\u0219u atlantic poate tr\u0103i p\xE2n\u0103
+    la 40 de ani \u0219i ajunge la maturitate la 4\u20138 ani."
+  food: "Tonul este carnivor activ, hr\u0103nindu-se cu al\u021Bi pe\u0219ti, crustacee,
+    cefalopode \u0219i larve marine. Este un pr\u0103d\u0103tor rapid \u0219i eficient,
+    capabil de vitez\u0103 mare."
+  habitatTitle: Ocean
+  lifespanTitle: "15\u201340 de ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 3e3d24657ea9f554ea08444615bab8b0, type: 3}

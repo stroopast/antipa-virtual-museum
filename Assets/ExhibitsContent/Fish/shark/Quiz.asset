@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Ce fel de animal este?
+    correctAnswer: peste
+    questionNumber: 1
+  - questionText: "Ce tip de pr\u0103d\u0103tor este?"
+    correctAnswer: apex
+    questionNumber: 2
+  - questionText: "Unde tr\u0103ie\u0219te?"
+    correctAnswer: ocean
+    questionNumber: 3
+  - questionText: "Ce m\u0103n\xE2nc\u0103 adesea?"
+    correctAnswer: foci
+    questionNumber: 4
+  - questionText: Este erbivor sau carnivor?
+    correctAnswer: carnivor
+    questionNumber: 5
+  - questionText: Poate ataca delfini?
+    correctAnswer: da
+    questionNumber: 6
+  - questionText: "\xCEn ce ape tr\u0103ie\u0219te?"
+    correctAnswer: tropicale
+    questionNumber: 7
+  - questionText: "C\xE2t poate tr\u0103i?"
+    correctAnswer: 70
+    questionNumber: 8
+  - questionText: E mai mare masculul sau femela?
+    correctAnswer: femela
+    questionNumber: 9
+  - questionText: "Ce vitez\u0103 are c\xE2nd atac\u0103?"
+    correctAnswer: mare
+    questionNumber: 10

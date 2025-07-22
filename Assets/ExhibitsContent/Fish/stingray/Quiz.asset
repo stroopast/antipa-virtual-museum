@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce tip de pe\u0219te este?"
+    correctAnswer: Cartilaginos
+    questionNumber: 1
+  - questionText: "C\xE2t poate tr\u0103i?"
+    correctAnswer: 20
+    questionNumber: 2
+  - questionText: "E periculoas\u0103 pentru oameni?"
+    correctAnswer: uneori
+    questionNumber: 3
+  - questionText: "Tr\u0103ie\u0219te \u0219i \xEEn ap\u0103 dulce?\n"
+    correctAnswer: da
+    questionNumber: 4
+  - questionText: Unde se ascunde?
+    correctAnswer: nisip
+    questionNumber: 5
+  - questionText: "Este ierbivor\u0103?"
+    correctAnswer: nu
+    questionNumber: 6
+  - questionText: "Ce folose\u0219te pentru a sim\u021Bi prada?"
+    correctAnswer: electricitate
+    questionNumber: 7
+  - questionText: "Ce form\u0103 are corpul ei?"
+    correctAnswer: plat
+    questionNumber: 8
+  - questionText: "Ce m\u0103n\xE2nc\u0103?"
+    correctAnswer: crustacee
+    questionNumber: 9
+  - questionText: "Unde tr\u0103ie\u0219te pisica de mare?"
+    correctAnswer: ocean
+    questionNumber: 10

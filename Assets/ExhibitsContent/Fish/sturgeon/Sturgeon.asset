@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Sturgeon
+  m_EditorClassIdentifier: 
+  exhibitName: Sturion
+  species: Acipenseridae
+  description: "Sturionul este un pe\u0219te ancestral, longeviv \u0219i masiv, care
+    tr\u0103ie\u0219te \xEEn r\xE2uri mari \u0219i m\u0103ri. Este celebru pentru
+    producerea icrelor negre (caviarul) \u0219i joac\u0103 un rol important \xEEn
+    ecosisteme."
+  image: {fileID: 21300000, guid: 21b4bcce1e178224890afa817a365db1, type: 3}
+  sound: {fileID: 8300000, guid: 8c83d5575a62c69419c09186aecf8eca, type: 3}
+  geographicRange: "Sturionii se g\u0103sesc \xEEn r\xE2urile \u0219i m\u0103rile
+    din Europa, Asia \u0219i America de Nord, \xEEn special \xEEn zonele M\u0103rii
+    Negre, Caspice, Dun\u0103rii \u0219i Volg\u0103i. Unele specii migreaz\u0103
+    \xEEntre ap\u0103 dulce \u0219i s\u0103rat\u0103."
+  habitat: "Sturionii tr\u0103iesc \xEEn ape dulci ad\xE2nci \u0219i estuare, iar
+    unele specii petrec o parte a vie\u021Bii \xEEn m\u0103ri. Prefer\u0103 fundurile
+    m\xE2loase sau nisipoase ale r\xE2urilor mari."
+  lifespan: "Au o durat\u0103 de via\u021B\u0103 excep\u021Bional\u0103: pot tr\u0103i
+    \xEEntre 50 \u0219i 100 de ani. Sunt unele dintre cele mai longevive specii de
+    pe\u0219ti. Ating maturitatea sexual\u0103 foarte t\xE2rziu."
+  food: "Sunt bentofagi (se hr\u0103nesc de pe fundul apei) \u0219i carnivori: consum\u0103
+    viermi, crustacee, melci, pe\u0219ti mici \u0219i insecte acvatice. Au o gur\u0103
+    orientat\u0103 \xEEn jos, f\u0103r\u0103 din\u021Bi, cu care aspir\u0103 prada."
+  habitatTitle: "R\xE2uri, m\u0103ri \u0219i estuare"
+  lifespanTitle: "50\u2013100 de ani"
+  dietTitle: "Carnivor\u0103, bentofag\u0103"
+  map: {fileID: 21300000, guid: 01daf7b9d67645041a96f8cfb58a2eb8, type: 3}

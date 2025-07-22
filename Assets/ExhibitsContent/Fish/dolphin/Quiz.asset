@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Ce tip de animal este delfinul?
+    correctAnswer: Mamifer
+    questionNumber: 1
+  - questionText: "Unde tr\u0103ie\u0219te delfinul?"
+    correctAnswer: Ocean
+    questionNumber: 2
+  - questionText: Este erbivor sau carnivor?
+    correctAnswer: Carnivor
+    questionNumber: 3
+  - questionText: "Cum v\xE2neaz\u0103?"
+    correctAnswer: "Ecoloca\u021Bie"
+    questionNumber: 4
+  - questionText: "Cu cine tr\u0103ie\u0219te?"
+    correctAnswer: Grup
+    questionNumber: 5
+  - questionText: "Ce m\u0103n\xE2nc\u0103 des?"
+    correctAnswer: "Pe\u0219te"
+    questionNumber: 6
+  - questionText: Este inteligent?
+    correctAnswer: Da
+    questionNumber: 7
+  - questionText: "C\xE2t tr\u0103ie\u0219te \xEEn medie?"
+    correctAnswer: 30
+    questionNumber: 8
+  - questionText: Este sociabil?
+    correctAnswer: da
+    questionNumber: 9
+  - questionText: "Are pl\u0103m\xE2ni sau branhii?"
+    correctAnswer: "Pl\u0103m\xE2ni"
+    questionNumber: 10

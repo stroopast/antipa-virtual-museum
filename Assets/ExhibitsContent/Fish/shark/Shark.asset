@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Shark
+  m_EditorClassIdentifier: 
+  exhibitName: Marele alb
+  species: Carcharodon carcharias
+  description: "Marele Rechin Alb este cel mai temut pr\u0103d\u0103tor marin, renumit
+    pentru puterea, dimensiunea \u0219i atacurile sale spectaculoase. Domin\u0103
+    lan\u021Bul trofic \xEEn apele oceanice."
+  image: {fileID: 21300000, guid: 31641845d1b93b34aace588b797d8415, type: 3}
+  sound: {fileID: 8300000, guid: 8c83d5575a62c69419c09186aecf8eca, type: 3}
+  geographicRange: "Marele Rechin Alb tr\u0103ie\u0219te \xEEn oceane temperate \u0219i
+    tropicale din \xEEntreaga lume. Este \xEEnt\xE2lnit frecvent \xEEn coastele Californiei,
+    Australiei, Africii de Sud \u0219i Japoniei."
+  habitat: "Prefer\u0103 apele de coast\u0103, dar poate fi g\u0103sit \u0219i \xEEn
+    ape ad\xE2nci, la peste 1.000 de metri. St\u0103 adesea aproape de \u021B\u0103rm
+    \xEEn zone bogate \xEEn prad\u0103, precum recife, insule sau estuare."
+  lifespan: "Poate tr\u0103i \xEEntre 40 \u0219i 70 de ani, fiind unul dintre cei
+    mai longevivi pr\u0103d\u0103tori marini. Femelele tr\u0103iesc mai mult dec\xE2t
+    masculii \u0219i ating maturitatea t\xE2rziu, la 15-20 de ani."
+  food: "Este un carnivor apex, hr\u0103nindu-se cu pe\u0219ti mari, foci, lei de
+    mare, delfini \u0219i chiar balene moarte. Are sim\u021Buri foarte dezvoltate
+    \u0219i atac\u0103 de jos, cu vitez\u0103 mare."
+  habitatTitle: Ocean
+  lifespanTitle: "40\u201370 de ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 988c2712b7b013e4a9f6b5653454b79e, type: 3}

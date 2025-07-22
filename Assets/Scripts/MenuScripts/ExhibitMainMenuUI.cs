@@ -27,7 +27,9 @@ public class ExhibitMainMenuUI : MonoBehaviour
     private List<string> noSoundAnimals = new List<string> { "Tarantula mexicană", "Scorpion imperial", "Viespea gigant asiatică",
                                                              "Gândacul verde", "Fluturele Goliath", "Văduva neagră", "Călugărița",
                                                              "Crab Dungeness", "Furnica gigant", "Lăcustă cu dungi verzi", "Anaconda verde",
-                                                             "Vipera cu corn", "Mamba negru", "Piton verde de copac", "Cobra", "Aligator", "Dragonul de Komodo"};
+                                                             "Vipera cu corn", "Mamba negru", "Piton verde de copac", "Cobra", "Aligator", "Dragonul de Komodo",
+                                                             "Delfin", "Caracatiță", "Orca", "Pește balon", "Somon",
+                                                             "Marele alb", "Pisică de mare", "Sturion", "Pește spadă", "Ton"};
 
     private void Awake()
     {
