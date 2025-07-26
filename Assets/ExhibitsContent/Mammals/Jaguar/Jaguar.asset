@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Jaguar
+  m_EditorClassIdentifier: 
+  exhibitName: Jaguar
+  species: Panthera onca
+  description: "Jaguarul este cel mai mare pr\u0103d\u0103tor al Americii, un v\xE2n\u0103tor
+    puternic \u0219i solitar, adaptat at\xE2t pentru uscat, c\xE2t \u0219i pentru
+    mediile acvatice ale p\u0103durilor tropicale."
+  image: {fileID: 21300000, guid: ddbcad766ecbe484c98474ffb766e7b3, type: 3}
+  sound: {fileID: 8300000, guid: 9d644fd73f07f8545bcc0bd8fd1a9083, type: 3}
+  geographicRange: "Jaguarul tr\u0103ie\u0219te \xEEn America Central\u0103 \u0219i
+    de Sud, fiind cel mai comun \xEEn p\u0103durile tropicale din Amazon, dar a fost
+    observat \u0219i \xEEn sudul Mexicului \u0219i nordul Argentinei."
+  habitat: "Prefer\u0103 p\u0103durile tropicale dense, mla\u0219tinile, zonele ml\u0103\u0219tinoase
+    \u0219i apropierea r\xE2urilor. Este un excelent \xEEnot\u0103tor \u0219i v\xE2n\u0103tor
+    nocturn."
+  lifespan: "\xCEn libertate, tr\u0103ie\u0219te \xEEn jur de 12\u201315 ani, iar
+    \xEEn captivitate poate atinge 20 de ani. Supravie\u021Buirea depinde de accesul
+    la prad\u0103 \u0219i de lipsa conflictului cu oamenii."
+  food: "Este un pr\u0103d\u0103tor carnivor, v\xE2n\xE2nd mamifere, p\u0103s\u0103ri,
+    reptile \u0219i pe\u0219ti. Este unul dintre pu\u021Binii pr\u0103d\u0103tori
+    care \xEE\u0219i ucide prada prin mu\u0219c\u0103tura craniului."
+  habitatTitle: "P\u0103duri tropicale"
+  lifespanTitle: "12\u201320 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 0bce294f7fcc335469b9003f62c96e1f, type: 3}

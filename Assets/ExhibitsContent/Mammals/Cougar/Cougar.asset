@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Cougar
+  m_EditorClassIdentifier: 
+  exhibitName: Puma
+  species: Puma concolor
+  description: "Puma este un pr\u0103d\u0103tor solitar, agil \u0219i t\u0103cut,
+    care tr\u0103ie\u0219te pe \xEEntreg continentul american, v\xE2n\xE2nd prin
+    ambuscad\u0103 \xEEn habitate variate."
+  image: {fileID: 21300000, guid: 73d871acb0ae8424a8c75b83f886c994, type: 3}
+  sound: {fileID: 8300000, guid: 8e38be035cee80d40999faf9d01bcd97, type: 3}
+  geographicRange: "Puma tr\u0103ie\u0219te pe aproape \xEEntregul continent american,
+    din Canada p\xE2n\u0103 \xEEn sudul Anzilor din America de Sud. Are cea mai mare
+    distribu\u021Bie geografic\u0103 dintre to\u021Bi pr\u0103d\u0103torii terestri
+    din cele dou\u0103 Americi."
+  habitat: "Este extrem de adaptabil\u0103 \u0219i poate fi \xEEnt\xE2lnit\u0103
+    \xEEn p\u0103duri, mun\u021Bi, de\u0219erturi, savane \u0219i zone \xEEmp\u0103durite.
+    Evit\u0103 \xEEn general zonele dens populate de oameni."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, puma tr\u0103ie\u0219te \xEEn medie 8\u201313
+    ani, dar \xEEn captivitate poate ajunge \u0219i la 20 de ani. Femelele tr\u0103iesc
+    de regul\u0103 mai mult dec\xE2t masculii."
+  food: "Este un pr\u0103d\u0103tor solitar, v\xE2n\xE2nd \xEEn special mamifere
+    erbivore, precum cerbi, c\u0103prioare, guanaco, porci spino\u0219i, dar \u0219i
+    pr\u0103zi mai mici dac\u0103 este cazul. V\xE2neaz\u0103 prin surprindere, din
+    apropiere."
+  habitatTitle: "mun\u021Bi, p\u0103duri"
+  lifespanTitle: "8\u201320 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 24e2c42932f8a90429ec36e98cad3e6a, type: 3}

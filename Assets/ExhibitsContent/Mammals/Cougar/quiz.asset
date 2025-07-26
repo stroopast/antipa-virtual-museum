@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "C\xE2t tr\u0103ie\u0219te \xEEn captivitate?"
+    correctAnswer: 20
+    questionNumber: 1
+  - questionText: "Poate tr\u0103i \xEEn apropierea ora\u0219elor mari?"
+    correctAnswer: nu
+    questionNumber: 2
+  - questionText: Ce culoare are blana cel mai des?
+    correctAnswer: bej
+    questionNumber: 3
+  - questionText: "Poate tr\u0103i \xEEn de\u0219ert?"
+    correctAnswer: da
+    questionNumber: 4
+  - questionText: Este puma un animal migrator?
+    correctAnswer: nu
+    questionNumber: 5
+  - questionText: "Ce animal mare v\xE2neaz\u0103 des?"
+    correctAnswer: cerb
+    questionNumber: 6
+  - questionText: "Unde v\xE2neaz\u0103 cel mai eficient?"
+    correctAnswer: padure
+    questionNumber: 7
+  - questionText: "Ce fel de diet\u0103 are?"
+    correctAnswer: "Carnivor\u0103"
+    questionNumber: 8
+  - questionText: "\xCEn ce continent tr\u0103ie\u0219te puma?"
+    correctAnswer: America
+    questionNumber: 9
+  - questionText: "Este puma un animal solitar sau de hait\u0103?"
+    correctAnswer: solitart
+    questionNumber: 10

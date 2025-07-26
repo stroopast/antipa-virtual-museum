@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Tiger
+  m_EditorClassIdentifier: 
+  exhibitName: Tigru
+  species: Panthera tigris
+  description: "Tigrul este cea mai mare felin\u0103 din lume, un pr\u0103d\u0103tor
+    solitar \u0219i discret, simbol al puterii \u0219i elegan\u021Bei s\u0103lbatice
+    \xEEn p\u0103durile Asiei."
+  image: {fileID: 21300000, guid: 5d41aeeffd733304abb4ebfa290a6b5f, type: 3}
+  sound: {fileID: 8300000, guid: 8aff35e93f25808488288371ef9e6b31, type: 3}
+  geographicRange: "Tigrul tr\u0103ie\u0219te \xEEn Asia, \xEEn special \xEEn India,
+    China, Rusia (Extremul Orient), Indochina \u0219i insulele Sumatra \u0219i Java.
+    Popula\u021Biile sunt dispersate \u0219i fragmentate."
+  habitat: "Prefer\u0103 p\u0103duri dese tropicale, mangrove, taigale \u0219i savane,
+    dar poate fi g\u0103sit \u0219i \xEEn zone muntoase. E un animal adaptabil, dar
+    are nevoie de teritorii mari \u0219i izolate."
+  lifespan: "\xCEn s\u0103lb\u0103ticie tr\u0103ie\u0219te \xEEntre 10 \u0219i 15
+    ani, iar \xEEn captivitate poate ajunge la 20\u201325 de ani. Masculii tr\u0103iesc
+    adesea mai pu\u021Bin dec\xE2t femelele din cauza conflictelor teritoriale."
+  food: "Tigrul este un pr\u0103d\u0103tor solitar, carnivor, care v\xE2neaz\u0103
+    mamifere mari: cerbi, mistre\u021Bi, bivoli, uneori \u0219i maimu\u021Be, p\u0103s\u0103ri
+    sau pe\u0219ti. Se bazeaz\u0103 pe for\u021B\u0103 \u0219i atac surpriz\u0103."
+  habitatTitle: "P\u0103duri tropicale"
+  lifespanTitle: "10\u201325 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 36457ac64b462e6428ea6e7fa95de2d0, type: 3}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Wolf
+  m_EditorClassIdentifier: 
+  exhibitName: Lup
+  species: Canis lupus
+  description: "Lupul este un v\xE2n\u0103tor social inteligent, tr\u0103ind \xEEn
+    haite organizate. A ocupat o mare varietate de habitate \u0219i joac\u0103 un
+    rol cheie \xEEn echilibrul ecosistemelor."
+  image: {fileID: 21300000, guid: 362f4122da32265428afac142d2ad6d0, type: 3}
+  sound: {fileID: 8300000, guid: 55cf52fb50cc45540ba3f0489924e007, type: 3}
+  geographicRange: "Lupii sunt r\u0103sp\xE2ndi\u021Bi pe tot globul, \xEEn America
+    de Nord, Europa, Asia \u0219i unele p\u0103r\u021Bi din Orientul Mijlociu \u0219i
+    Africa de Nord."
+  habitat: "Sunt extrem de adaptabili \u0219i pot tr\u0103i \xEEn p\u0103duri, tundre,
+    stepe, mun\u021Bi \u0219i chiar de\u0219erturi. Prefer\u0103 zonele s\u0103lbatice,
+    cu pu\u021Bin\u0103 prezen\u021B\u0103 uman\u0103."
+  lifespan: "\xCEn s\u0103lb\u0103ticie, tr\u0103iesc \xEEn medie 6\u20138 ani, dar
+    pot atinge \u0219i 13 ani. \xCEn captivitate pot tr\u0103i p\xE2n\u0103 la 16
+    ani."
+  food: "Sunt carnivori, v\xE2n\u0103tori sociali, hr\u0103nindu-se cu cerbi, iepuri,
+    mistre\u021Bi \u0219i roz\u0103toare. Uneori consum\u0103 \u0219i hoituri sau
+    hran\u0103 vegetal\u0103 ocazional."
+  habitatTitle: "P\u0103duri"
+  lifespanTitle: "6\u201313 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 78ac78c549ab394488b91bd2b2ae5ca1, type: 3}

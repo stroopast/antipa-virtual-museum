@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce animal v\xE2neaz\u0103 cel mai des?"
+    correctAnswer: foca
+    questionNumber: 
+  - questionText: Cum e blana ursului polar?
+    correctAnswer: alba
+    questionNumber: 
+  - questionText: "Pe ce continent tr\u0103ie\u0219te ursul polar?"
+    correctAnswer: Poli
+    questionNumber: 
+  - questionText: Este erbivor sau carnivor?
+    correctAnswer: carnivor
+    questionNumber: 
+  - questionText: "Unde \xEE\u0219i petrece majoritatea timpului?"
+    correctAnswer: gheata
+    questionNumber: 
+  - questionText: "Ce \u021Bar\u0103 are popula\u021Bie mare de ur\u0219i polari?"
+    correctAnswer: canada
+    questionNumber: 
+  - questionText: "Poate \xEEnota pe distan\u021Be mari?"
+    correctAnswer: da
+    questionNumber: 
+  - questionText: "Ce culoare are pielea de sub blan\u0103?"
+    correctAnswer: neagra
+    questionNumber: 
+  - questionText: "Este un v\xE2n\u0103tor solitar?"
+    correctAnswer: da
+    questionNumber: 
+  - questionText: "Ce v\xE2rst\u0103 atinge rar \xEEn captivitate?"
+    correctAnswer: 30
+    questionNumber: 

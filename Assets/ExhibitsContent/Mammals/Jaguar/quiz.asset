@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce alt animal mare \xEEmp\u0103rt\u0103\u0219e\u0219te genul Panthera
+      cu el?"
+    correctAnswer: tigrul
+    questionNumber: 1
+  - questionText: "C\xE2t tr\u0103ie\u0219te \xEEn libertate?"
+    correctAnswer: 15
+    questionNumber: 2
+  - questionText: "Ce animal poate v\xE2na, de\u0219i are carapace?"
+    correctAnswer: broasca
+    questionNumber: 3
+  - questionText: Ce culoare au petele lui?
+    correctAnswer: negre
+    questionNumber: 4
+  - questionText: "Tr\u0103ie\u0219te \xEEn grup sau singur?"
+    correctAnswer: singur
+    questionNumber: 5
+  - questionText: "Este un bun \xEEnot\u0103tor?"
+    correctAnswer: da
+    questionNumber: 6
+  - questionText: "Ce animal mare din America se aseam\u0103n\u0103 cu leopardul?"
+    correctAnswer: jaguar
+    questionNumber: 7
+  - questionText: "Ce parte a corpului pr\u0103zii atac\u0103?"
+    correctAnswer: craniu
+    questionNumber: 8
+  - questionText: Este carnivor sau erbivor?
+    correctAnswer: carnivor
+    questionNumber: 9
+  - questionText: "\xCEn ce p\u0103dure tropical\u0103 tr\u0103ie\u0219te frecvent
+      jaguarul?"
+    correctAnswer: amazon
+    questionNumber: 10

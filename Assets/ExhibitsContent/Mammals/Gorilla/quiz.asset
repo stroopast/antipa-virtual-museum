@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Este omnivor\u0103?"
+    correctAnswer: nu
+    questionNumber: 1
+  - questionText: "Ce specie de goril\u0103 tr\u0103ie\u0219te \xEEn mun\u021Bi?"
+    correctAnswer: montana
+    questionNumber: 2
+  - questionText: "Tr\u0103ie\u0219te \xEEn grup sau singur\u0103?"
+    correctAnswer: grup
+    questionNumber: 3
+  - questionText: "Ce fel de diet\u0103 are?"
+    correctAnswer: erbivora
+    questionNumber: 4
+  - questionText: Ce lungime poate atinge un adult (m)?
+    correctAnswer: 20
+    questionNumber: 5
+  - questionText: "Cum se nume\u0219te masculul dominant?"
+    correctAnswer: silverback
+    questionNumber: 6
+  - questionText: Care este sexul liderului de grup?
+    correctAnswer: mascul
+    questionNumber: 7
+  - questionText: "Ce m\u0103n\xE2nc\u0103 cel mai des?"
+    correctAnswer: frunze
+    questionNumber: 8
+  - questionText: "Unde tr\u0103ie\u0219te \xEEn mod natural?"
+    correctAnswer: africa
+    questionNumber: 9
+  - questionText: Ce tip de animal este gorila?
+    correctAnswer: primata
+    questionNumber: 10

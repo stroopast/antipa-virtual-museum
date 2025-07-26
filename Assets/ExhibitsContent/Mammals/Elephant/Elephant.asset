@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Elephant
+  m_EditorClassIdentifier: 
+  exhibitName: Elefant
+  species: Elephas maximus
+  description: "Elefantul este cel mai mare mamifer terestru, cunoscut pentru inteligen\u021Ba
+    sa, memoria excelent\u0103 \u0219i rolul esen\u021Bial \xEEn men\u021Binerea
+    echilibrului ecologic."
+  image: {fileID: 21300000, guid: bc7e3e3be8a65dc47ba3606c4c3271bb, type: 3}
+  sound: {fileID: 8300000, guid: 70c1357e99dd6f340b5e7a5e474f5714, type: 3}
+  geographicRange: "Elefan\u021Bii tr\u0103iesc \xEEn Africa (elefantul african)
+    \u0219i Asia de Sud \u0219i Sud-Est (elefantul asiatic). Habitatul lor include
+    peste 35 de \u021B\u0103ri, de la savanele africane p\xE2n\u0103 la p\u0103durile
+    tropicale asiatice."
+  habitat: "Prefer\u0103 savane, p\u0103duri tropicale, mla\u0219tini \u0219i c\xE2mpii
+    \xEEmp\u0103durite, unde au acces la ap\u0103 \u0219i vegeta\u021Bie abundent\u0103.
+    Sunt animale migratoare sezoniere, urm\xE2nd trasee vechi."
+  lifespan: "Elefan\u021Bii pot tr\u0103i \xEEntre 50 \u0219i 70 de ani, iar \xEEn
+    captivitate uneori chiar mai mult. Sunt unele dintre cele mai longevive mamifere
+    terestre."
+  food: "Sunt erbivori, consum\xE2nd zilnic \xEEntre 100 \u0219i 300 kg de vegeta\u021Bie:
+    frunze, iarb\u0103, scoar\u021B\u0103 de copac, fructe \u0219i r\u0103d\u0103cini.
+    Petrec peste 16 ore pe zi hr\u0103nindu-se."
+  habitatTitle: "Savane, p\u0103duri"
+  lifespanTitle: "50\u201370 ani"
+  dietTitle: "Erbivor\u0103"
+  map: {fileID: 21300000, guid: e8e32576c9f20a0488956fc5a199bfc6, type: 3}

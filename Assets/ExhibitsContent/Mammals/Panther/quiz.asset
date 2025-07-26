@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Ce caracteristic\u0103 unic\u0103 \xEEi ofer\u0103 camuflaj?"
+    correctAnswer: Melanismul
+    questionNumber: 1
+  - questionText: "C\xE2t tr\u0103ie\u0219te \xEEn captivitate?"
+    correctAnswer: 20
+    questionNumber: 2
+  - questionText: "Tr\u0103ie\u0219te singur\u0103 sau \xEEn grup?"
+    correctAnswer: singura
+    questionNumber: 3
+  - questionText: "Ce tip de atac prefer\u0103 pantera?"
+    correctAnswer: surpriza
+    questionNumber: 4
+  - questionText: Este un animal diurn sau nocturn?
+    correctAnswer: nocturn
+    questionNumber: 5
+  - questionText: "Ce specie poate fi pantera \xEEn Amazon?"
+    correctAnswer: jaguar
+    questionNumber: 6
+  - questionText: "Ce specie poate fi pantera \xEEn Asia?"
+    correctAnswer: leopard
+    questionNumber: 7
+  - questionText: "Unde prefer\u0103 s\u0103 v\xE2neze?"
+    correctAnswer: padure
+    questionNumber: 8
+  - questionText: "Este erbivor\u0103 sau carnivor\u0103?"
+    correctAnswer: carnivora
+    questionNumber: 9
+  - questionText: "Ce culoare are pantera melanistic\u0103?"
+    correctAnswer: neagra
+    questionNumber: 10

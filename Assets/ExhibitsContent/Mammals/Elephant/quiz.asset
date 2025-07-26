@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Cum se nume\u0219te perioada de deplasare sezonier\u0103?"
+    correctAnswer: migratie
+    questionNumber: 1
+  - questionText: E un animal solitar?
+    correctAnswer: nu
+    questionNumber: 2
+  - questionText: "Cu ce \xEE\u0219i protejeaz\u0103 familia?"
+    correctAnswer: colti
+    questionNumber: 3
+  - questionText: "Se poate adapta la p\u0103duri tropicale?"
+    correctAnswer: da
+    questionNumber: 4
+  - questionText: "Ce fel de habitat prefer\u0103?"
+    correctAnswer: savane
+    questionNumber: 5
+  - questionText: "C\xE2t poate tr\u0103i un elefant \xEEn libertate?"
+    correctAnswer: 70
+    questionNumber: 6
+  - questionText: "Ce parte a corpului folose\u0219te pentru a mirosi \u0219i apuca?"
+    correctAnswer: trompa
+    questionNumber: 7
+  - questionText: "\xCEn ce continent tr\u0103ie\u0219te elefantul african?"
+    correctAnswer: africa
+    questionNumber: 8
+  - questionText: "Ce fel de diet\u0103 are?"
+    correctAnswer: erbivora
+    questionNumber: 9
+  - questionText: Care este cel mai mare mamifer terestru?
+    correctAnswer: elefantul
+    questionNumber: 10

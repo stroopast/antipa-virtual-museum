@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Care este cel mai \xEEnalt animal de pe uscat?"
+    correctAnswer: girafa
+    questionNumber: 1
+  - questionText: "Se deplaseaz\u0103 singur\u0103 sau \xEEn grup?"
+    correctAnswer: grup
+    questionNumber: 2
+  - questionText: "C\xE2t poate tr\u0103i \xEEn libertate?"
+    correctAnswer: 20
+    questionNumber: 3
+  - questionText: Ce culoare are limba girafei?
+    correctAnswer: albastru
+    questionNumber: 4
+  - questionText: "\xCEn ce \u021Bar\u0103 african\u0103 sunt multe girafe?"
+    correctAnswer: kenya
+    questionNumber: 5
+  - questionText: "Unde tr\u0103ie\u0219te cel mai des?"
+    correctAnswer: savana
+    questionNumber: 6
+  - questionText: "Ce fel de diet\u0103 are girafa?"
+    correctAnswer: erbivora
+    questionNumber: 7
+  - questionText: "Ce parte a corpului e foarte lung\u0103, \xEEn afar\u0103 de g\xE2t?"
+    correctAnswer: limba
+    questionNumber: 8
+  - questionText: "Cu ce tip de plante se hr\u0103ne\u0219te frecvent?"
+    correctAnswer: acacia
+    questionNumber: 9
+  - questionText: "Pe ce continent tr\u0103iesc girafele?"
+    correctAnswer: africa
+    questionNumber: 10
