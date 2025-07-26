@@ -33,6 +33,7 @@ public class PlayerController : NetworkBehaviour
         {
             HandleMovement();
             UpdateMovementAnimation();
+            CheckInteractionAnimations();
             freeLookCamera.m_XAxis.m_InputAxisName = "Mouse X";
             freeLookCamera.m_YAxis.m_InputAxisName = "Mouse Y";
         }
@@ -45,6 +46,26 @@ public class PlayerController : NetworkBehaviour
             freeLookCamera.m_YAxis.m_InputAxisValue = 0;
 
             ResetMovementAnimation();
+        }
+    }
+
+    private void CheckInteractionAnimations()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            animator.SetTrigger("wave1Trigger");
+        }
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            animator.SetTrigger("wave2Trigger");
+        }
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            animator.SetTrigger("dance1Trigger");
+        }
+        if (Input.GetKeyDown(KeyCode.F4))
+        {
+            animator.SetTrigger("dance2Trigger");
         }
     }
 
