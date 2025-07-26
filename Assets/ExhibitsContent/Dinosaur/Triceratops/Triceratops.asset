@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Triceratops
+  m_EditorClassIdentifier: 
+  exhibitName: Triceratops
+  species: Triceratops horridus
+  description: "Triceratops era un dinozaur erbivor masiv, cu trei coarne \u0219i
+    o \u201Eguler\u201D osos protector, perfect adaptat pentru ap\u0103rare \xEEmpotriva
+    pr\u0103d\u0103torilor."
+  image: {fileID: 21300000, guid: 26d19c0502c6dd148be9d98f3493e85d, type: 3}
+  sound: {fileID: 8300000, guid: 0563bfa7a53f36547bcc41a51741e87b, type: 3}
+  geographicRange: "A tr\u0103it \xEEn America de Nord, \xEEn special \xEEn vestul
+    SUA \u0219i Canada."
+  habitat: "Popula zonele ml\u0103\u0219tinoase, c\xE2mpiile \u0219i p\u0103durile
+    tropicale joase, \xEEn apropierea r\xE2urilor."
+  lifespan: "Se estimeaz\u0103 c\u0103 putea tr\u0103i p\xE2n\u0103 la 30 de ani,
+    dezvolt\xE2ndu-se complet \xEEn aproximativ 10 ani."
+  food: "Era erbivor, hr\u0103nindu-se cu ferigi, palmieri, cicade \u0219i alte plante
+    joase, folosindu-\u0219i ciocul pentru a smulge vegeta\u021Bia."
+  habitatTitle: "C\xE2mpii, p\u0103duri"
+  lifespanTitle: 30 ani
+  dietTitle: "Erbivor\u0103"
+  map: {fileID: 21300000, guid: ad8ba606a15f3604aa527da7b6e0cd10, type: 3}

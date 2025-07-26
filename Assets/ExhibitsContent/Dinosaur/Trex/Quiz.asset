@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: "Unde tr\u0103ia T. rex?"
+    correctAnswer: America
+    questionNumber: 1
+  - questionText: Ce tip de dinozaur era?
+    correctAnswer: Carnivor
+    questionNumber: 2
+  - questionText: "Ce prad\u0103 v\xE2na?"
+    correctAnswer: Triceratops
+    questionNumber: 3
+  - questionText: Era erbivor sau carnivor?
+    correctAnswer: Carnivor
+    questionNumber: 4
+  - questionText: "\xCEn ce perioad\u0103 a tr\u0103it?"
+    correctAnswer: Cretacic
+    questionNumber: 5
+  - questionText: "C\xE2te picioare folosea pentru mers?"
+    correctAnswer: Doua
+    questionNumber: 6
+  - questionText: "Ce f\u0103cea cu bra\u021Bele mici?"
+    correctAnswer: Nimic
+    questionNumber: 7
+  - questionText: "Era pr\u0103d\u0103tor sau pr\u0103d\u0103?"
+    correctAnswer: pradator
+    questionNumber: 8
+  - questionText: Ce avea puternic?
+    correctAnswer: muscatura
+    questionNumber: 9
+  - questionText: "Tr\u0103ia singur sau \xEEn grup?"
+    correctAnswer: singur
+    questionNumber: 10

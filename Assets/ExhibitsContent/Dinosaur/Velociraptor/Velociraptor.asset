@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Velociraptor
+  m_EditorClassIdentifier: 
+  exhibitName: Velociraptor
+  species: Velociraptor mongoliensis
+  description: "Velociraptorul era un dinozaur mic, dar rapid \u0219i inteligent,
+    faimos pentru gheara curbat\u0103 de pe picior \u0219i posibila v\xE2n\u0103toare
+    \xEEn hait\u0103."
+  image: {fileID: 21300000, guid: 0e5ad1ac4f4958945acd7d8f3281df97, type: 3}
+  sound: {fileID: 8300000, guid: 625d53a8a150d4f43852cabbc2afffbc, type: 3}
+  geographicRange: "A fost descoperit \xEEn de\u0219ertul Gobi, Mongolia \u2013 Asia
+    Central\u0103."
+  habitat: "Locuia \xEEn zone semi-aride, cu dune de nisip, r\xE2uri \u0219i tufi\u0219uri,
+    cu clim\u0103 cald\u0103 \u0219i uscat\u0103."
+  lifespan: "Estimarea duratei de via\u021B\u0103 este de 10\u201315 ani, fiind un
+    dinozaur de dimensiuni mici, cu cre\u0219tere rapid\u0103."
+  food: "Carnivor agil, se hr\u0103nea cu mamifere mici, \u0219op\xE2rle, ou\u0103
+    \u0219i dinozauri mai mici, posibil chiar \xEEn grupuri."
+  habitatTitle: "De\u0219erturi"
+  lifespanTitle: "10\u201315 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: d8ed352672f59684eab268a1826cafc5, type: 3}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Spinosaurus
+  m_EditorClassIdentifier: 
+  exhibitName: Spinosaurus
+  species: Spinosaurus aegyptiacus
+  description: "Spinosaurus a fost un dinozaur pr\u0103d\u0103tor semi-acvatic, faimos
+    pentru \u201Evela\u201D de pe spate \u0219i adapt\u0103rile sale unice pentru
+    v\xE2n\u0103toarea de pe\u0219ti \xEEn ape tropicale."
+  image: {fileID: 21300000, guid: b9a39a75b70fcef4cb8f6e065228bffa, type: 3}
+  sound: {fileID: 8300000, guid: 0b33b7b58426fb14f8cee428d72e0f5e, type: 3}
+  geographicRange: "Fosilele sale au fost descoperite \xEEn Africa de Nord, \xEEn
+    special \xEEn Egipt \u0219i Maroc."
+  habitat: "Spinosaurus tr\u0103ia \xEEn ecosisteme tropicale umede, \xEEn apropierea
+    r\xE2urilor, deltelor \u0219i lagunelor, av\xE2nd un stil de via\u021B\u0103
+    semi-acvatic."
+  lifespan: "Se estimeaz\u0103 c\u0103 tr\u0103ia \xEEntre 20\u201325 de ani, ating\xE2nd
+    dimensiuni mari \xEEn jurul v\xE2rstei de 15 ani."
+  food: "Era carnivor, cu o diet\u0103 dominat\u0103 de pe\u0219ti mari, dar se hr\u0103nea
+    \u0219i cu animale terestre; avea f\u0103lci alungite \u0219i din\u021Bi conici,
+    ideali pentru prinderea pr\u0103zii alunecoase."
+  habitatTitle: "R\xE2uri, delte"
+  lifespanTitle: "20\u201325 ani"
+  dietTitle: "Carnivor\u0103"
+  map: {fileID: 21300000, guid: 3115fcf62272c794b9bfbf4fc27a1206, type: 3}

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Unde a fost descoperit?
+    correctAnswer: Mongolia
+    questionNumber: 1
+  - questionText: Era rapid sau lent?
+    correctAnswer: Rapid
+    questionNumber: 2
+  - questionText: "Ce form\u0103 avea gheara?"
+    correctAnswer: curbata
+    questionNumber: 3
+  - questionText: Marimea acestuia este mica sau mare?
+    correctAnswer: mica
+    questionNumber: 4
+  - questionText: Ce fel de dinozaur era?
+    correctAnswer: carnivor
+    questionNumber: 5
+  - questionText: "Tr\u0103ia singur sau \xEEn grup?"
+    correctAnswer: grup
+    questionNumber: 6
+  - questionText: Avea pene?
+    correctAnswer: Da
+    questionNumber: 7
+  - questionText: "Ce tip de prad\u0103 consuma?"
+    correctAnswer: mica
+    questionNumber: 8
+  - questionText: "\xCEn ce epoc\u0103 tr\u0103ia?"
+    correctAnswer: cretacic
+    questionNumber: 9
+  - questionText: Era erbivor?
+    correctAnswer: nu
+    questionNumber: 10

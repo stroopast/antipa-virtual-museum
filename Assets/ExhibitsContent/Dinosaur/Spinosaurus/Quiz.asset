@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923db40e028c2c74e9a07d950fa3d2aa, type: 3}
+  m_Name: Quiz
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: Unde a fost descoperit?
+    correctAnswer: africa
+    questionNumber: 1
+  - questionText: Era erbivor sau carnivor?
+    correctAnswer: Carnivor
+    questionNumber: 2
+  - questionText: "Ce v\xE2na \xEEn principal?"
+    correctAnswer: pesti
+    questionNumber: 3
+  - questionText: "Ce form\u0103 avea spatele?"
+    correctAnswer: vela
+    questionNumber: 4
+  - questionText: Ce fel de mediu prefera?
+    correctAnswer: acvatic
+    questionNumber: 5
+  - questionText: "Avea bra\u021Be lungi sau scurte?"
+    correctAnswer: lungi
+    questionNumber: 6
+  - questionText: "Cu ce se hr\u0103nea \xEEn ap\u0103?"
+    correctAnswer: pesti
+    questionNumber: 7
+  - questionText: "Era mai mare dec\xE2t T. rex?"
+    correctAnswer: da
+    questionNumber: 8
+  - questionText: Ce avea pe spate?
+    correctAnswer: vela
+    questionNumber: 9
+  - questionText: Era biped sau patruped?
+    correctAnswer: ambele
+    questionNumber: 10

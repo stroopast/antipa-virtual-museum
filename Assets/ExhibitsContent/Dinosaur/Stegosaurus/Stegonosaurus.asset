@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde1cabbc94108d419bff18de9fa66e7, type: 3}
+  m_Name: Stegonosaurus
+  m_EditorClassIdentifier: 
+  exhibitName: Stegosaurus
+  species: Stegosaurus stenops
+  description: "Stegosaurus era un dinozaur erbivor recunoscut pentru pl\u0103cile
+    mari de pe spate \u0219i coada cu 4 \u021Bepi folosit\u0103 \xEEn ap\u0103rare."
+  image: {fileID: 21300000, guid: 4da4d45bebe414948a34c2fc3f6fc88f, type: 3}
+  sound: {fileID: 8300000, guid: 2a8fa1fe79b59ae4fb0590a2b3463a5a, type: 3}
+  geographicRange: "Tr\u0103ia \xEEn ceea ce este ast\u0103zi America de Nord, \xEEn
+    special zona Mun\u021Bilor St\xE2nco\u0219i."
+  habitat: "Locuia \xEEn p\u0103duri joase, c\xE2mpii aluvionare \u0219i regiuni
+    subtropicale, cu vegeta\u021Bie dens\u0103."
+  lifespan: "Se estimeaz\u0103 c\u0103 putea tr\u0103i p\xE2n\u0103 la 25\u201330
+    de ani, dar avea o dezvoltare lent\u0103."
+  food: "Era erbivor, consum\xE2nd ferigi, conifere, cicade \u0219i plante joase,
+    pe care le smulgea cu ciocul s\u0103u lipsit de din\u021Bi."
+  habitatTitle: "C\xE2mpii subtropicale"
+  lifespanTitle: "25\u201330 ani"
+  dietTitle: "Erbivor\u0103"
+  map: {fileID: 21300000, guid: db565e7e187cbb14098b19351404302d, type: 3}
