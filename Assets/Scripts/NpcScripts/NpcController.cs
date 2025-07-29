@@ -17,6 +17,16 @@ public class NpcController : NetworkBehaviour
     [SerializeField] private GameObject npcRoomDialogue;
     [SerializeField] private TextMeshProUGUI countdownTimer;
 
+    [SerializeField] private TextMeshProUGUI textRoom1;
+    [SerializeField] private TextMeshProUGUI textRoom2;
+    [SerializeField] private TextMeshProUGUI textRoom3;
+    [SerializeField] private TextMeshProUGUI textRoom4;
+    [SerializeField] private TextMeshProUGUI textRoom5;
+    [SerializeField] private TextMeshProUGUI textRoom6;
+    [SerializeField] private TextMeshProUGUI textRoom7;
+    [SerializeField] private TextMeshProUGUI textRoom8;
+    [SerializeField] private TextMeshProUGUI textRoom9;
+
     private NavMeshAgent agent;
     private Animator animator;
     private int currentCheckpoint = 0;
@@ -174,7 +184,7 @@ public class NpcController : NetworkBehaviour
             {
                 if (GameModeManager.Instance.GetGameMode() == 1)
                 {
-                    TriggerRoomDialogue(i);
+                    TriggerRoomDialogueClientRpc(i);
                 }
                 else
                 {
@@ -203,31 +213,31 @@ public class NpcController : NetworkBehaviour
         switch (room)
         {
             case 0:
-                dialogueText.text = "";
+                dialogueText.text = textRoom1.text;
                 break;
             case 1:
-                dialogueText.text = "";
+                dialogueText.text = textRoom2.text;
                 break;
             case 2:
-                dialogueText.text = "";
+                dialogueText.text = textRoom3.text;
                 break;
             case 3:
-                dialogueText.text = "";
+                dialogueText.text = textRoom4.text;
                 break;
             case 4:
-                dialogueText.text = "";
+                dialogueText.text = textRoom5.text;
                 break;
             case 5:
-                dialogueText.text = "";
+                dialogueText.text = textRoom6.text;
                 break;
             case 6:
-                dialogueText.text = "";
+                dialogueText.text = textRoom7.text;
                 break;
             case 7:
-                dialogueText.text = "";
+                dialogueText.text = textRoom8.text;
                 break;
             case 8:
-                dialogueText.text = "";
+                dialogueText.text = textRoom9.text;
                 break;
         }
     }
@@ -239,33 +249,31 @@ public class NpcController : NetworkBehaviour
         switch (room)
         {
             case 0:
-                dialogueText.text = "";
+                dialogueText.text = textRoom1.text;
                 break;
             case 1:
-                dialogueText.text = "";
+                dialogueText.text = textRoom2.text;
                 break;
             case 2:
-                dialogueText.text = "";
+                dialogueText.text = textRoom3.text;
                 break;
             case 3:
-                dialogueText.text = "";
+                dialogueText.text = textRoom4.text;
                 break;
             case 4:
-                dialogueText.text = "";
+                dialogueText.text = textRoom5.text;
                 break;
             case 5:
-                dialogueText.text = "";
+                dialogueText.text = textRoom6.text;
                 break;
             case 6:
-                dialogueText.text = "";
+                dialogueText.text = textRoom7.text;
                 break;
             case 7:
-                dialogueText.text = "";
+                dialogueText.text = textRoom8.text;
                 break;
             case 8:
-                dialogueText.text = "";
-                break;
-            default:
+                dialogueText.text = textRoom9.text;
                 break;
         }
     }

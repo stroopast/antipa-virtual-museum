@@ -9894,6 +9894,157 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ecfc4a80d04ed7a44b2735be05e98425, type: 3}
   m_PrefabInstance: {fileID: 253770421}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &256623360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256623361}
+  - component: {fileID: 256623363}
+  - component: {fileID: 256623362}
+  m_Layer: 5
+  m_Name: Text_room8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &256623361
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256623360}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &256623362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256623360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Bine a\u021Bi venit \xEEn Camera Pe\u0219tilor, un col\u021B dedicat vie\u021Buitoarelor
+    din ad\xE2ncurile oceanelor \u0219i m\u0103rilor! Aici putem admira unele dintre
+    cele mai fascinante \u0219i rapide creaturi marine.\n\n\xCEn fa\u021B\u0103,
+    domin\u0103 impun\u0103toarea Orc\u0103, cunoscut\u0103 \u0219i sub numele de
+    balena uciga\u0219\u0103. De\u0219i face parte din familia delfinilor, este un
+    pr\u0103d\u0103tor de top, inteligent \u0219i organizat, v\xE2n\xE2nd \xEEn grupuri
+    bine coordonate.\n\nAl\u0103turi, \xEEnoat\u0103 Rechinul Alb, un simbol al puterii
+    \u0219i al eficien\u021Bei \xEEn regnul marin. Cu sim\u021Buri extrem de dezvoltate
+    \u0219i o vitez\u0103 uimitoare, este un v\xE2n\u0103tor de temut.\n\n\xCEn zona
+    central\u0103 g\u0103sim Tonul, un \xEEnot\u0103tor rapid \u0219i rezistent,
+    important at\xE2t \xEEn ecosistem, c\xE2t \u0219i pentru alimenta\u021Bia uman\u0103.
+    Poate atinge viteze impresionante \u0219i migreaz\u0103 pe distan\u021Be lungi.\n\nL\xE2ng\u0103
+    el, plin de gra\u021Bie, se afl\u0103 Delfinul, una dintre cele mai inteligente
+    \u0219i prietenoase creaturi marine. Este sociabil, juc\u0103u\u0219 \u0219i
+    comunic\u0103 prin sunete complexe \u0219i ecou-localizare.\n\n\u0218i, desigur,
+    \xEEn jurul lor se \xEEnv\xE2rt numeroase alte specii de pe\u0219ti, fiecare
+    cu forme, culori \u0219i abilit\u0103\u021Bi uimitoare, demonstr\xE2nd c\xE2t
+    de divers\u0103 \u0219i spectaculoas\u0103 este via\u021Ba subacvatic\u0103."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &256623363
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256623360}
+  m_CullTransparentMesh: 1
 --- !u!1 &256799531
 GameObject:
   m_ObjectHideFlags: 0
@@ -14714,6 +14865,149 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82a2dedbcdc47ac4a92072d5b7b0cac2, type: 3}
   m_PrefabInstance: {fileID: 381439535}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &381557478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381557479}
+  - component: {fileID: 381557481}
+  - component: {fileID: 381557480}
+  m_Layer: 5
+  m_Name: Text_room1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &381557479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381557478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &381557480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381557478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Salutare, exploratori! \xCEnainte s\u0103 \xEEncepem turul propriu-zis,
+    vreau s\u0103 v\u0103 fac o scurt\u0103 prezentare a acestui tur ghidat interactiv.\nPe
+    parcursul vizitei, m\u0103 voi opri \xEEn fiecare camer\u0103 pentru a v\u0103
+    povesti c\xE2teva lucruri interesante despre exponatele din acea \xEEnc\u0103pere.
+    La finalul turului, v-am preg\u0103tit o mic\u0103 provocare sub forma a dou\u0103
+    jocule\u021Be!\nPrimul este un set de \xEEntreb\u0103ri despre ce a\u021Bi descoperit
+    \xEEn muzeu, iar al doilea este un joc amuzant \xEEn care va trebui s\u0103 ghici\u021Bi
+    ce animal a l\u0103sat urma din imaginea prezentat\u0103.\nPromit c\u0103 va
+    fi distractiv! A\u0219a c\u0103... s\u0103 nu mai pierdem vremea \u0219i s\u0103
+    \xEEncepem aventura!"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &381557481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381557478}
+  m_CullTransparentMesh: 1
 --- !u!1 &382565889
 GameObject:
   m_ObjectHideFlags: 0
@@ -16089,6 +16383,155 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0132146105, y: 0.019994909, z: 0.01199599}
   m_Center: {x: -0.0000052249525, y: -0.00001442153, z: -0.0000025457703}
+--- !u!1 &416043487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416043488}
+  - component: {fileID: 416043490}
+  - component: {fileID: 416043489}
+  m_Layer: 5
+  m_Name: Text_room5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &416043488
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416043487}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &416043489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416043487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Urmeaz\u0103 Camera P\u0103s\u0103rilor, unde putem admira c\xE2teva dintre
+    cele mai emblematice specii zbur\u0103toare.\n\n\xCEn fa\u021B\u0103, troneaz\u0103
+    impun\u0103tor Vulturul cu cap alb, simbol na\u021Bional al Statelor Unite. Este
+    un excelent pr\u0103d\u0103tor, cu o vedere extrem de ascu\u021Bit\u0103, capabil
+    s\u0103 detecteze prada de la kilometri distan\u021B\u0103.\n\nAl\u0103turi de
+    el, z\u0103rim Pesc\u0103ru\u0219ul, o pas\u0103re de coast\u0103 adaptabil\u0103,
+    cunoscut\u0103 pentru \u021Bipetele sale inconfundabile \u0219i pentru talentul
+    de a fura gust\u0103ri direct de pe plaj\u0103!\n\nPe o ramur\u0103 mai \xEEnalt\u0103
+    st\u0103 Bufni\u021Ba, st\u0103p\xE2na nop\u021Bii. Este o pas\u0103re t\u0103cut\u0103
+    \u0219i misterioas\u0103, cu o auz excelent \u0219i o capacitate uimitoare de
+    a zbura f\u0103r\u0103 zgomot, ideal\u0103 pentru v\xE2n\u0103toarea nocturn\u0103.\n\nIar
+    \xEEn col\u021B, se afl\u0103 Cioara, una dintre cele mai inteligente p\u0103s\u0103ri
+    de pe P\u0103m\xE2nt. Capabil\u0103 s\u0103 rezolve probleme, s\u0103 recunoasc\u0103
+    fe\u021Be \u0219i chiar s\u0103 foloseasc\u0103 unelte, cioara ne reaminte\u0219te
+    c\u0103 nu toate p\u0103s\u0103rile se bazeaz\u0103 doar pe aripi \u2013 unele
+    au \u0219i min\u021Bi sclipitoare."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &416043490
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416043487}
+  m_CullTransparentMesh: 1
 --- !u!1 &417205252
 GameObject:
   m_ObjectHideFlags: 0
@@ -24240,6 +24683,149 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578870890}
   m_CullTransparentMesh: 1
+--- !u!1 &579829987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579829988}
+  - component: {fileID: 579829990}
+  - component: {fileID: 579829989}
+  m_Layer: 5
+  m_Name: Text_room6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &579829988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579829987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &579829989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579829987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Continu\u0103m turul cu \xEEnc\u0103 2 specii de p\u0103s\u0103ri superbe.\n\n\xCEn
+    partea st\xE2ng\u0103, \xEEl pute\u021Bi admira pe P\u0103un, o pas\u0103re celebr\u0103
+    pentru penajul s\u0103u colorat \u0219i spectaculos. Masculul \xEE\u0219i deschide
+    coada \xEEntr-un evantai uria\u0219 pentru a impresiona femelele \u2014 un adev\u0103rat
+    spectacol al naturii!\n\nIar al\u0103turi, zburd\u0103 juc\u0103u\u0219 Papagalul
+    Peru\u0219, o pas\u0103re mic\u0103, vesel\u0103 \u0219i foarte sociabil\u0103.
+    Este cunoscut pentru capacitatea de a imita sunete \u0219i chiar cuvinte, fiind
+    un companion preferat \xEEn multe gospod\u0103rii.\n\nFiecare dintre aceste p\u0103s\u0103ri
+    ne arat\u0103 c\u0103 frumuse\u021Bea naturii vine \xEEn toate formele: fie prin
+    culori str\u0103lucitoare, fie prin inteligen\u021B\u0103 \u0219i personalitate."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &579829990
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579829987}
+  m_CullTransparentMesh: 1
 --- !u!1 &582046481
 GameObject:
   m_ObjectHideFlags: 0
@@ -30640,12 +31226,21 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1864254186}
+  - {fileID: 381557479}
+  - {fileID: 1820781569}
+  - {fileID: 852556322}
+  - {fileID: 1229898246}
+  - {fileID: 416043488}
+  - {fileID: 579829988}
+  - {fileID: 1124535370}
+  - {fileID: 256623361}
+  - {fileID: 1734063186}
   m_Father: {fileID: 505836126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 400}
+  m_SizeDelta: {x: 1000, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692087068
 MonoBehaviour:
@@ -39627,6 +40222,157 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!1 &852556321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852556322}
+  - component: {fileID: 852556324}
+  - component: {fileID: 852556323}
+  m_Layer: 5
+  m_Name: Text_room3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &852556322
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852556321}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &852556323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852556321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Trecem mai departe \xEEn Camera Reptilelor, locul unde \xEE\u0219i fac
+    veacul unii dintre cei mai periculo\u0219i, dar \u0219i cei mai impresionan\u021Bi
+    \u0219erpi din lume.\n\nAici, pe partea st\xE2ng\u0103, o putem observa pe Vipera
+    cu Corn, recunoscut\u0103 dup\u0103 proeminen\u021Bele ca ni\u0219te coarne de
+    deasupra ochilor. Este un \u0219arpe veninos, des \xEEnt\xE2lnit \xEEn regiunile
+    aride, care se camufleaz\u0103 perfect \xEEn nisip \xEEnainte s\u0103 atace fulger\u0103tor.\n\nL\xE2ng\u0103
+    ea se afl\u0103 temutul Mamba Negru \u2013 considerat unul dintre cei mai rapizi
+    \u0219i venino\u0219i \u0219erpi din lume. De\u0219i numele sugereaz\u0103 altceva,
+    pielea sa este de fapt gri-\xEEnchis, iar \u201Enegrul\u201D vine de la interiorul
+    gurii, care devine vizibil c\xE2nd se simte amenin\u021Bat.\n\nTot \xCEn partea
+    central\u0103 avem adev\u0103ra\u021Bi gigan\u021Bi: Anaconda, un \u0219arpe
+    constrictor deosebit de puternic, care tr\u0103ie\u0219te \xEEn mla\u0219tinile
+    din America de Sud, \u0219i Pythonul, un alt \u0219arpe uria\u0219, capabil s\u0103
+    \xEEnghit\u0103 pr\u0103zi foarte mari datorit\u0103 f\u0103lcilor sale flexibile.\n\nIar
+    ca o not\u0103 aparte, \xEEn col\u021Bul camerei pute\u021Bi admira o creatur\u0103
+    mai pa\u0219nic\u0103, dar cu totul special\u0103: \u021Aestoasa de Gal\xE1pagos.
+    Este una dintre cele mai longevive \u0219i mai mari specii de \u021Bestoase din
+    lume, o adev\u0103rat\u0103 relicv\u0103 vie a naturii."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &852556324
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852556321}
+  m_CullTransparentMesh: 1
 --- !u!1 &852636266
 GameObject:
   m_ObjectHideFlags: 0
@@ -51004,6 +51750,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cfbb58ea5e2daba4ca47a1cb35ba053a, type: 2}
   - {fileID: 11400000, guid: 63a41a8c2cf079243918b049e435b975, type: 2}
   - {fileID: 11400000, guid: b2c3b33010b3ada498666e84819574c2, type: 2}
+  - {fileID: 11400000, guid: b9153a8372201b64ba0285950214b4d0, type: 2}
   achievementsIcons:
   - image: {fileID: 2067647341}
     achievementName: {fileID: 879918442}
@@ -51117,6 +51864,8 @@ MonoBehaviour:
     achievementName: {fileID: 1679067709}
   - image: {fileID: 1451470620}
     achievementName: {fileID: 1716112732}
+  - image: {fileID: 836280618}
+    achievementName: {fileID: 2022551279}
   WinTrophyMenu: {fileID: 277736643}
   winTrophyIcon: {fileID: 588533452}
   winTrophyName: {fileID: 1735060215}
@@ -54280,6 +55029,154 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123201786}
+  m_CullTransparentMesh: 1
+--- !u!1 &1124535369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1124535370}
+  - component: {fileID: 1124535372}
+  - component: {fileID: 1124535371}
+  m_Layer: 5
+  m_Name: Text_room7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1124535370
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124535369}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1124535371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124535369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Pe final, \xEEncheiem turul prin lumea p\u0103s\u0103rilor cu c\xE2teva
+    specii mai familiare, dar la fel de interesante.\n\n\xCEn col\u021B, g\u0103sim
+    Coco\u0219ul, o prezen\u021B\u0103 sonor\u0103 \u0219i m\xE2ndr\u0103 din cur\u021Bile
+    \u021B\u0103r\u0103ne\u0219ti. Este cunoscut pentru c\xE2ntecul s\u0103u matinal,
+    dar \u0219i pentru penajul colorat \u0219i atitudinea de lider al g\u0103inii.\n\nL\xE2ng\u0103
+    el st\u0103 Porumbelul, simbol al p\u0103cii \u0219i fidelit\u0103\u021Bii. De-a
+    lungul istoriei, porumbeii au fost folosi\u021Bi ca mesageri datorit\u0103 sim\u021Bului
+    lor de orientare remarcabil.\n\nPe trunchiul de copac, observ\u0103m Cioc\u0103nitoarea,
+    o pas\u0103re specializat\u0103 \xEEn cioc\u0103nirea scoar\u021Bei pentru a
+    g\u0103si insecte. Cu ciocul puternic \u0219i ritmul ei inconfundabil, este constructorul
+    \u0219i cercet\u0103torul p\u0103durii.\n\nIar micu\u021Ba Vrabie, mereu gr\u0103bit\u0103
+    \u0219i curioas\u0103, \xEEncheie galeria noastr\u0103. Este una dintre cele
+    mai r\u0103sp\xE2ndite p\u0103s\u0103ri de pe glob \u0219i tr\u0103ie\u0219te
+    adesea \xEEn apropierea oamenilor, adapt\xE2ndu-se cu u\u0219urin\u021B\u0103
+    la orice mediu."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1124535372
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124535369}
   m_CullTransparentMesh: 1
 --- !u!1001 &1125946509
 PrefabInstance:
@@ -59614,6 +60511,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82a2dedbcdc47ac4a92072d5b7b0cac2, type: 3}
   m_PrefabInstance: {fileID: 1229096435}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1229898245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229898246}
+  - component: {fileID: 1229898248}
+  - component: {fileID: 1229898247}
+  m_Layer: 5
+  m_Name: Text_room4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1229898246
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229898245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1229898247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229898245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xCEn continuare, \xEEi \xEEnt\xE2lnim pe doi dintre cei mai temu\u021Bi
+    locuitori ai apelor ml\u0103\u0219tinoase: Crocodilul \u0219i Aligatorul.\n\nDe\u0219i
+    mul\u021Bi \xEEi confund\u0103, exist\u0103 diferen\u021Be clare \xEEntre ei:
+    Crocodilul are botul lung \u0219i ascu\u021Bit, iar Aligatorul are un bot mai
+    lat \u0219i rotunjit. Crocodilul prefer\u0103 apele s\u0103rate, \xEEn timp ce
+    aligatorul tr\u0103ie\u0219te mai ales \xEEn ape dulci. Am\xE2ndoi sunt pr\u0103d\u0103tori
+    redutabili, capabili de atacuri rapide \u0219i nea\u0219teptate.\n\nL\xE2ng\u0103
+    ei, putem vedea o prezen\u021B\u0103 regal\u0103: Cobra Regal\u0103, cel mai
+    lung \u0219arpe veninos din lume. Este inteligent\u0103, teritorial\u0103 \u0219i
+    cunoscut\u0103 pentru pozi\u021Bia sa de atac, cu g\xE2tul l\u0103rgit \xEEntr-un
+    guler amenin\u021B\u0103tor. \xCEn ciuda reputa\u021Biei, atac\u0103 doar dac\u0103
+    se simte \xEEn pericol.\n\n\u0218i, nu \xEEn ultimul r\xE2nd, \xEEl avem pe impresionantul
+    Dragon de Komodo \u2013 cea mai mare specie de \u0219op\xE2rl\u0103 de pe planet\u0103!
+    Acest pr\u0103d\u0103tor se afl\u0103 \xEEn v\xE2rful lan\u021Bului trofic pe
+    insulele sale natale din Indonezia. Are mu\u0219c\u0103tura otr\u0103vitoare
+    \u0219i poate dobor\xEE animale mult mai mari dec\xE2t el."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1229898248
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229898245}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1229924842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86715,6 +87761,158 @@ Transform:
   - {fileID: 1163281519}
   m_Father: {fileID: 930166147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1734063185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734063186}
+  - component: {fileID: 1734063188}
+  - component: {fileID: 1734063187}
+  m_Layer: 5
+  m_Name: Text_room9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1734063186
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734063185}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1734063187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734063185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\xCEncheiem turul cu dou\u0103 dintre cele mai \xEEndr\u0103gite zone
+    ale muzeului: Camera Mamiferelor \u0219i Camera Dinozaurilor.\n\nMai \xEEnt\xE2i,
+    descoperim c\xE2teva dintre cele mai impresionante feline. Puma, agil\u0103 \u0219i
+    t\u0103cut\u0103, este st\u0103p\xE2na mun\u021Bilor americani. Leul, cunoscut
+    drept regele savanei, tr\u0103ie\u0219te \xEEn grupuri \u0219i \xEE\u0219i impune
+    autoritatea cu un simplu r\u0103get. Tigrul, cea mai mare dintre feline, este
+    un v\xE2n\u0103tor solitar cu blan\u0103 dungat\u0103 \u0219i mers elegant.\n\n\xCEn
+    urm\u0103toarea sal\u0103 ne a\u0219teapt\u0103 mamifere de mari dimensiuni.
+    Ursul polar, adaptat la via\u021Ba \xEEn regiunile arctice, este un pr\u0103d\u0103tor
+    singuratic al ghe\u021Burilor. Elefantul, cel mai mare animal de uscat, impresioneaz\u0103
+    prin inteligen\u021B\u0103 \u0219i memorie. Iar girafa, cu g\xE2tul ei lung,
+    este cea mai \xEEnalt\u0103 creatur\u0103 terestr\u0103, perfect adaptat\u0103
+    pentru a ajunge la frunzele din v\xE2rful copacilor.\n\nIar \xEEn ultimul spa\u021Biu
+    expozi\u021Bional p\u0103\u0219im \xEEn lumea disp\u0103rut\u0103 a dinozaurilor.
+    Faimosul T-Rex, un pr\u0103d\u0103tor uria\u0219 cu f\u0103lci puternice \u0219i
+    o prezen\u021B\u0103 impun\u0103toare, domin\u0103 \xEEnc\u0103perea. Nu departe
+    de el, Triceratopsul atrage privirile cu cele trei coarne \u0219i scutul osos
+    care \xEEi proteja capul.\n\nO \xEEncheiere spectaculoas\u0103 pentru o c\u0103l\u0103torie
+    prin timp, evolu\u021Bie \u0219i misterul naturii."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1734063188
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734063185}
+  m_CullTransparentMesh: 1
 --- !u!1 &1734195576
 GameObject:
   m_ObjectHideFlags: 0
@@ -92781,6 +93979,155 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 82a2dedbcdc47ac4a92072d5b7b0cac2, type: 3}
   m_PrefabInstance: {fileID: 1816949687}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1820781568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820781569}
+  - component: {fileID: 1820781571}
+  - component: {fileID: 1820781570}
+  m_Layer: 5
+  m_Name: Text_room2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1820781569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820781568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692087067}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 950, y: 380}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1820781570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820781568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Aceasta este Camera Insectelor. Aici putem descoperi unele dintre cele
+    mai fascinante \u0219i neobi\u0219nuite vie\u021Buitoare din lumea micilor pr\u0103d\u0103tori.\n\nPe
+    partea st\xE2ng\u0103, \xEEl avem pe Scorpionul Regal \u2013 una dintre cele
+    mai mari specii de scorpioni din lume. De\u0219i pare \xEEnfrico\u0219\u0103tor,
+    \xEEn\u021Bep\u0103tura lui nu este periculoas\u0103 pentru oameni, \xEEns\u0103
+    cle\u0219tii puternici sunt impresionan\u021Bi!\n\nL\xE2ng\u0103 el, se afl\u0103
+    Viespea Asiatic\u0103 Gigant \u2013 o insect\u0103 temut\u0103 pentru dimensiunea
+    sa \u0219i \xEEn\u021Bep\u0103tura extrem de dureroas\u0103. Poate atinge p\xE2n\u0103
+    la 5 centimetri \u0219i este cunoscut\u0103 pentru faptul c\u0103 atac\u0103
+    stupii de albine.\n\nPe partea dreapt\u0103, \xEEnt\xE2lnim C\u0103lug\u0103ri\u021Ba
+    Verde, o insect\u0103 elegant\u0103 \u0219i misterioas\u0103, cunoscut\u0103
+    pentru postura sa de rug\u0103ciune \u0219i comportamentul s\u0103u de pr\u0103d\u0103tor
+    agil.\n\nIar l\xE2ng\u0103 ea se afl\u0103 una dintre cele mai veninoase specii
+    de p\u0103ianjeni: V\u0103duva Neagr\u0103. U\u0219or de recunoscut dup\u0103
+    corpul lucios \u0219i pata ro\u0219ie \xEEn form\u0103 de clepsidr\u0103, aceast\u0103
+    specie trebuie admirat\u0103 de la distan\u021B\u0103!"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_sharedMaterial: {fileID: 6485574593075336198, guid: 3c4119b42199396448c1ed5b730ddd82, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1820781571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820781568}
+  m_CullTransparentMesh: 1
 --- !u!1 &1821502736
 GameObject:
   m_ObjectHideFlags: 0
@@ -95855,8 +97202,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -111141,6 +112488,42 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 602778513}
     - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom1
+      value: 
+      objectReference: {fileID: 381557480}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom2
+      value: 
+      objectReference: {fileID: 1820781570}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom3
+      value: 
+      objectReference: {fileID: 852556323}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom4
+      value: 
+      objectReference: {fileID: 1229898247}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom5
+      value: 
+      objectReference: {fileID: 416043489}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom6
+      value: 
+      objectReference: {fileID: 579829989}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom7
+      value: 
+      objectReference: {fileID: 1124535371}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom8
+      value: 
+      objectReference: {fileID: 256623362}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
+      propertyPath: textRoom9
+      value: 
+      objectReference: {fileID: 1734063187}
+    - target: {fileID: 4351804230841469646, guid: 2c687e142ddce2c4fa607befe480b0d2, type: 3}
       propertyPath: NpcQuiz2UI
       value: 
       objectReference: {fileID: 48543635}
@@ -111301,6 +112684,7 @@ SceneRoots:
   - {fileID: 1642982220}
   - {fileID: 1866235669}
   - {fileID: 1978354753}
+  - {fileID: 1257194116}
   - {fileID: 1373373860}
   - {fileID: 1857798901}
   - {fileID: 1063310561}
@@ -111318,4 +112702,3 @@ SceneRoots:
   - {fileID: 1462908211}
   - {fileID: 505836126}
   - {fileID: 820793579}
-  - {fileID: 1257194116}

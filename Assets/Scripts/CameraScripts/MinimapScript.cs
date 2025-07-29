@@ -22,7 +22,7 @@ public class MinimapScript : NetworkBehaviour
 
     public void AttachCameraToPlayer()
     {
-        if (!IsOwner && GameModeManager.Instance.GetGameMode() == 1) { return; }
+        //if (!IsOwner && GameModeManager.Instance.GetGameMode() == 1) { return; }
         player = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 }
