@@ -34,7 +34,7 @@ public class SingleplayerNewGameUI : MonoBehaviour
         startGameBtn.onClick.AddListener(() =>
         {
             GameModeManager.Instance.SetPlayerName(playerNameInputField.text);
-            SceneManager.LoadScene("GameScene");
+            AsyncManager.Instance.LoadGameSceneButton("GameScene");
         });
 
         backBtn.onClick.AddListener(() =>

@@ -65,7 +65,7 @@ public class SingleplayerLoadUI : MonoBehaviour
         {
             PlayerPrefs.SetInt("SlotToLoad", slot);
             PlayerPrefs.Save();
-            SceneManager.LoadScene("GameScene");
+            AsyncManager.Instance.LoadGameSceneButton("GameScene");
         }
         else
         {
