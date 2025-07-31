@@ -79,6 +79,7 @@ public class AchievementManager : MonoBehaviour
         {
             unlockedAchievements[animalName] = true;
             WinTrophyMenu.SetActive(true);
+            SoundManager.Instance.PlayWinTrophySound();
             AddAchievement();
             foreach (var achievement in allAchievements)
             {

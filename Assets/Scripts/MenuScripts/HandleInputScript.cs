@@ -18,7 +18,7 @@ public class HandleInputScript : MonoBehaviour
         HandleInput();
     }
 
-    bool AreMenusActive()
+    public bool AreMenusActive()
     {
         foreach (var menu in Menus)
         {
