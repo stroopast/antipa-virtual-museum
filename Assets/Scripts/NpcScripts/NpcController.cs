@@ -147,9 +147,9 @@ public class NpcController : NetworkBehaviour
                     yield return new WaitForSeconds(5f);
                     HideFinalScoreClientRpc();
                    
-                    if (PlayerScore.Instance.GetPlayerScore() > 1)
+                    if (PlayerScore.Instance.GetPlayerScore() > 24)
                     {
-                        UnlockSpecialAchievementClientRpc();
+                        AchievementManager.Instance.UnlockAchievement("Tur");
                     }
                 }
                 // for singleplayer
@@ -170,7 +170,7 @@ public class NpcController : NetworkBehaviour
                     yield return new WaitForSeconds(5f);
                     timeExpiredUI.gameObject.SetActive(false);
 
-                    if (PlayerScore.Instance.GetPlayerScore() > 1)
+                    if (PlayerScore.Instance.GetPlayerScore() > 24)
                     {
                         AchievementManager.Instance.UnlockAchievement("Tur");
                     }
@@ -364,10 +364,10 @@ public class NpcController : NetworkBehaviour
         isCountingEnabled = false;
     }
 
-    [ClientRpc]
-    private void UnlockSpecialAchievementClientRpc()
-    {
-        AchievementManager.Instance.UnlockAchievement("Tur");
-    }
+    //[ClientRpc]
+    //private void UnlockSpecialAchievementClientRpc()
+    //{
+    //    AchievementManager.Instance.UnlockAchievement("Tur");
+    //}
 
 }

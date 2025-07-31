@@ -35,5 +35,10 @@ public class StartUI : MonoBehaviour
             gameObject.SetActive(false);
             settingsUI.gameObject.SetActive(true);
         });
+
+        exitGameBtn.onClick.AddListener(() =>
+        {
+            Application.Quit();
+        });
     }
 }

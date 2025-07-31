@@ -26,6 +26,8 @@ public class AchievementManager : MonoBehaviour
     public Image winTrophyIcon;
     public TextMeshProUGUI winTrophyName;
 
+    private int countUnlockedAchievements = 0;
+
     private void Awake()
     {
         Instance = this;
@@ -50,6 +52,17 @@ public class AchievementManager : MonoBehaviour
                 achievementsIcons[iconIndex].achievementName.text = allAchievements[iconIndex].achievementName;
             }
         }
+
+    }
+
+    public void AddAchievement()
+    {
+        countUnlockedAchievements++;
+    }
+
+    public int GetAchievementCount()
+    {
+        return countUnlockedAchievements;
     }
 
     void InitAchievements()
@@ -66,6 +79,7 @@ public class AchievementManager : MonoBehaviour
         {
             unlockedAchievements[animalName] = true;
             WinTrophyMenu.SetActive(true);
+            AddAchievement();
             foreach (var achievement in allAchievements)
             {
                 if(achievement.animalName == animalName)
